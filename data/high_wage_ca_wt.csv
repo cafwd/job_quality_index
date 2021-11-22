@@ -1,0 +1,270 @@
+Industry Title,unweighted_ind_counts,wt_ind_counts,wt_CA_high_wage_count,wt_CA_high_wage_perc
+Coal mining,3,713.0,713.0,100.0
+Tobacco,2,62.0,55.0,88.70967741935483
+Software publishers,405,40383.0,34271.0,84.86491840626006
+"Electric and gas, and other combinations",364,31461.0,25762.0,81.88550904294205
+Internet publishing and broadcasting and web search portals,898,84500.0,67881.0,80.33254437869822
+Not specified utilities,41,3260.0,2552.0,78.28220858895706
+Sewage treatment facilities,108,10351.0,7947.0,76.77519080282099
+Computer systems design and related services,6238,613483.0,469415.0,76.51638268705082
+"Engine, turbine, and power transmission equipment manufacturing",53,6402.0,4866.0,76.0074976569822
+"Other information services, except libraries and archives, and internet publishing and broadcasting and web search portals",74,6872.0,5101.0,74.22875436554133
+Computer and peripheral equipment manufacturing,524,48224.0,34515.0,71.57224618447246
+Rail transportation,152,19503.0,13945.0,71.5018202327847
+Metal ore mining,13,1719.0,1220.0,70.97149505526468
+"Data processing, hosting, and related services",273,25861.0,18351.0,70.96013301883146
+"Electric power generation, transmission and distribution",558,52027.0,36901.0,70.92663424760221
+Petroleum refining,188,19544.0,13748.0,70.34383954154728
+Pharmaceuticals and medicines,878,82428.0,57570.0,69.84277187363517
+Pipeline transportation,16,1672.0,1167.0,69.79665071770334
+"Communications, audio, and video equipment",336,29509.0,20509.0,69.50083025517638
+Natural gas distribution,152,15318.0,10629.0,69.38895417156287
+Aerospace products and parts manufacturing,178,16335.0,11304.0,69.20110192837465
+Nonmetallic mineral mining and quarrying,62,5928.0,4067.0,68.60661268556005
+Scientific research and development services,1684,154626.0,105726.0,68.37530557603509
+Labor unions,172,15327.0,10275.0,67.03855940497162
+"Justice, public order, and safety activities",3792,366233.0,243350.0,66.44677022551218
+"Electronic components and products, n.e.c.",2146,196668.0,127913.0,65.04006752496593
+"Water, steam, air conditioning, and irrigation systems",442,42608.0,27481.0,64.49727750657154
+"Navigational, measuring, electromedical, and control instruments",470,41658.0,26740.0,64.1893513850881
+Management of companies and enterprises,324,32507.0,20847.0,64.13080259636385
+"Securities, commodities, funds, trusts, and other financial investments",1740,165926.0,105375.0,63.50722611284548
+"Architectural, engineering, and related services",2484,230143.0,143891.0,62.522431705504836
+Administration of environmental quality and housing programs,425,36022.0,22519.0,62.51457442673921
+Wired telecommunications carriers,659,64442.0,39999.0,62.06976816362
+"Paint, coating, and adhesives",60,6675.0,4135.0,61.94756554307116
+Administration of economic programs and space research,682,63260.0,39170.0,61.91906417957635
+Broadcasting (except internet),724,70550.0,43606.0,61.80864635010631
+National security and international affairs,1045,100409.0,62029.0,61.77633479070601
+Support activities for mining,155,15888.0,9759.0,61.4237160120846
+Nondepository credit and related activities,1297,129223.0,79123.0,61.22981203036611
+Aircraft and parts manufacturing,1736,168720.0,102477.0,60.73790896159317
+"Telecommunications, except wired telecommunications carriers",405,42774.0,25808.0,60.335717959508116
+"General medical and surgical hospitals, and specialty (except psychiatric and substance abuse) hospitals",7895,796488.0,479988.0,60.26305481061861
+Petroleum and petroleum products merchant wholesalers ,88,8593.0,5160.0,60.0488769929012
+Public finance activities,463,42656.0,25541.0,59.8766879219805
+Oil and gas extraction,64,5842.0,3453.0,59.106470386853815
+Professional and commercial equipment and supplies merchant wholesalers,506,50856.0,29982.0,58.95469561113733
+"Metals and minerals, except petroleum, merchant wholesalers",76,7561.0,4376.0,57.87594233566988
+Commercial and service industry machinery manufacturing,106,10954.0,6253.0,57.08417016614935
+"Commercial, industrial, and other intangible assets rental and leasing",160,15199.0,8671.0,57.04980590828343
+Miscellaneous petroleum and coal products,21,2227.0,1268.0,56.937584193982936
+"Cement, concrete, lime, and gypsum products manufacturing",127,13011.0,7337.0,56.39074629159941
+Medical equipment and supplies,1265,122214.0,68654.0,56.175233606624445
+Banking and related activities,1844,187390.0,103004.0,54.96771439244357
+"Advertising, public relations, and related services",1062,103894.0,57042.0,54.90403680674534
+"Drugs, sundries, and chemical and allied product merchant wholesalers",349,33707.0,18415.0,54.63256890260183
+"U.S. Armed forces, branch not specified",77,7980.0,4269.0,53.496240601503764
+Insurance Carriers,2181,212681.0,113718.0,53.46881009587128
+"Sporting and athletic goods, and doll, toy, and game manufacturing",169,17259.0,9161.0,53.07955269714352
+Ship and boat building,91,10045.0,5268.0,52.444001991040324
+U.S. Coast Guard,36,2593.0,1353.0,52.1789433089086
+Executive offices and legislative bodies,1869,182846.0,95206.0,52.06895420189668
+Psychiatric and substance abuse hospitals,171,17949.0,9315.0,51.89704161791743
+Postal service,948,88908.0,45711.0,51.41382102847888
+Legal services,2730,251095.0,128988.0,51.37019853043668
+Industrial and miscellaneous chemicals,224,24511.0,12427.0,50.69968585533026
+Household appliances and electrical and electronic goods merchant wholesalers,366,36535.0,18281.0,50.036950869029695
+Alcoholic beverages merchat wholesalers,181,18290.0,9128.0,49.907053034445056
+Water transportation,95,9152.0,4563.0,49.85795454545455
+"Construction, and mining and oil and gas field machinery",29,3048.0,1515.0,49.70472440944882
+"Agencies, Brokerages, And Other Insurance Related Activities",823,75494.0,37222.0,49.304580496463295
+Agricultural implements,28,2708.0,1333.0,49.224519940915805
+"Farm product raw materials, merchant wholesalers ",19,1464.0,716.0,48.90710382513661
+Motion pictures and video industries,2258,210979.0,103143.0,48.88780399945018
+"Management, scientific and technical consulting services",2918,269650.0,130314.0,48.32709067309475
+U.S. Air Force,222,21796.0,10501.0,48.17856487428886
+"Business, professional, political and similar organizations",219,19353.0,9277.0,47.935720560119876
+"Machinery manufacturing, n.e.c. or not specified",587,60512.0,28993.0,47.912810682178744
+"Coating, engraving, heat treating and allied activities",83,7636.0,3643.0,47.70822420115244
+"Savings institutions, including credit unions",315,33069.0,15747.0,47.618615621881524
+Lumber and other construction materials merchant wholesalers,186,18554.0,8823.0,47.55308828285006
+Dairy products,213,21989.0,10408.0,47.33275728773478
+"Machinery, equipment, and supplies merchant wholesalers",426,40398.0,19060.0,47.180553492747165
+"Pulp, paper, and paperboard mills",80,7043.0,3321.0,47.15320176061337
+Air transportation,757,74216.0,34952.0,47.09496604505767
+Motor vehicles and motor vehicle equipment manufacturing ,668,71146.0,33248.0,46.732072077137154
+Other general government and support,261,24170.0,11253.0,46.55771617707902
+Bus service and urban transit,783,83502.0,38314.0,45.883930923810205
+Other transportation equipment manufacturing ,35,3574.0,1633.0,45.69110240626749
+Farm supplies merchant wholesalers,66,5300.0,2401.0,45.30188679245283
+"Periodical, book, and directory publishers",252,21850.0,9780.0,44.75972540045767
+Offices of physicians,2281,219795.0,98007.0,44.590186309970655
+Metal forgings and stampings,35,3151.0,1403.0,44.52554744525548
+Beverage,683,69426.0,30348.0,43.71273010111486
+Iron and steel mills and steel products manufacturing,135,14347.0,6184.0,43.103087753537324
+Other health care services,1634,178819.0,76819.0,42.95908152936768
+"Wholesale electronic markets, agents and brokers",211,20932.0,8922.0,42.62373399579591
+U.S. Navy,620,66546.0,28236.0,42.430799747543055
+"Electric lighting, and electrical equipment manufacturing, and other electrical component manufacturing, n.e.c.",405,36793.0,15514.0,42.16562933166635
+Prefabricated wood buildings and mobile homes,27,2525.0,1061.0,42.01980198019802
+Agricultural chemicals,35,3486.0,1452.0,41.65232358003442
+"Soap, cleaning compound, and cosmetics",202,21039.0,8751.0,41.59418223299586
+Fuel dealers,55,5138.0,2135.0,41.55313351498637
+Outpatient care centers,2556,256385.0,104887.0,40.90995963102365
+"Accounting, tax preparation, bookkeeping and payroll services",1935,184053.0,74557.0,40.50844050355061
+"Civic, social, advocacy organizations and grantmaking and giving services",1238,117528.0,47550.0,40.45844394527261
+Paperboard container manufacturing,101,10943.0,4411.0,40.30887325230741
+"Colleges, universities, and professional schools, including junior colleges ",6684,597070.0,240065.0,40.207178387793725
+"Promoters Of Performing Arts, Sports, And Similar Events, Agents And Managers For Artists, Athletes, Entertainers, And Other Public Figures",426,45315.0,17971.0,39.65794990621207
+Elementary and secondary schools,13278,1233619.0,487996.0,39.55808073643483
+Household appliances,32,2777.0,1090.0,39.25099027727764
+Waste management and remediation services,673,76321.0,29718.0,38.93816904914768
+Sound recording industries,177,17188.0,6692.0,38.934140097742606
+"Forestry, except logging",96,7637.0,2957.0,38.71939243158308
+"Other administrative, and other support services",623,66025.0,25044.0,37.9310867095797
+Automobile dealers,1274,148646.0,56249.0,37.84091061986196
+Ordnance,8,767.0,290.0,37.809647979139505
+Electronics stores,927,97774.0,36931.0,37.771800274101494
+Aluminum production and processing,39,2981.0,1118.0,37.50419322375042
+Travel arrangements and reservation services,495,44621.0,16572.0,37.139463481320455
+Services incidental to transportation,1211,134523.0,49931.0,37.11707291689897
+"Real Estate Property Managers, Offices of Real Estate Appraisers, And Other Activities Related to Real Estate",1015,94140.0,34696.0,36.85574676014446
+"Structural metals, and boiler, tank, and shipping container manufacturing",291,31941.0,11671.0,36.539244231551926
+"Animal food, grain and oilseed milling",102,10656.0,3854.0,36.16741741741742
+"Machine shops; turned product; screw, nut, and bolt manufacturing  ",427,41612.0,15032.0,36.12419494376622
+Construction (The Cleaning Of Buildings And Dwellings Is Incidental During Construction And Immediately After Construction),13304,1501082.0,540366.0,35.99843313023539
+"Hardware, and plumbing and heating equipment, and supplies, merchant wholesalers",249,25449.0,9050.0,35.5613187158631
+"Lessors Of Real Estate, And Offices Of Real Estate Agents And Brokers",3403,335863.0,119393.0,35.54812527727079
+Other consumer goods rental,211,23040.0,8168.0,35.45138888888889
+Sawmills and wood preservation,81,9824.0,3432.0,34.93485342019544
+Miscellaneous paper and pulp products,39,4387.0,1520.0,34.647823113745154
+Motor vehicle and motor vehicle parts and supplies merchant wholesalers       ,339,33251.0,11518.0,34.63955971248985
+Miscellaneous nondurable goods merchant wholesalers,361,36399.0,12560.0,34.506442484683646
+Miscellaneous fabricated metal products manufacturing,279,27242.0,9356.0,34.34402760443433
+"Community food and housing, and emergency services",226,22269.0,7633.0,34.27634828685617
+Specialized design services,871,87311.0,29769.0,34.09536026388428
+Glass and glass products manufacturing,125,13400.0,4535.0,33.84328358208955
+Railroad rolling stock manufacturing,16,1435.0,485.0,33.79790940766551
+Electronic and precision equipment repair and maintenance,175,16596.0,5585.0,33.652687394552906
+Footwear Manufacturing,28,3498.0,1165.0,33.30474556889651
+Plastics products,323,34013.0,11320.0,33.281392408784875
+Truck transportation,1975,229521.0,75607.0,32.941212350939566
+Other motor vehicle dealers,143,12913.0,4227.0,32.7344536513591
+Printing and related support activities,628,64766.0,21082.0,32.551029861347004
+Grocery and related product merchant wholesalers ,1306,138295.0,44892.0,32.461043421671064
+Metalworking machinery,88,8606.0,2791.0,32.43086218917035
+Furniture and home furnishing merchant wholesalers   ,166,16912.0,5337.0,31.557473982970674
+Cutlery and hand tool manufacturing,32,2446.0,767.0,31.35731807031889
+Electronic shopping and mail-order houses,1110,115512.0,36156.0,31.30064408892583
+Not specified metal industries,23,2652.0,828.0,31.221719457013574
+"Resin, synthetic rubber, and fibers and filaments",122,15306.0,4764.0,31.125049000392004
+Household appliance stores,70,6190.0,1909.0,30.840064620355413
+Administration of human resource programs,2024,208072.0,64019.0,30.76771502172325
+Offices of dentists,1520,155837.0,47414.0,30.425380365381777
+Spectator Sports,258,25657.0,7715.0,30.069766535448416
+Tires,24,1815.0,545.0,30.02754820936639
+Lawn and garden equipment and supplies stores,182,19091.0,5712.0,29.91985752448798
+Military reserves or national guard,21,1853.0,552.0,29.789530491095523
+"Other professional, scientific and technical services",803,77876.0,23161.0,29.740870101186502
+Newspaper publishers,180,17364.0,5138.0,29.589956231283114
+"Health and personal care, except drug, stores",715,73128.0,21578.0,29.507165517995844
+Foundries,34,3094.0,908.0,29.347123464770526
+Not specified industries,656,72419.0,20354.0,28.10588381502092
+"Apparel, piece goods, and notions merchant wholesalers",403,40908.0,11488.0,28.08252664515498
+Miscellaneous durable goods merchant wholesalers,206,20382.0,5692.0,27.926601903640467
+"Museums, art galleries, historical sites, and similar institutions",664,65132.0,18069.0,27.74212368728121
+"Nonferrous metal, except aluminum, production and processing",26,3115.0,856.0,27.479935794542538
+Business support services,723,75528.0,20698.0,27.404406312890583
+Libraries and archives,321,29497.0,8083.0,27.402786724073636
+Musical instrument and supplies stores,76,7658.0,2095.0,27.35701227474536
+"Beer, wine, and liquor stores",236,26223.0,7161.0,27.308088319414253
+Offices of optometrists,238,22828.0,6168.0,27.019449798493078
+Performing Arts Companies,401,34225.0,9231.0,26.971512052593134
+Furniture and related products manufacturing,440,47154.0,12643.0,26.812147431819145
+"Miscellaneous manufacturing, n.e.c.",563,57358.0,15363.0,26.78440670874159
+Not specified food industries,80,10367.0,2764.0,26.661522137551845
+Pharmacies and drug stores,1010,105523.0,27962.0,26.498488481184197
+"Funeral homes, cemeteries and crematories",161,16582.0,4363.0,26.311663249306477
+U.S. Army,142,14382.0,3760.0,26.143790849673206
+Furniture and home furnishings stores,739,76646.0,19868.0,25.921770216319185
+Offices of other health practitioners,716,66453.0,17222.0,25.91606097542624
+"Seafood and other miscellaneous foods, n.e.c.",315,33444.0,8525.0,25.490371965075948
+Nursing care facilities (skilled nursing facilities),1343,145303.0,36508.0,25.125427554833692
+Commercial and industrial machinery and equipment repair and maintenance,297,34816.0,8709.0,25.014361213235293
+"Business, technical, and trade schools and training",198,16086.0,4010.0,24.928509262712918
+U.S. Marines,500,47029.0,11703.0,24.884645644177
+Veterinary services,505,50064.0,12374.0,24.716363055289232
+Animal slaughtering and processing,223,24032.0,5913.0,24.604693741677764
+Employment services,1799,190494.0,46475.0,24.397093871722994
+Clay building material and refractories manufacturing,21,2874.0,698.0,24.28670842032011
+Couriers and messengers,1354,154335.0,37076.0,24.023066705543137
+"Knitting fabric mills, and apparel knitting mills",13,1659.0,395.0,23.809523809523807
+"Rubber products, except tires",58,5826.0,1343.0,23.051836594576038
+Automotive equipment rental and leasing,264,27930.0,6437.0,23.046902971715003
+Automotive repair and maintenance,1506,175416.0,39632.0,22.593149997719706
+"Fishing, hunting, and trapping",38,3532.0,779.0,22.055492638731597
+Recyclable material merchant wholesalers,66,8273.0,1809.0,21.866312099601114
+Investigation and security services,1532,171864.0,36728.0,21.37038588651492
+Miscellaneous nonmetallic mineral products manufacturing,62,7236.0,1522.0,21.03372028745163
+Building material and supplies dealers,1105,117637.0,24717.0,21.011246461572462
+Carpet and rug mills,18,2073.0,430.0,20.742884708152438
+Home health care services,1258,133017.0,27294.0,20.519181758722567
+"Bakeries and tortilla manufacturing, except retail bakeries",309,35511.0,7229.0,20.357072456421953
+Religious organizations,1511,125447.0,25357.0,20.213317177772286
+Traveler accommodation,1968,229282.0,45119.0,19.678387313439348
+Not specified wholesale trade,235,25207.0,4939.0,19.593763637084937
+Individual and family services,3711,383941.0,75208.0,19.588426346756403
+Miscellaneous wood products,206,22428.0,4360.0,19.43998573212056
+Paper and paper products mechant wholesalers,81,8163.0,1583.0,19.3923802523582
+Sugar and confectionery products,81,9050.0,1747.0,19.303867403314918
+Not specified retail trade,791,90344.0,17039.0,18.860134596652795
+Vending machine operators,43,4755.0,885.0,18.61198738170347
+"Cut And Sew, And Apparel Accessories And Other Apparel",609,62530.0,11425.0,18.27122980969135
+Leather and hide tanning and finishing and other allied products manufacturing,40,3277.0,597.0,18.21788220933781
+"Automotive parts, accessories, and tire stores",519,57807.0,10420.0,18.02549864203297
+"Independent Artists, Writers, And Performers",979,93179.0,16731.0,17.955762564526342
+Textile And Fabric Finishing and Fabric Coating Mills,30,2982.0,535.0,17.940979208584842
+"Fabric mills, except knitting mills",89,9782.0,1734.0,17.72643631159272
+Other direct selling establishments,211,24025.0,4202.0,17.490114464099896
+Office supplies and stationary stores,171,17374.0,3008.0,17.313226660527224
+Office of chiropractors,167,17372.0,3003.0,17.28643794612019
+"Other amusement, gambling, and recreation industries",3784,390546.0,67140.0,17.19131677190395
+"Pottery, ceramics, and plumbing fixture manufacturing",23,2422.0,414.0,17.09331131296449
+Miscellaneous retail stores,759,78729.0,13453.0,17.087731331529675
+Scenic and sightseeing transportation,68,6422.0,1095.0,17.050763002180005
+"Other schools and instruction, and educational support services ",1883,173241.0,28305.0,16.338511091485273
+"Residential care facilities, except skilled nursing",1079,116176.0,18843.0,16.219356837901117
+Textile product mills except carpets and rugs,120,12669.0,2053.0,16.204909621911753
+"Drinking places, alcohol beverages",258,29068.0,4539.0,15.61510939865144
+Shoe stores,274,29878.0,4664.0,15.610147934935403
+"Jewelry, luggage,and leather goods stores",265,26719.0,4148.0,15.524533103783824
+Clothing stores,2185,230583.0,32922.0,14.277722121752253
+"Veneer, plywood, and engineered wood products",22,2047.0,289.0,14.118221787982414
+"Gift, novelty, and souvenir shops",247,23623.0,3268.0,13.833975362993693
+Other personal services,901,90422.0,12508.0,13.832916768043175
+Logging,44,3409.0,470.0,13.787034320915225
+Supermarkets And Grocery (Except Convenience) Stores,3177,363494.0,49555.0,13.632962304742307
+Specialty food stores,374,38012.0,5181.0,13.629906345364622
+Personal and household goods repair and maintenance,243,26322.0,3492.0,13.266469113289265
+Vocational rehabilitation services,211,20239.0,2663.0,13.157764711695242
+Fruit and vegetable preserving and specialty foods,354,44418.0,5842.0,13.152325633752081
+Animal production and aquaculture ,479,49298.0,6209.0,12.594831433323867
+"Sporting goods, and hobby and toy stores",637,63423.0,7931.0,12.504927234599435
+Drycleaning and laundry services,377,40982.0,4743.0,11.57337367624811
+"General merchandise stores, including warehouse clubs and supercenters ",2331,251996.0,28921.0,11.476769472531311
+Warehousing and storage,1504,200369.0,22966.0,11.461852881433755
+Gasoline stations,498,56458.0,6315.0,11.185305891104893
+Hardware stores,262,29130.0,3250.0,11.156882938551322
+Taxi and limousine service,1146,130875.0,14582.0,11.141929321872016
+Crop production,2775,353971.0,36269.0,10.24631961375367
+Convenience Stores,211,20385.0,1963.0,9.62962962962963
+Bowling centers,42,4411.0,417.0,9.453638630695988
+"Recreational vehicle parks and camps, and rooming and boarding houses, dormitories, and workers' camps",272,24761.0,2165.0,8.743588708048948
+Services to buildings and dwellings (except cleaning during construction and immediately after construction) ,2243,272508.0,23761.0,8.7193770458115
+Department stores,796,82831.0,7126.0,8.603059241105383
+Retail bakeries,261,29809.0,2471.0,8.28944278573585
+Support activities for agriculture and forestry,569,81194.0,6676.0,8.22228243466266
+Landscaping services,1688,210411.0,17124.0,8.138357785476995
+Restaurants and other food services,13350,1521852.0,122193.0,8.02923017481332
+Child day care services,2034,210857.0,16269.0,7.71565563391303
+Car washes,278,35983.0,2761.0,7.673067837589972
+Beauty salons,1417,151891.0,10413.0,6.8555740629793736
+Barber shops,120,14640.0,966.0,6.598360655737705
+Nail salons and other personal care services,839,88449.0,5558.0,6.283847188775453
+Used merchandise stores,405,42093.0,2525.0,5.998622098686242
+Florists,172,18010.0,921.0,5.113825652415325
+Book stores and news dealers,162,15111.0,697.0,4.612533915690556
+"Sewing, needlework and piece goods stores",83,8011.0,316.0,3.9445762077143924
+Private households,1529,180264.0,6958.0,3.8598943771357566
+"Unemployed, with no work experience in past 5 years",2013,240244.0,0.0,0.0
