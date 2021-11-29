@@ -17,3 +17,5 @@ use the IPUMs data to estimate the probability an industry sector is a quality j
 3. housing cost adjusted of state mean wage
 4. housing cost adjusted regional mean wage
 5. a multiple of the real cost measure (which the United Way folks dissuaded me from)
+
+B. another option would be to use the United Way real cost measure (acknowledging that there would have to be some regional population weighted averaging)
