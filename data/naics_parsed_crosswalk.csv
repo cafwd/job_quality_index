@@ -1,0 +1,270 @@
+Industry Title,INDNAICS,Main_Code,Sub_1_Code,Sub_2_Code,Sub_3_Code,Sub_4_Code
+Crop production,111,111,111,111,111,111
+Support activities for agriculture and forestry,115,111,111,111,111,111
+Animal production and aquaculture ,112,111,111,111,111,111
+"Fishing, hunting, and trapping",114,111,111,111,111,111
+"Forestry, except logging",113m,100,113,113,113,113
+Logging,1133,100,113,113,113,113
+Oil and gas extraction,211,100,210,211,211,211
+Nonmetallic mineral mining and quarrying,2123,100,210,212,212,212
+Metal ore mining,2122,100,210,212,212,212
+Coal mining,2121,100,210,212,212,212
+Support activities for mining,213,100,210,213,213,213
+Not specified utilities,22s,400,431,431,431,431
+"Water, steam, air conditioning, and irrigation systems",2213m,400,431,431,431,431
+Natural gas distribution,2212p,400,431,431b,431b,431b
+Sewage treatment facilities,22132,400,431,431,431,431
+"Electric power generation, transmission and distribution",2211p,400,431,431a,431a,431a
+"Electric and gas, and other combinations",221mp,400,431,431,431,431
+Construction (The Cleaning Of Buildings And Dwellings Is Incidental During Construction And Immediately After Construction),23,230,230,230,230,230
+Not specified industries,3ms,300,300,300,300,300
+Leather and hide tanning and finishing and other allied products manufacturing,316m,300,310,310,310,310
+Retail bakeries,311811,300,310,311,311d,311d
+Animal slaughtering and processing,3116,300,310,311,311c,311c
+Fruit and vegetable preserving and specialty foods,3114,300,310,311,311a,311a
+Dairy products,3115,300,310,311,311b,311b
+"Bakeries and tortilla manufacturing, except retail bakeries",3118z,300,310,311,311d,311d
+"Seafood and other miscellaneous foods, n.e.c.",311m2,300,310,311,311e,311e
+"Animal food, grain and oilseed milling",311m1,300,310,311,311,311
+Not specified food industries,311s,300,310,311,311,311
+Sugar and confectionery products,3113,300,310,311,311,311
+Beverage,3121,300,310,312,312,312
+Tobacco,3122,300,310,312,312,312
+"Fabric mills, except knitting mills",3132z,300,310,313,313,313
+Textile And Fabric Finishing and Fabric Coating Mills,3133,300,310,314,314,314
+Carpet and rug mills,31411,300,310,314,314,314
+Textile product mills except carpets and rugs,314z,300,310,314,314,314
+"Knitting fabric mills, and apparel knitting mills",31m,300,310,315,315a,315a
+"Cut And Sew, And Apparel Accessories And Other Apparel",315m,300,310,315,315b,315b
+Footwear Manufacturing,3162,300,310,315,315,315
+"Veneer, plywood, and engineered wood products",3212,300,320,321,321,321
+Miscellaneous wood products,3219zm,300,320,321,321a,321a
+Prefabricated wood buildings and mobile homes,32199m,300,320,321,321,321
+Sawmills and wood preservation,3211,300,320,321,321,321
+Paperboard container manufacturing,32221,300,310,322,322a,322a
+Miscellaneous paper and pulp products,3222m,300,310,322,322,322
+"Pulp, paper, and paperboard mills",3221,300,310,322,322,322
+Printing and related support activities,3231,300,310,323,323,323
+Petroleum refining,32411,300,310,324,324,324
+Miscellaneous petroleum and coal products,3241m,300,310,324,324,324
+"Soap, cleaning compound, and cosmetics",3256,300,310,325,325b,325b
+Pharmaceuticals and medicines,3254,300,310,325,325a,325a
+Agricultural chemicals,3253,300,310,325,325,325
+"Paint, coating, and adhesives",3255,300,310,325,325,325
+Industrial and miscellaneous chemicals,325m,300,310,325,325,325
+"Resin, synthetic rubber, and fibers and filaments",3252,300,310,326,326,326
+Plastics products,3261,300,310,326,326,326
+"Rubber products, except tires",3262m,300,310,326,326,326
+Tires,32621,300,310,326,326,326
+"Cement, concrete, lime, and gypsum products manufacturing",327m,300,320,327,327,327
+"Pottery, ceramics, and plumbing fixture manufacturing",32711,300,320,327,327,327
+Glass and glass products manufacturing,3272,300,320,327,327,327
+Clay building material and refractories manufacturing,327120,300,320,327,327,327
+Miscellaneous nonmetallic mineral products manufacturing,3279,300,320,327,327,327
+"Nonferrous metal, except aluminum, production and processing",3314,300,320,331,331,331
+Iron and steel mills and steel products manufacturing,331m,300,320,331,331,331
+Aluminum production and processing,3313,300,320,331,331,331
+Not specified metal industries,33ms,300,320,331,331,331
+Foundries,3315,300,320,331,331,331
+Miscellaneous fabricated metal products manufacturing,332mz,300,320,332,332c,332c
+"Machine shops; turned product; screw, nut, and bolt manufacturing  ",3327,300,320,332,332b,332b
+Metal forgings and stampings,3321,300,320,332,332,332
+"Structural metals, and boiler, tank, and shipping container manufacturing",332m,300,320,332,332,332
+"Coating, engraving, heat treating and allied activities",3328,300,320,332,332,332
+Ordnance,33299m,300,320,332,332,332
+Cutlery and hand tool manufacturing,3322,300,320,332,332,332
+"Machinery manufacturing, n.e.c. or not specified",333ms,300,320,333,333d,333d
+"Construction, and mining and oil and gas field machinery",3331m,300,320,333,333a,333a
+Commercial and service industry machinery manufacturing,3333,300,320,333,333b,333b
+Metalworking machinery,3335,300,320,333,333c,333c
+Agricultural implements,33311,300,320,333,333,333
+"Engine, turbine, and power transmission equipment manufacturing",3336,300,320,333,333,333
+"Electronic components and products, n.e.c.",334m2,300,320,334,334c,334c
+"Navigational, measuring, electromedical, and control instruments",3345,300,320,334,334d,334d
+Computer and peripheral equipment manufacturing,3341,300,320,334,334a,334a
+"Communications, audio, and video equipment",334m1,300,320,334,334b,334b
+"Electric lighting, and electrical equipment manufacturing, and other electrical component manufacturing, n.e.c.",335m,300,320,335,335,335
+Household appliances,3352,300,320,335,335,335
+Ship and boat building,3366,300,320,336,336c,336c
+Motor vehicles and motor vehicle equipment manufacturing ,336m,300,320,336,336a,336a
+Aerospace products and parts manufacturing,33641m2,300,320,336,336b,336b
+Aircraft and parts manufacturing,33641m1,300,320,336,336b,336b
+Other transportation equipment manufacturing ,3369,300,320,336,336,336
+Railroad rolling stock manufacturing,3365,300,320,336,336,336
+Furniture and related products manufacturing,337,300,320,337,337,337
+"Miscellaneous manufacturing, n.e.c.",3399zm,300,300,300,300,300
+Medical equipment and supplies,3391,300,320,339,339a,339a
+"Sporting and athletic goods, and doll, toy, and game manufacturing",3399m,300,310,326,326,326
+Postal service,491,400,430,480,480,480
+Scenic and sightseeing transportation,487,400,430,480,480,480
+Water transportation,483,400,430,480,480,480
+Rail transportation,482,400,430,480,480,480
+Pipeline transportation,486,400,430,480,480,480
+Not specified retail trade,4ms,400,440,440,440,440
+Not specified wholesale trade,42s,400,420,420,420,420
+Household appliances and electrical and electronic goods merchant wholesalers,4236,400,420,423,423b,423b
+Professional and commercial equipment and supplies merchant wholesalers,4234,400,420,423,423d,423d
+Miscellaneous durable goods merchant wholesalers,4239z,400,420,423,423,423
+Motor vehicle and motor vehicle parts and supplies merchant wholesalers       ,4231,400,420,423,423a,423a
+"Hardware, and plumbing and heating equipment, and supplies, merchant wholesalers",4237,400,420,423,423f,423f
+"Machinery, equipment, and supplies merchant wholesalers",4238,400,420,423,423g,423g
+Lumber and other construction materials merchant wholesalers,4233,400,420,423,423c,423c
+Recyclable material merchant wholesalers,42393,400,420,424,424a,424a
+Furniture and home furnishing merchant wholesalers   ,4232,400,420,423,423b,423b
+"Metals and minerals, except petroleum, merchant wholesalers",4235,400,420,423,423c,423c
+Grocery and related product merchant wholesalers ,4244,400,420,424,424c,424c
+Miscellaneous nondurable goods merchant wholesalers,4249z,400,420,424,424e,424e
+"Drugs, sundries, and chemical and allied product merchant wholesalers",424m,400,420,424,424d,424d
+"Apparel, piece goods, and notions merchant wholesalers",4243,400,420,424,424b,424b
+Alcoholic beverages merchat wholesalers,4248,400,420,424,424c,424c
+Paper and paper products mechant wholesalers,4241,400,420,424,424a,424a
+Petroleum and petroleum products merchant wholesalers ,4247,400,420,424,424d,424d
+Farm supplies merchant wholesalers,42491,400,420,424,424,424
+"Farm product raw materials, merchant wholesalers ",4245,400,420,424,424,424
+"Wholesale electronic markets, agents and brokers",4251,400,420,425,425,425
+"Automotive parts, accessories, and tire stores",4413,400,440,441,441c,441c
+Other motor vehicle dealers,4412,400,440,441,441b,441b
+Automobile dealers,4411,400,440,441,441a,441a
+Furniture and home furnishings stores,442,400,440,442,442,442
+Electronics stores,443142,400,440,443,443,443
+Household appliance stores,443141,400,440,443,443,443
+Building material and supplies dealers,4441z,400,440,444,444a,444a
+Hardware stores,44413,400,440,444,444,444
+Lawn and garden equipment and supplies stores,4442,400,440,444,444,444
+Convenience Stores,44512,400,440,445,445a,445a
+Supermarkets And Grocery (Except Convenience) Stores,44511,400,440,445,445a,445a
+"Beer, wine, and liquor stores",4453,400,440,445,445c,445c
+Specialty food stores,4452,400,440,445,445b,445b
+Pharmacies and drug stores,44611,400,440,446,446,446
+"Health and personal care, except drug, stores",446z,400,440,446,446,446
+Gasoline stations,447,400,440,447,447,447
+Clothing stores,4481,400,440,448,448a,448a
+Shoe stores,44821,400,440,448,448a,448a
+"Jewelry, luggage,and leather goods stores",4483,400,440,448,448b,448b
+"Sporting goods, and hobby and toy stores",4511m,400,440,451,451a,451a
+Book stores and news dealers,45121,400,440,451,451b,451b
+"Sewing, needlework and piece goods stores",45113,400,440,451,451a,451a
+Musical instrument and supplies stores,45114,400,440,451,451a,451a
+Department stores,45221,400,440,452,452a,452a
+"General merchandise stores, including warehouse clubs and supercenters ",4523,400,440,452,452b,452b
+Used merchandise stores,4533,400,440,452,453b,453b
+Florists,4531,400,440,453,453,453
+Miscellaneous retail stores,4539,400,440,453,453c,453c
+Office supplies and stationary stores,45321,400,440,453,453a,453a
+"Gift, novelty, and souvenir shops",45322,400,440,453,453a,453a
+Electronic shopping and mail-order houses,454110,400,440,454,454a,454a
+Other direct selling establishments,45439,400,440,454,454,454
+Vending machine operators,4542,400,440,454,454,454
+Fuel dealers,454310,400,440,454,454,454
+Air transportation,481,400,430,480,481,481
+Truck transportation,484,400,430,480,482,482
+Taxi and limousine service,4853,400,430,480,483,483
+Bus service and urban transit,485m,400,430,480,483,483
+Services incidental to transportation,488,400,430,480,484,484
+Couriers and messengers,492,400,430,480,485,485
+Warehousing and storage,493,400,430,480,486,486
+Newspaper publishers,51111,500,511,511a,511a,511a
+"Periodical, book, and directory publishers",5111z,500,511,511a,511a,511a
+Software publishers,5112,500,511,511b,511b,511b
+Sound recording industries,5122,500,512,512,512,512
+Motion pictures and video industries,5121,500,512,512a,512a,512a
+Broadcasting (except internet),515,500,515,515,515,515
+Wired telecommunications carriers,517311,500,517,517a,517a,517a
+"Telecommunications, except wired telecommunications carriers",517z,500,517,517,517,517
+"Data processing, hosting, and related services",5182,500,518,518,518,518
+Libraries and archives,51912,500,519,519,519,519
+Internet publishing and broadcasting and web search portals,51913,500,519,519,519,519
+"Other information services, except libraries and archives, and internet publishing and broadcasting and web search portals",5191zm,500,519,519,519,519
+Nondepository credit and related activities,522m,520,521,522,522b,522b
+"Savings institutions, including credit unions",5221m,520,521,522,522a,522a
+"Securities, commodities, funds, trusts, and other financial investments",52m2,520,521,523,523a,523a
+Banking and related activities,52m1,520,521,523,523b,523b
+Insurance Carriers,5241,520,521,524,524a,524a
+"Agencies, Brokerages, And Other Insurance Related Activities",5242,520,521,524,524b,524b
+"Lessors Of Real Estate, And Offices Of Real Estate Agents And Brokers",531m,520,530,531,531a,531a
+"Real Estate Property Managers, Offices of Real Estate Appraisers, And Other Activities Related to Real Estate",5313,520,530,531,531b,531b
+Automotive equipment rental and leasing,5321,520,530,532,532a,532a
+Other consumer goods rental,532m2,520,530,532,532b,532b
+"Commercial, industrial, and other intangible assets rental and leasing",53m,520,530,532,532d,532d
+"Architectural, engineering, and related services",5413,540,541,541c,541c,541c
+Scientific research and development services,5417,540,541,541g,541g,541g
+Legal services,5411,540,541,541a,541a,541a
+"Accounting, tax preparation, bookkeeping and payroll services",5412,540,541,541b,541b,541b
+"Other professional, scientific and technical services",5419z,540,541,541i,541i,541i
+Computer systems design and related services,5415,540,541,541e,541e,541e
+"Advertising, public relations, and related services",5418,540,541,541h,541h,541h
+"Management, scientific and technical consulting services",5416,540,541,541f,541f,541f
+Veterinary services,54194,540,541,541,541,541
+Specialized design services,5414,540,541,541d,541d,541d
+Management of companies and enterprises,55,540,550,550,550,550
+Employment services,5613,540,560,561,561c,561c
+Services to buildings and dwellings (except cleaning during construction and immediately after construction) ,5617z,540,560,561,561g,561g
+Investigation and security services,5616,540,560,561,561f,561f
+Travel arrangements and reservation services,5615,540,560,561,561e,561e
+Business support services,5614,540,560,561,561d,561d
+"Other administrative, and other support services",561m,540,560,561,561h,561h
+Landscaping services,56173,540,560,561,561,561
+Waste management and remediation services,562,540,560,562,562,562
+"Colleges, universities, and professional schools, including junior colleges ",611m1,600,610,610,610,610
+Elementary and secondary schools,6111,600,610,611,611,611
+"Other schools and instruction, and educational support services ",611m3,600,610,614,614,614
+"Business, technical, and trade schools and training",611m2,600,610,610,610,610
+Offices of physicians,6211,600,620,621,621a,621a
+Outpatient care centers,6214,600,620,621,621d,621d
+Other health care services,621m,600,620,621,621g,621g
+Home health care services,6216,600,620,621,621f,621f
+Offices of dentists,6212,600,620,621,621b,621b
+Offices of other health practitioners,6213zm,600,620,621,621c,621c
+Offices of optometrists,62132,600,620,621,621,621
+Office of chiropractors,62131,600,620,621,621,621
+"General medical and surgical hospitals, and specialty (except psychiatric and substance abuse) hospitals",622m,600,620,622,622a,622a
+Psychiatric and substance abuse hospitals,6222,600,620,622,622b,622b
+"Residential care facilities, except skilled nursing",623m,600,620,623,623d,623d
+Nursing care facilities (skilled nursing facilities),6231,600,620,623,623a,623a
+Individual and family services,6241,600,620,624,624a,624a
+"Community food and housing, and emergency services",6242,600,620,624,624b,624b
+Vocational rehabilitation services,6243,600,620,624,624c,624c
+Child day care services,6244,600,620,624,624d,624d
+Performing Arts Companies,7111,700,710,711,711a,711a
+"Independent Artists, Writers, And Performers",7115,700,710,711,711c,711c
+"Promoters Of Performing Arts, Sports, And Similar Events, Agents And Managers For Artists, Athletes, Entertainers, And Other Public Figures",711m,700,710,711,711,712
+Spectator Sports,7112,700,710,711,711b,711b
+"Museums, art galleries, historical sites, and similar institutions",712,700,710,712,712,713
+"Other amusement, gambling, and recreation industries",713z,700,710,713,713c,713c
+Bowling centers,71395,700,710,713,713,713
+"Recreational vehicle parks and camps, and rooming and boarding houses, dormitories, and workers' camps",721m,700,720,721,721,721
+Traveler accommodation,7211,700,720,721,721,721
+Restaurants and other food services,722z,700,720,722,722,722
+"Drinking places, alcohol beverages",7224,700,720,722,722b,722b
+Automotive repair and maintenance,8111z,800,811,811a,811a,811a
+Car washes,811192,800,811,811a,811a,811a
+Commercial and industrial machinery and equipment repair and maintenance,8113,800,811,811b,811b,811b
+Personal and household goods repair and maintenance,8114,800,811,811c,811c,811c
+Electronic and precision equipment repair and maintenance,8112,800,811,811,811,811
+Other personal services,8129,800,812,812c,812c,812c
+Drycleaning and laundry services,8123,800,812,812b,812b,812b
+Beauty salons,812112,800,812,812a,812a,812a
+Private households,814,800,812,812,812,812
+Nail salons and other personal care services,8121m,800,812,812a,812a,812a
+Barber shops,812111,800,812,812a,812a,812a
+"Funeral homes, cemeteries and crematories",8122,800,812,812,812,812
+Religious organizations,8131,800,813,813a,813a,813a
+"Civic, social, advocacy organizations and grantmaking and giving services",813m,800,813,813b,813b,813b
+Labor unions,81393,800,813,813e,813e,813e
+"Business, professional, political and similar organizations",8139z,800,813,813e,813e,813e
+U.S. Marines,928110p4,900,910,919,919,919
+U.S. Navy,928110p3,900,910,919,919,919
+U.S. Air Force,928110p2,900,910,919,919,919
+U.S. Army,928110p1,900,910,919,919,919
+"U.S. Armed forces, branch not specified",928110p6,900,910,919,919,919
+Military reserves or national guard,928110p7,900,910,919,919,919
+National security and international affairs,928p,900,910,919,919,919
+U.S. Coast Guard,928110p5,900,910,919,919,919
+Administration of environmental quality and housing programs,92m1,900,900,900,900,900
+Administration of human resource programs,923,900,900,900,900,900
+Administration of economic programs and space research,92m2,900,900,900,900,900
+Other general government and support,92119,900,900,900,900,900
+Executive offices and legislative bodies,9211mp,900,900,900,900,900
+Public finance activities,92113,900,900,900,900,900
+"Justice, public order, and safety activities",92mp,900,900,900,900,900
+"Unemployed, with no work experience in past 5 years",999920,999,999,999,999,999
