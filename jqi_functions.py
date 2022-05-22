@@ -21,14 +21,19 @@ def cleaned_ipums(year: str):
     Function to clean IPUMS data for the specified year.
     Currently has hardcoded file paths for naics_parsed_crosswalk and 
     ind_indnaics_crosswalk_2000_onward_without_code_descriptions csv files.
+    Assumption of full time employees is anyone with INCWAGE >= minimum wage * 30 hours * 50 weeks
     """
     cwd = os.getcwd()
-    if int(year) < 2015: # change to 2014
+    
+    if int(year) < 2014:
         print('Invalid year')
         return None
+    min_wages = {2014:9, 2015:9, 2016:10, 2017:10, 2018:10.5, 2019:11, 2020:12}
+    min_wage = min_wages[int(year)] * 30 * 50
     ipums = pd.read_csv(f'{cwd}/data/ipums/IPUMS_{year}.csv')
-    ipums = ipums[['YEAR','STATEFIP', 'COUNTYFIP', 'INDNAICS','PERWT','INCWAGE']]
-    ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy().reset_index().iloc[:,1:]
+    ipums = ipums[['YEAR','STATEFIP', 'COUNTYFIP', 'INDNAICS','PERWT','INCWAGE', 'OCCSOC']]
+    ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy()
+    ca_ipums = ca_ipums.loc[ca_ipums['INCWAGE'] >= min_wage].reset_index().iloc[:,1:] # filter by full time employees
     ipums_titles = pd.read_csv(f'{cwd}/data/ipums/ind_indnaics_crosswalk_2000_onward_without_code_descriptions.csv')
     ipums_titles = ipums_titles.iloc[2:]
     ipums_titles = ipums_titles.iloc[:,9:]
@@ -43,8 +48,8 @@ def cleaned_ipums(year: str):
         ipums_titles = ipums_titles[['2013-2017 ACS/PRCS INDNAICS CODE', 'Industry Title']]
         merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2013-2017 ACS/PRCS INDNAICS CODE')
         merged_ipums = merged_ipums.rename(columns={"2013-2017 ACS/PRCS INDNAICS CODE": "NAICS Code"})
-    naics_parsed_crosswalk = pd.read_csv(f'{cwd}/data/ipums/naics_parsed_crosswalk.csv').drop_duplicates(subset='INDNAICS').reset_index().iloc[:,1:]
-    merged_ipums = pd.merge(merged_ipums, naics_parsed_crosswalk, on='INDNAICS')
+#     naics_parsed_crosswalk = pd.read_csv(f'{cwd}/data/ipums/naics_parsed_crosswalk.csv').drop_duplicates(subset='INDNAICS').reset_index().iloc[:,1:]
+#     merged_ipums = pd.merge(merged_ipums, naics_parsed_crosswalk, on='INDNAICS')
     return merged_ipums
 
 def show_null(df):
@@ -195,12 +200,12 @@ def edd_to_hw(edd_df, ipums_df_hw, naics_df, county_df, county: str, parsed_code
     output += f", High wage count: {hw_count}"
     return output, hw_count, industry, employment_count
 
-def ca_ipums_filter(df, county_df, county: str, NAICS: str, n: int):
+def ca_ipums_filter(df, county_df, region: str, NAICS: str, n: int):
     """
     Returns the high wage percentage to be used in the edd_to_hw function.
     Substitutes specified county with higher geographical levels if there isn't a large enough sample size.
     """
-    df = df.loc[df['County'] == county].copy()
+    df = df.loc[df['County'] == county].copy() # change to exclude counties
     level = 'county'
     if len(df) == 0:
         county_df = county_df.loc[county_df['County'] == county].copy() # narrow down county df
