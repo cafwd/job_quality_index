@@ -31,8 +31,8 @@ def cleaned_ipums(year: str):
     min_wages = {2014:9, 2015:9, 2016:10, 2017:10, 2018:10.5, 2019:11, 2020:12}
     min_wage = min_wages[int(year)] * 30 * 50
     ipums = pd.read_csv(f'{cwd}/data/ipums/IPUMS_{year}.csv')
-    ipums = ipums[['YEAR','STATEFIP', 'COUNTYFIP', 'INDNAICS','PERWT','INCWAGE', 'OCCSOC']]
     ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy()
+    ca_ipums = ca_ipums[['YEAR', 'COUNTYFIP', 'INDNAICS','PERWT','INCWAGE']]
     ca_ipums = ca_ipums.loc[ca_ipums['INCWAGE'] >= min_wage].reset_index().iloc[:,1:] # filter by full time employees
     ipums_titles = pd.read_csv(f'{cwd}/data/ipums/ind_indnaics_crosswalk_2000_onward_without_code_descriptions.csv')
     ipums_titles = ipums_titles.iloc[2:]
@@ -48,8 +48,9 @@ def cleaned_ipums(year: str):
         ipums_titles = ipums_titles[['2013-2017 ACS/PRCS INDNAICS CODE', 'Industry Title']]
         merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2013-2017 ACS/PRCS INDNAICS CODE')
         merged_ipums = merged_ipums.rename(columns={"2013-2017 ACS/PRCS INDNAICS CODE": "NAICS Code"})
-#     naics_parsed_crosswalk = pd.read_csv(f'{cwd}/data/ipums/naics_parsed_crosswalk.csv').drop_duplicates(subset='INDNAICS').reset_index().iloc[:,1:]
-#     merged_ipums = pd.merge(merged_ipums, naics_parsed_crosswalk, on='INDNAICS')
+    merged_ipums['Industry Title'] = normalize_titles(merged_ipums['Industry Title'])
+    ipums_to_edd = pd.read_csv(f'{cwd}/data/ipums/ipums_to_edd_crosswalk.csv')
+    merged_ipums = pd.merge(merged_ipums, ipums_to_edd, on='NAICS Code')
     return merged_ipums
 
 def show_null(df):
@@ -67,31 +68,18 @@ def add_to_state_df(df):
     """
     Add high wage threshold and percentage features at the state level.
     """
-    df['Above CA Threshold'] = df['INCWAGE'] > 74448
-    df['wt_ind_counts'] = df['PERWT'].groupby(df['INDNAICS']).transform('sum')
+    df['Above CA Threshold'] = df['INCWAGE'] > df['State COL']
+#     df['wt_ind_counts'] = df['PERWT'].groupby(df['INDNAICS']).transform('sum')
+    df['wt_ind_counts'] = df['PERWT'].groupby(df['Crosswalk Value']).transform('sum')
     df["Above CA Threshold"] = df["Above CA Threshold"].astype(int)
     df["wt_CA_above_thresh"] = df["Above CA Threshold"] * df['PERWT']
+#     df['wt_CA_high_wage_count'] = df['wt_CA_above_thresh'].groupby(
+#         df['INDNAICS']).transform('sum')
     df['wt_CA_high_wage_count'] = df['wt_CA_above_thresh'].groupby(
-        df['INDNAICS']).transform('sum')
+        df['Crosswalk Value']).transform('sum')
     df['wt_CA_high_wage_perc'] = (df['wt_CA_high_wage_count'] / df['wt_ind_counts']) * 100
-    df['unwt_ind_counts'] = df['INDNAICS'].groupby(df['INDNAICS']).transform('count')
-    return df
-
-def add_to_county_df(df):
-    """
-    Add high wage threshold and percentage features at the county level.
-    """
-    df['above_county_thresh'] = df['INCWAGE'] > df['County COL']
-    df["above_county_thresh"] = df["above_county_thresh"].astype(int)
-    df["wt_county_above_thresh"] = df["above_county_thresh"] * df['PERWT']
-    df_agg = df.groupby(['INDNAICS','County']).agg(wt_county_ind_counts = ('PERWT','sum'),
-                                                     wt_county_hw_count = ('wt_county_above_thresh','sum'),
-                                                     unwt_county_ind_counts = ('INDNAICS','count')).reset_index()    
-    
-    df = pd.merge(df, df_agg, on=['INDNAICS', 'County'])
-    df['wt_county_hw_perc'] = (df['wt_county_hw_count'] / df['wt_county_ind_counts']) * 100
-    df = df.rename(columns={"County_x": "County", 'wt_county_hw_count_x':'wt_county_hw_count','wt_county_ind_counts_x':'wt_county_ind_counts',
-                           'unwt_county_ind_counts_x':'unwt_county_ind_counts'})
+#     df['unwt_ind_counts'] = df['INDNAICS'].groupby(df['INDNAICS']).transform('count')
+    df['unwt_ind_counts'] = df['Crosswalk Value'].groupby(df['Crosswalk Value']).transform('count')
     return df
 
 def add_to_region_df(df):
@@ -101,31 +89,17 @@ def add_to_region_df(df):
     df['above_region_thresh'] = df['INCWAGE'] > df['Regional COL']
     df["above_region_thresh"] = df["above_region_thresh"].astype(int)
     df["wt_reg_above_thresh"] = df["above_region_thresh"] * df['PERWT']
-    df_agg = df.groupby(['INDNAICS','CDI Regions']).agg(wt_reg_ind_counts = ('PERWT','sum'),
+#     df_agg = df.groupby(['INDNAICS','Regions']).agg(wt_reg_ind_counts = ('PERWT','sum'),
+#                                                      wt_reg_high_wage_count = ('wt_reg_above_thresh','sum'),
+#                                                      unwt_reg_ind_counts = ('INDNAICS','count')).reset_index()    
+    df_agg = df.groupby(['Crosswalk Value','Regions']).agg(wt_reg_ind_counts = ('PERWT','sum'),
                                                      wt_reg_high_wage_count = ('wt_reg_above_thresh','sum'),
-                                                     unwt_reg_ind_counts = ('INDNAICS','count')).reset_index()    
-    
-    df = pd.merge(df, df_agg, on=['INDNAICS', 'CDI Regions'])
+                                                     unwt_reg_ind_counts = ('Crosswalk Value','count')).reset_index() 
+#     df = pd.merge(df, df_agg, on=['INDNAICS', 'Regions'])
+    df = pd.merge(df, df_agg, on=['Crosswalk Value', 'Regions'])
     df['wt_reg_high_wage_perc'] = (df['wt_reg_high_wage_count'] / df['wt_reg_ind_counts']) * 100
-    df = df.rename(columns={"CDI Regions_x": "CDI Regions", 'wt_reg_high_wage_count_x':'wt_reg_high_wage_count','wt_reg_ind_counts_x':'wt_reg_ind_counts',
+    df = df.rename(columns={"Regions_x": "Regions", 'wt_reg_high_wage_count_x':'wt_reg_high_wage_count','wt_reg_ind_counts_x':'wt_reg_ind_counts',
                            'unwt_reg_ind_counts_x':'unwt_reg_ind_counts'})
-    return df
-
-def add_to_regioncomm_df(df):
-    """
-    Add high wage threshold and percentage features at the regional urban/rural level.
-    """
-    df['above_regcomm_thresh'] = df['INCWAGE'] > df['Regional Rural/Urban COL']
-    df["above_regcomm_thresh"] = df["above_regcomm_thresh"].astype(int)
-    df["wt_regcomm_above_thresh"] = df["above_regcomm_thresh"] * df['PERWT']
-    df_agg = df.groupby(['INDNAICS','Regional Rural/Urban']).agg(wt_regcomm_ind_counts = ('PERWT','sum'),
-                                                     wt_regcomm_hw_count = ('wt_regcomm_above_thresh','sum'),
-                                                     unwt_regcomm_ind_counts = ('INDNAICS','count')).reset_index()    
-    
-    df = pd.merge(df, df_agg, on=['INDNAICS', 'Regional Rural/Urban'])
-    df['wt_regcomm_hw_perc'] = (df['wt_regcomm_hw_count'] / df['wt_regcomm_ind_counts']) * 100
-    df = df.rename(columns={"Regional Rural/Urban_x": "Regional Rural/Urban", 'wt_regcomm_hw_count_x':'wt_regcomm_hw_count','wt_regcomm_ind_counts_x':'wt_regcomm_ind_counts',
-                           'unwt_regcomm_ind_counts_x':'unwt_regcomm_ind_counts'})
     return df
 
 def add_to_community_df(df):
@@ -135,11 +109,14 @@ def add_to_community_df(df):
     df['above_comm_thresh'] = df['INCWAGE'] > df['Rural/Urban COL']
     df["above_comm_thresh"] = df["above_comm_thresh"].astype(int)
     df["wt_comm_above_thresh"] = df["above_comm_thresh"] * df['PERWT']
-    df_agg = df.groupby(['INDNAICS','Rural/Urban']).agg(wt_comm_ind_counts = ('PERWT','sum'),
+#     df_agg = df.groupby(['INDNAICS','Rural/Urban']).agg(wt_comm_ind_counts = ('PERWT','sum'),
+#                                                      wt_comm_high_wage_count = ('wt_comm_above_thresh','sum'),
+#                                                      unwt_comm_ind_counts = ('INDNAICS','count')).reset_index()    
+    df_agg = df.groupby(['Crosswalk Value','Rural/Urban']).agg(wt_comm_ind_counts = ('PERWT','sum'),
                                                      wt_comm_high_wage_count = ('wt_comm_above_thresh','sum'),
-                                                     unwt_comm_ind_counts = ('INDNAICS','count')).reset_index()    
-    
-    df = pd.merge(df, df_agg, on=['INDNAICS', 'Rural/Urban'])
+                                                     unwt_comm_ind_counts = ('Crosswalk Value','count')).reset_index()
+#     df = pd.merge(df, df_agg, on=['INDNAICS', 'Rural/Urban'])
+    df = pd.merge(df, df_agg, on=['Crosswalk Value', 'Rural/Urban'])
     df['wt_comm_high_wage_perc'] = (df['wt_comm_high_wage_count'] / df['wt_comm_ind_counts']) * 100
     df = df.rename(columns={"Rural/Urban_x": "Rural/Urban", 'wt_comm_high_wage_count_x':'wt_comm_high_wage_count','wt_comm_ind_counts_x':'wt_comm_ind_counts',
                            'unwt_comm_ind_counts_x':'unwt_comm_ind_counts'})
@@ -155,133 +132,36 @@ def add_geo_high_wages(df):
     df_new = add_to_state_df(df_new) # creating state level counts
     df_new = add_to_community_df(df_new) # creating rural/urban level counts
     df_new = add_to_region_df(df_new) # creating regional level counts
-    df_new = add_to_regioncomm_df(df_new) # creating regional rural/urban level counts
-    df_new = add_to_county_df(df_new) # creating county level counts
     return df_new
 
-    
-def edd_to_hw(edd_df, ipums_df_hw, naics_df, county_df, county: str, parsed_code: str, date: str, sample_size: int):
+def edd_to_hw(edd_df, ipums_df_hw, region: str, crosswalk_val: int, date: str, sample_size: int):
     """
     Returns the number of high wage jobs for a given date, county, and industry.
     Merges on the parsed code system at the most granular level possible.
     
     """
-    # filter edd by date, edd county, and industry via parsed code
+    # filter edd by date, region, and industry via crosswalk value
     edd_df = edd_df.loc[edd_df['Date'] == date].copy()
+    edd_df = edd_df.loc[edd_df['Crosswalk Value'] == crosswalk_val].copy()
+    edd_df = edd_df.loc[edd_df['Regions'] == region]
+    
+    # merge naics with edd on crosswalk value
+    edd_df = pd.merge(edd_df, ipums_df_hw, on=['Crosswalk Value', 'Regions', 'County', 'Rural/Urban'])
     if len(edd_df) == 0:
-        return "Date not valid or found", np.nan, np.nan, np.nan
-    edd_df = edd_df.loc[(edd_df['Sub_4_Code'] == parsed_code) | 
-                        (edd_df['Sub_3_Code'] == parsed_code) | 
-                        (edd_df['Sub_2_Code'] == parsed_code) | 
-                        (edd_df['Sub_1_Code'] == parsed_code) | 
-                        (edd_df['Main_Code'] == parsed_code)].copy()
-    edd_df = edd_df.loc[edd_df['Area Name'] == county] 
-    edd_df = edd_df.drop_duplicates(subset='Main_EDD').reset_index().iloc[:,1:]
+        return np.nan, np.nan, np.nan, np.nan
+    employment_count = float(edd_df['Current Employment'].values[0])
     
-    # merge naics with edd
-    edd_df_ = pd.merge(edd_df, naics_df, on='Sub_4_Code')
-    if len(edd_df_) == 0:
-        edd_df_ = pd.merge(edd_df, naics_df, on='Sub_3_Code')
-        if len(edd_df_) == 0:
-            edd_df_ = pd.merge(edd_df, naics_df, on='Sub_2_Code')
-            if len(edd_df_) == 0:
-                edd_df_ = pd.merge(edd_df, naics_df, on='Sub_1_Code')
-                if len(edd_df_) == 0:
-                    edd_df_ = pd.merge(edd_df, naics_df, on='Main_Code')
-                    if len(edd_df_) == 0:
-                        return "No parsed code of input industry found within input county", np.nan, np.nan, np.nan
-    edd_df = edd_df_.rename(columns = {'Industry Title_x':'EDD Industry',
-                                 'Industry Title_y': 'IPUMS Industry'})
-    edd_df = edd_df[['EDD Industry', 'Area Name', 'IPUMS Industry', 'INDNAICS', 'Current Employment']]
-    employment_count = int(edd_df['Current Employment'].values[0])
-    naics_code = edd_df['INDNAICS'].values[0]
-    output, hw_perc, industry = ca_ipums_filter(ipums_df_hw, county_df, county, naics_code, sample_size)
+    # sample size logic
+    if edd_df['unwt_reg_ind_counts'].values[0] >= sample_size:
+        hw_perc = edd_df['wt_reg_high_wage_perc'].values[0]
+    elif edd_df['unwt_comm_ind_counts'].values[0] >= sample_size:
+        hw_perc = edd_df['wt_comm_high_wage_perc'].values[0]
+    elif edd_df['unwt_ind_counts'].values[0] >= sample_size:
+        hw_perc = edd_df['wt_CA_high_wage_perc'].values[0]
     hw_count = (employment_count * hw_perc) / 100
-    output += f", High wage count: {hw_count}"
-    return output, hw_count, industry, employment_count
+    industry = edd_df['Industry_x'].values[0]
+    return hw_count, hw_perc, employment_count, industry
 
-def ca_ipums_filter(df, county_df, region: str, NAICS: str, n: int):
-    """
-    Returns the high wage percentage to be used in the edd_to_hw function.
-    Substitutes specified county with higher geographical levels if there isn't a large enough sample size.
-    """
-    df = df.loc[df['County'] == county].copy() # change to exclude counties
-    level = 'county'
-    if len(df) == 0:
-        county_df = county_df.loc[county_df['County'] == county].copy() # narrow down county df
-        reg_rural_urban = county_df['Regional Rural/Urban'].values[0]
-        region = county_df['CDI Regions'].values[0]
-        rural_urban = county_df['Rural/Urban'].values[0]
-        df = df.loc[df['Regional Rural/Urban'] == reg_rural_urban].copy()
-        level = 'reg_rural_urban'
-        if len(df) == 0:
-            df = df.loc[df['CDI Regions'] == region].copy()
-            level = 'region'
-            if len(df) == 0:
-                df = df.loc[df['Rural/Urban'] == rural_urban].copy()
-                level = 'rural_urban'
-                if len(df) == 0:
-                    level = 'state'
-    
-    df = df.loc[df['INDNAICS'] == NAICS].copy()
-    try:
-        industry = df['Industry Title'].values[0]
-    except:
-        return "Industry not valid or found", np.nan, np.nan
-    if len(df) == 0:
-        return "NAICS Code not valid or found", np.nan, np.nan
-    df = df.drop_duplicates(subset='INDNAICS').reset_index().iloc[:,1:]
-    
-    # incorporate tracked levels for conditions
-    if level == 'county':
-        if df['unwt_county_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: County, Industry: {industry}, High wage percentage: {df['wt_county_hw_perc'].values[0]}", df['wt_county_hw_perc'].values[0], industry
-        elif df['unwt_regcomm_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Regional Rural/Urban, Industry: {industry}, High wage percentage: {df['wt_regcomm_hw_perc'].values[0]}", df['wt_regcomm_hw_perc'].values[0], industry
-        elif df['unwt_reg_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Regional, Industry: {industry}, High wage percentage: {df['wt_reg_high_wage_perc'].values[0]}", df['wt_reg_high_wage_perc'].values[0], industry
-        elif df['unwt_comm_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Rural/Urban, Industry: {industry}, High wage percentage: {df['wt_comm_high_wage_perc'].values[0]}", df['wt_comm_high_wage_perc'].values[0], industry
-        elif df['unwt_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: State, Industry: {industry}, High wage percentage: {df['wt_CA_high_wage_perc'].values[0]}", df['wt_CA_high_wage_perc'].values[0], industry
-        else:
-            return "Not enough records available to satisfy sample size request", np.nan, np.nan
-        
-    elif level == 'reg_rural_urban':
-        if df['unwt_regcomm_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Regional Rural/Urban, Industry: {industry}, High wage percentage: {df['wt_regcomm_hw_perc'].values[0]}", df['wt_regcomm_hw_perc'].values[0], industry
-        elif df['unwt_reg_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Regional, Industry: {industry}, High wage percentage: {df['wt_reg_high_wage_perc'].values[0]}", df['wt_reg_high_wage_perc'].values[0], industry
-        elif df['unwt_comm_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Rural/Urban, Industry: {industry}, High wage percentage: {df['wt_comm_high_wage_perc'].values[0]}", df['wt_comm_high_wage_perc'].values[0], industry
-        elif df['unwt_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: State, Industry: {industry}, High wage percentage: {df['wt_CA_high_wage_perc'].values[0]}", df['wt_CA_high_wage_perc'].values[0], industry
-        else:
-            return "Not enough records available to satisfy sample size request", np.nan, np.nan
-        
-    elif level == 'region':
-        if df['unwt_reg_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Regional, Industry: {industry}, High wage percentage: {df['wt_reg_high_wage_perc'].values[0]}", df['wt_reg_high_wage_perc'].values[0], industry
-        elif df['unwt_comm_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Rural/Urban, Industry: {industry}, High wage percentage: {df['wt_comm_high_wage_perc'].values[0]}", df['wt_comm_high_wage_perc'].values[0], industry
-        elif df['unwt_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: State, Industry: {industry}, High wage percentage: {df['wt_CA_high_wage_perc'].values[0]}", df['wt_CA_high_wage_perc'].values[0], industry
-        else:
-            return "Not enough records available to satisfy sample size request", np.nan, np.nan
-        
-    elif level == 'rural_urban':
-        if df['unwt_comm_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: Rural/Urban, Industry: {industry}, High wage percentage: {df['wt_comm_high_wage_perc'].values[0]}", df['wt_comm_high_wage_perc'].values[0], industry
-        elif df['unwt_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: State, Industry: {industry}, High wage percentage: {df['wt_CA_high_wage_perc'].values[0]}", df['wt_CA_high_wage_perc'].values[0], industry
-        else:
-            return "Not enough records available to satisfy sample size request", np.nan, np.nan
-        
-    elif level == 'state':
-        if df['unwt_ind_counts'].values[0] >= n:
-            return f"County: {county}, Geographical level used: State, Industry: {industry}, High wage percentage: {df['wt_CA_high_wage_perc'].values[0]}", df['wt_CA_high_wage_perc'].values[0], industry
-        else:
-            return "Not enough records available to satisfy sample size request", np.nan, np.nan
         
 def ts_plot(df, title):
     """
@@ -297,19 +177,77 @@ def ts_plot(df, title):
     ax.spines['bottom'].set_linewidth(0.5)
     ax.spines['left'].set_linewidth(0.5)
     
-def clean_edd(edd):
+region_series_codes = {'Bay Area':[10000000, 11000000, 15000000, 20000000, 30000000, 41000000, 42000000, 43000000, 50000000, 60540000, 60550000, 60560000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Central Coast':[10000000, 11000000, 15000000, 20000000, 30000000, 41000000, 42000000, 43000000, 55000000, 60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Central Valley':[10000000, 11000000, 15000000, 20000000, 30000000, 41000000, 42000000, 43000000, 55000000, 60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Inland Empire':[10000000, 11000000, 20000000, 31000000, 32000000, 41000000, 42000000, 43000000, 55000000, 60540000, 60550000, 60560000, 65610000, 65620000, 70710000, 70720000, 80000000, 90910000, 90920000, 90930000],
+                       'Los Angeles':[10000000, 11000000, 15000000, 20236000, 20237000, 20238000, 31000000, 32000000, 41000000, 42000000, 43220000, 43400089, 50000000, 55000000, 60540000, 60550000, 60560000, 65610000, 65620000, 70710000, 70720000, 80811000, 80812000, 80813000, 90910000, 90920000, 90930000],
+                       'Orange':[10000000, 11000000, 15000000, 20000000, 31000000, 32000000, 41000000, 42000000, 43220000, 43400089, 50000000, 55520000, 55530000, 60540000, 60550000, 60560000, 65610000, 65620000, 70710000, 70720000, 80000000, 90910000, 90920000, 90930000],
+                       'Redwood Coast':[10000000, 11000000, 15000000, 20000000, 31000000, 32000000, 40000000, 50000000, 55000000, 60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Sacramento':[10000000, 11000000, 15000000, 20000000, 30000000, 40000000, 50000000, 55000000, 60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'San Diego-Imperial':[10000000, 11000000, 15000000, 20236000, 20237000, 20238000, 31000000, 32000000, 41000000, 42000000, 43220000, 43400089, 43493000, 50000000, 55000000, 60540000, 60550000, 60560000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Shasta / Cascades':[8999999, 10000000, 11000000, 15000000, 20000000, 30000000, 41000000, 42000000, 43000000, 50000000, 55000000, 60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Sierra Nevada':[8999999, 10000000, 11000000, 15000000, 20000000, 30000000, 41000000, 42000000, 43000000, 50000000, 55000000, 60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000]
+}
+    
+def filter_edd(edd, region_series_codes):
+    """
+    Filter EDD data to have only the industries that properly represent the population of each region.
+    """
+    # separate dataframes
+    ba = edd.loc[edd['Regions'] == 'Bay Area']
+    cc = edd.loc[edd['Regions'] == 'Central Coast']
+    cv = edd.loc[edd['Regions'] == 'Central Valley']
+    ie = edd.loc[edd['Regions'] == 'Inland Empire']
+    la = edd.loc[edd['Regions'] == 'Los Angeles']
+    oc = edd.loc[edd['Regions'] == 'Orange']
+    rc = edd.loc[edd['Regions'] == 'Redwood Coast']
+    sac = edd.loc[edd['Regions'] == 'Sacramento']
+    sd = edd.loc[edd['Regions'] == 'San Diego-Imperial']
+    shas = edd.loc[edd['Regions'] == 'Shasta / Cascades']
+    sn = edd.loc[edd['Regions'] == 'Sierra Nevada']
+    
+    # filter out series codes
+    ba = ba.loc[ba['Series Code'].isin(region_series_codes['Bay Area'])]
+    cc = cc.loc[cc['Series Code'].isin(region_series_codes['Central Coast'])]
+    cv = cv.loc[cv['Series Code'].isin(region_series_codes['Central Valley'])]
+    ie = ie.loc[ie['Series Code'].isin(region_series_codes['Inland Empire'])]
+    la = la.loc[la['Series Code'].isin(region_series_codes['Los Angeles'])]
+    oc = oc.loc[oc['Series Code'].isin(region_series_codes['Orange'])]
+    rc = rc.loc[rc['Series Code'].isin(region_series_codes['Redwood Coast'])]
+    sac = sac.loc[sac['Series Code'].isin(region_series_codes['Sacramento'])]
+    sd = sd.loc[sd['Series Code'].isin(region_series_codes['San Diego-Imperial'])]
+    shas = shas.loc[shas['Series Code'].isin(region_series_codes['Shasta / Cascades'])]
+    sn = sn.loc[sn['Series Code'].isin(region_series_codes['Sierra Nevada'])]
+    
+    dfs = [ba, cc, cv, ie, la, oc, rc, sac, sd, shas, sn]
+    final_edd = pd.concat(dfs)
+    
+    return final_edd
+    
+def clean_edd(edd, edd_titles_crosswalk, edd_to_ipums_crosswalk, county_info):
     """
     Function to clean EDD data.
+    edd = pd.read_csv('data/edd/current_edd_1121.csv')
+    county_info = pd.read_csv('data/county_to_regions_key.csv')
+    edd_crosswalk = pd.read_csv('data/edd/Industry_Title_Crosswalk.csv')
     """
     edd['Area Name'] = edd['Area Name'].str.replace(' County', '')
     edd = edd.loc[edd['Area Type'] == 'County']
-    edd = edd.drop(columns=['Industry Title'])
-    edd = edd.rename(columns={"LMID Industry Title": "Industry Title"})
-    edd['Sub_1_Code'] = [str(x) for x in edd['Sub_1_Code']]
-    edd['Main_Code'] = [str(x) for x in edd['Main_Code']]
+    edd = edd.loc[edd['Year'] >= 2014]
+    edd = pd.merge(edd, edd_titles_crosswalk, on='Series Code')
+    edd = edd.drop(columns=['Industry Title', 'EDD Industry Title'])
+    edd = edd.rename(columns={'LMID Industry Title':'Industry Title'})
+    edd['Industry Title'] = normalize_titles(edd['Industry Title'])
+    edd = pd.merge(edd, county_info, left_on='Area Name', right_on='County')
+    edd = edd.loc[edd['Seasonally Adjusted'] == 'N']
+    edd = pd.merge(edd, edd_to_ipums_crosswalk, on='Series Code')
+    edd = edd[['Area Type', 'Area Name', 'Year', 'Month', 'Date', 'Series Code',
+       'Seasonally Adjusted', 'Current Employment', 'Industry Title',
+       'FIPS', 'COUNTYFIP', 'County', 'Rural/Urban', 'Regions', 'Crosswalk Value']]
     return edd
 
-def cleaned_ipums_demo(year: str):
+def cleaned_ipums_demo(year: str): # need to update to match cleaned_ipums
     """
     Function to clean IPUMS data specifically for a race/demographics breakdown for the specified year.
     Currently has hardcoded file paths for naics_parsed_crosswalk and 
@@ -336,23 +274,4 @@ def cleaned_ipums_demo(year: str):
         ipums_titles = ipums_titles[['2013-2017 ACS/PRCS INDNAICS CODE', 'Industry Title']]
         merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2013-2017 ACS/PRCS INDNAICS CODE')
         merged_ipums = merged_ipums.rename(columns={"2013-2017 ACS/PRCS INDNAICS CODE": "NAICS Code"})
-    naics_parsed_crosswalk = pd.read_csv(f'{cwd}/data/ipums/naics_parsed_crosswalk.csv').drop_duplicates(subset='INDNAICS').reset_index().iloc[:,1:]
-    merged_ipums = pd.merge(merged_ipums, naics_parsed_crosswalk, on='INDNAICS')
     return merged_ipums
-
-def parse_edd(edd, crosswalk, parsed_crosswalk, year: int):
-    """
-    Need to import EDD data (File: data/edd/Current_EDD_1121.csv, Parameter: edd), 
-    EDD to LMID crosswalk (File: data/edd/Industry_Title_Crosswalk.csv, Parameter: crosswalk), 
-    and EDD to Parsed Code crosswalk (File: data/edd/edd_parsed_crosswalk.csv, Parameter: parsed_crosswalk).
-    The parameters of the function, besides year, should be dataframes.
-    """
-    edd['Industry Title'] = normalize_titles(edd['Industry Title'])
-    crosswalk['EDD Industry Title'] = normalize_titles(crosswalk['EDD Industry Title'])
-    crosswalk['LMID Industry Title'] = normalize_titles(crosswalk['LMID Industry Title'])
-    edd = edd.loc[edd['Area Type'] != 'Metropolitan Area'] # exclude metropolitan areas
-    final_edd = edd.loc[edd['Year'] == year].copy() # specify year
-    final_edd = pd.merge(final_edd, crosswalk, on='Series Code')
-    final_edd = pd.merge(final_edd, parsed_crosswalk, on='Industry Title')
-    final_edd = final_edd[['Industry Title', 'LMID Industry Title', 'Parsed_Code', 'Area Type', 'Area Name', 'Date', 'Seasonally Adjusted', 'Current Employment', 'Main_EDD', 'Main_Code', 'Sub_1', 'Sub_1_Code', 'Sub_2', 'Sub_2_Code', 'Sub_3', 'Sub_3_Code', 'Sub_4', 'Sub_4_Code']]  
-    return final_edd
