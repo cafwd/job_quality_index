@@ -69,16 +69,12 @@ def add_to_state_df(df):
     Add high wage threshold and percentage features at the state level.
     """
     df['Above CA Threshold'] = df['INCWAGE'] > df['State COL']
-#     df['wt_ind_counts'] = df['PERWT'].groupby(df['INDNAICS']).transform('sum')
     df['wt_ind_counts'] = df['PERWT'].groupby(df['Crosswalk Value']).transform('sum')
     df["Above CA Threshold"] = df["Above CA Threshold"].astype(int)
     df["wt_CA_above_thresh"] = df["Above CA Threshold"] * df['PERWT']
-#     df['wt_CA_high_wage_count'] = df['wt_CA_above_thresh'].groupby(
-#         df['INDNAICS']).transform('sum')
     df['wt_CA_high_wage_count'] = df['wt_CA_above_thresh'].groupby(
         df['Crosswalk Value']).transform('sum')
     df['wt_CA_high_wage_perc'] = (df['wt_CA_high_wage_count'] / df['wt_ind_counts']) * 100
-#     df['unwt_ind_counts'] = df['INDNAICS'].groupby(df['INDNAICS']).transform('count')
     df['unwt_ind_counts'] = df['Crosswalk Value'].groupby(df['Crosswalk Value']).transform('count')
     return df
 
@@ -89,13 +85,9 @@ def add_to_region_df(df):
     df['above_region_thresh'] = df['INCWAGE'] > df['Regional COL']
     df["above_region_thresh"] = df["above_region_thresh"].astype(int)
     df["wt_reg_above_thresh"] = df["above_region_thresh"] * df['PERWT']
-#     df_agg = df.groupby(['INDNAICS','Regions']).agg(wt_reg_ind_counts = ('PERWT','sum'),
-#                                                      wt_reg_high_wage_count = ('wt_reg_above_thresh','sum'),
-#                                                      unwt_reg_ind_counts = ('INDNAICS','count')).reset_index()    
     df_agg = df.groupby(['Crosswalk Value','Regions']).agg(wt_reg_ind_counts = ('PERWT','sum'),
                                                      wt_reg_high_wage_count = ('wt_reg_above_thresh','sum'),
                                                      unwt_reg_ind_counts = ('Crosswalk Value','count')).reset_index() 
-#     df = pd.merge(df, df_agg, on=['INDNAICS', 'Regions'])
     df = pd.merge(df, df_agg, on=['Crosswalk Value', 'Regions'])
     df['wt_reg_high_wage_perc'] = (df['wt_reg_high_wage_count'] / df['wt_reg_ind_counts']) * 100
     df = df.rename(columns={"Regions_x": "Regions", 'wt_reg_high_wage_count_x':'wt_reg_high_wage_count','wt_reg_ind_counts_x':'wt_reg_ind_counts',
@@ -108,14 +100,10 @@ def add_to_community_df(df):
     """
     df['above_comm_thresh'] = df['INCWAGE'] > df['Rural/Urban COL']
     df["above_comm_thresh"] = df["above_comm_thresh"].astype(int)
-    df["wt_comm_above_thresh"] = df["above_comm_thresh"] * df['PERWT']
-#     df_agg = df.groupby(['INDNAICS','Rural/Urban']).agg(wt_comm_ind_counts = ('PERWT','sum'),
-#                                                      wt_comm_high_wage_count = ('wt_comm_above_thresh','sum'),
-#                                                      unwt_comm_ind_counts = ('INDNAICS','count')).reset_index()    
+    df["wt_comm_above_thresh"] = df["above_comm_thresh"] * df['PERWT'] 
     df_agg = df.groupby(['Crosswalk Value','Rural/Urban']).agg(wt_comm_ind_counts = ('PERWT','sum'),
                                                      wt_comm_high_wage_count = ('wt_comm_above_thresh','sum'),
                                                      unwt_comm_ind_counts = ('Crosswalk Value','count')).reset_index()
-#     df = pd.merge(df, df_agg, on=['INDNAICS', 'Rural/Urban'])
     df = pd.merge(df, df_agg, on=['Crosswalk Value', 'Rural/Urban'])
     df['wt_comm_high_wage_perc'] = (df['wt_comm_high_wage_count'] / df['wt_comm_ind_counts']) * 100
     df = df.rename(columns={"Rural/Urban_x": "Rural/Urban", 'wt_comm_high_wage_count_x':'wt_comm_high_wage_count','wt_comm_ind_counts_x':'wt_comm_ind_counts',
