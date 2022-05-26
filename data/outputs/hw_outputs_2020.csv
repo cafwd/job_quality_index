@@ -215,6 +215,18 @@ total farm,2020-09-01,Inland Empire,356,12300.0,63170
 total farm,2020-10-01,Inland Empire,374,12900.0,63170
 total farm,2020-11-01,Inland Empire,391,13500.0,63170
 total farm,2020-12-01,Inland Empire,385,13300.0,63170
+transportation warehousing and utilities,2020-01-01,Inland Empire,32174,160300.0,63170
+transportation warehousing and utilities,2020-02-01,Inland Empire,31692,157900.0,63170
+transportation warehousing and utilities,2020-03-01,Inland Empire,31452,156700.0,63170
+transportation warehousing and utilities,2020-04-01,Inland Empire,30247,150700.0,63170
+transportation warehousing and utilities,2020-05-01,Inland Empire,31953,159200.0,63170
+transportation warehousing and utilities,2020-06-01,Inland Empire,33499,166900.0,63170
+transportation warehousing and utilities,2020-07-01,Inland Empire,33278,165800.0,63170
+transportation warehousing and utilities,2020-08-01,Inland Empire,35225,175500.0,63170
+transportation warehousing and utilities,2020-09-01,Inland Empire,36108,179900.0,63170
+transportation warehousing and utilities,2020-10-01,Inland Empire,36931,184000.0,63170
+transportation warehousing and utilities,2020-11-01,Inland Empire,38577,192200.0,63170
+transportation warehousing and utilities,2020-12-01,Inland Empire,39400,196300.0,63170
 wholesale trade,2020-01-01,Inland Empire,19805,67300.0,63170
 wholesale trade,2020-02-01,Inland Empire,19981,67900.0,63170
 wholesale trade,2020-03-01,Inland Empire,19922,67700.0,63170
@@ -383,6 +395,18 @@ mining and logging,2020-09-01,Los Angeles,419,1600.0,80216
 mining and logging,2020-10-01,Los Angeles,419,1600.0,80216
 mining and logging,2020-11-01,Los Angeles,419,1600.0,80216
 mining and logging,2020-12-01,Los Angeles,419,1600.0,80216
+natural resources mining and construction,2020-01-01,Los Angeles,100709,152800.0,80216
+natural resources mining and construction,2020-02-01,Los Angeles,102356,155300.0,80216
+natural resources mining and construction,2020-03-01,Los Angeles,99720,151300.0,80216
+natural resources mining and construction,2020-04-01,Los Angeles,87065,132100.0,80216
+natural resources mining and construction,2020-05-01,Los Angeles,95040,144200.0,80216
+natural resources mining and construction,2020-06-01,Los Angeles,97479,147900.0,80216
+natural resources mining and construction,2020-07-01,Los Angeles,96688,146700.0,80216
+natural resources mining and construction,2020-08-01,Los Angeles,97743,148300.0,80216
+natural resources mining and construction,2020-09-01,Los Angeles,96425,146300.0,80216
+natural resources mining and construction,2020-10-01,Los Angeles,98006,148700.0,80216
+natural resources mining and construction,2020-11-01,Los Angeles,96161,145900.0,80216
+natural resources mining and construction,2020-12-01,Los Angeles,96490,146400.0,80216
 nondurable goods,2020-01-01,Los Angeles,21962,136300.0,80216
 nondurable goods,2020-02-01,Los Angeles,22058,136900.0,80216
 nondurable goods,2020-03-01,Los Angeles,21833,135500.0,80216
@@ -911,6 +935,18 @@ mining and logging,2020-09-01,Bay Area,198,800.0,93392
 mining and logging,2020-10-01,Bay Area,198,800.0,93392
 mining and logging,2020-11-01,Bay Area,198,800.0,93392
 mining and logging,2020-12-01,Bay Area,198,800.0,93392
+natural resources mining and construction,2020-01-01,Bay Area,113424,160100.0,93392
+natural resources mining and construction,2020-02-01,Bay Area,115833,163500.0,93392
+natural resources mining and construction,2020-03-01,Bay Area,114203,161200.0,93392
+natural resources mining and construction,2020-04-01,Bay Area,83598,118000.0,93392
+natural resources mining and construction,2020-05-01,Bay Area,102159,144200.0,93392
+natural resources mining and construction,2020-06-01,Bay Area,108748,153500.0,93392
+natural resources mining and construction,2020-07-01,Bay Area,108819,153600.0,93392
+natural resources mining and construction,2020-08-01,Bay Area,110023,155300.0,93392
+natural resources mining and construction,2020-09-01,Bay Area,109315,154300.0,93392
+natural resources mining and construction,2020-10-01,Bay Area,110378,155800.0,93392
+natural resources mining and construction,2020-11-01,Bay Area,108110,152600.0,93392
+natural resources mining and construction,2020-12-01,Bay Area,107827,152200.0,93392
 other services,2020-01-01,Bay Area,18852,129900.0,93392
 other services,2020-02-01,Bay Area,19099,131600.0,93392
 other services,2020-03-01,Bay Area,18649,128500.0,93392
@@ -971,6 +1007,18 @@ total farm,2020-09-01,Bay Area,4089,20400.0,93392
 total farm,2020-10-01,Bay Area,3848,19200.0,93392
 total farm,2020-11-01,Bay Area,3167,15800.0,93392
 total farm,2020-12-01,Bay Area,2926,14600.0,93392
+transportation warehousing and utilities,2020-01-01,Bay Area,26297,125300.0,93392
+transportation warehousing and utilities,2020-02-01,Bay Area,25898,123400.0,93392
+transportation warehousing and utilities,2020-03-01,Bay Area,25667,122300.0,93392
+transportation warehousing and utilities,2020-04-01,Bay Area,23317,111100.0,93392
+transportation warehousing and utilities,2020-05-01,Bay Area,23422,111600.0,93392
+transportation warehousing and utilities,2020-06-01,Bay Area,23736,113100.0,93392
+transportation warehousing and utilities,2020-07-01,Bay Area,23694,112900.0,93392
+transportation warehousing and utilities,2020-08-01,Bay Area,23967,114200.0,93392
+transportation warehousing and utilities,2020-09-01,Bay Area,23946,114100.0,93392
+transportation warehousing and utilities,2020-10-01,Bay Area,23799,113400.0,93392
+transportation warehousing and utilities,2020-11-01,Bay Area,24870,118500.0,93392
+transportation warehousing and utilities,2020-12-01,Bay Area,25394,121000.0,93392
 wholesale trade,2020-01-01,Bay Area,39033,116300.0,93392
 wholesale trade,2020-02-01,Bay Area,39100,116500.0,93392
 wholesale trade,2020-03-01,Bay Area,38832,115700.0,93392
@@ -1247,6 +1295,18 @@ construction,2020-09-01,Central Coast,6108,25200.0,76493
 construction,2020-10-01,Central Coast,6180,25500.0,76493
 construction,2020-11-01,Central Coast,6156,25400.0,76493
 construction,2020-12-01,Central Coast,6205,25600.0,76493
+durable goods,2020-01-01,Central Coast,14814,35000.0,76493
+durable goods,2020-02-01,Central Coast,14814,35000.0,76493
+durable goods,2020-03-01,Central Coast,14771,34900.0,76493
+durable goods,2020-04-01,Central Coast,13756,32500.0,76493
+durable goods,2020-05-01,Central Coast,13756,32500.0,76493
+durable goods,2020-06-01,Central Coast,14010,33100.0,76493
+durable goods,2020-07-01,Central Coast,13967,33000.0,76493
+durable goods,2020-08-01,Central Coast,13967,33000.0,76493
+durable goods,2020-09-01,Central Coast,13967,33000.0,76493
+durable goods,2020-10-01,Central Coast,13925,32900.0,76493
+durable goods,2020-11-01,Central Coast,13967,33000.0,76493
+durable goods,2020-12-01,Central Coast,14137,33400.0,76493
 educational and health services,2020-01-01,Central Coast,43098,116100.0,76493
 educational and health services,2020-02-01,Central Coast,43655,117600.0,76493
 educational and health services,2020-03-01,Central Coast,43543,117300.0,76493
@@ -1307,18 +1367,6 @@ local government,2020-09-01,Central Coast,39416,78200.0,76493
 local government,2020-10-01,Central Coast,39668,78700.0,76493
 local government,2020-11-01,Central Coast,40071,79500.0,76493
 local government,2020-12-01,Central Coast,38761,76900.0,76493
-manufacturing,2020-01-01,Central Coast,21341,53900.0,76493
-manufacturing,2020-02-01,Central Coast,21420,54100.0,76493
-manufacturing,2020-03-01,Central Coast,21182,53500.0,76493
-manufacturing,2020-04-01,Central Coast,19044,48100.0,76493
-manufacturing,2020-05-01,Central Coast,19440,49100.0,76493
-manufacturing,2020-06-01,Central Coast,20192,51000.0,76493
-manufacturing,2020-07-01,Central Coast,20232,51100.0,76493
-manufacturing,2020-08-01,Central Coast,20351,51400.0,76493
-manufacturing,2020-09-01,Central Coast,20509,51800.0,76493
-manufacturing,2020-10-01,Central Coast,20509,51800.0,76493
-manufacturing,2020-11-01,Central Coast,20470,51700.0,76493
-manufacturing,2020-12-01,Central Coast,20509,51800.0,76493
 mining and logging,2020-01-01,Central Coast,540,1800.0,76493
 mining and logging,2020-02-01,Central Coast,540,1800.0,76493
 mining and logging,2020-03-01,Central Coast,540,1800.0,76493
@@ -1331,6 +1379,30 @@ mining and logging,2020-09-01,Central Coast,480,1600.0,76493
 mining and logging,2020-10-01,Central Coast,480,1600.0,76493
 mining and logging,2020-11-01,Central Coast,480,1600.0,76493
 mining and logging,2020-12-01,Central Coast,480,1600.0,76493
+natural resources mining and construction,2020-01-01,Central Coast,8897,14200.0,76493
+natural resources mining and construction,2020-02-01,Central Coast,9085,14500.0,76493
+natural resources mining and construction,2020-03-01,Central Coast,8834,14100.0,76493
+natural resources mining and construction,2020-04-01,Central Coast,7581,12100.0,76493
+natural resources mining and construction,2020-05-01,Central Coast,8583,13700.0,76493
+natural resources mining and construction,2020-06-01,Central Coast,8897,14200.0,76493
+natural resources mining and construction,2020-07-01,Central Coast,8771,14000.0,76493
+natural resources mining and construction,2020-08-01,Central Coast,8834,14100.0,76493
+natural resources mining and construction,2020-09-01,Central Coast,8771,14000.0,76493
+natural resources mining and construction,2020-10-01,Central Coast,8897,14200.0,76493
+natural resources mining and construction,2020-11-01,Central Coast,8771,14000.0,76493
+natural resources mining and construction,2020-12-01,Central Coast,8834,14100.0,76493
+nondurable goods,2020-01-01,Central Coast,5465,15300.0,76493
+nondurable goods,2020-02-01,Central Coast,5465,15300.0,76493
+nondurable goods,2020-03-01,Central Coast,5322,14900.0,76493
+nondurable goods,2020-04-01,Central Coast,4536,12700.0,76493
+nondurable goods,2020-05-01,Central Coast,4857,13600.0,76493
+nondurable goods,2020-06-01,Central Coast,5215,14600.0,76493
+nondurable goods,2020-07-01,Central Coast,5286,14800.0,76493
+nondurable goods,2020-08-01,Central Coast,5393,15100.0,76493
+nondurable goods,2020-09-01,Central Coast,5465,15300.0,76493
+nondurable goods,2020-10-01,Central Coast,5536,15500.0,76493
+nondurable goods,2020-11-01,Central Coast,5500,15400.0,76493
+nondurable goods,2020-12-01,Central Coast,5429,15200.0,76493
 other services,2020-01-01,Central Coast,3613,26200.0,76493
 other services,2020-02-01,Central Coast,3655,26500.0,76493
 other services,2020-03-01,Central Coast,3572,25900.0,76493
@@ -1391,6 +1463,18 @@ total farm,2020-09-01,Central Coast,7640,68900.0,76493
 total farm,2020-10-01,Central Coast,7318,66000.0,76493
 total farm,2020-11-01,Central Coast,6575,59300.0,76493
 total farm,2020-12-01,Central Coast,5677,51200.0,76493
+transportation warehousing and utilities,2020-01-01,Central Coast,4195,15400.0,76493
+transportation warehousing and utilities,2020-02-01,Central Coast,4059,14900.0,76493
+transportation warehousing and utilities,2020-03-01,Central Coast,4032,14800.0,76493
+transportation warehousing and utilities,2020-04-01,Central Coast,3677,13500.0,76493
+transportation warehousing and utilities,2020-05-01,Central Coast,3732,13700.0,76493
+transportation warehousing and utilities,2020-06-01,Central Coast,3841,14100.0,76493
+transportation warehousing and utilities,2020-07-01,Central Coast,3868,14200.0,76493
+transportation warehousing and utilities,2020-08-01,Central Coast,3868,14200.0,76493
+transportation warehousing and utilities,2020-09-01,Central Coast,3923,14400.0,76493
+transportation warehousing and utilities,2020-10-01,Central Coast,4004,14700.0,76493
+transportation warehousing and utilities,2020-11-01,Central Coast,4113,15100.0,76493
+transportation warehousing and utilities,2020-12-01,Central Coast,4222,15500.0,76493
 wholesale trade,2020-01-01,Central Coast,6927,23900.0,76493
 wholesale trade,2020-02-01,Central Coast,6985,24100.0,76493
 wholesale trade,2020-03-01,Central Coast,6956,24000.0,76493
@@ -1415,6 +1499,18 @@ construction,2020-09-01,Central Valley,20615,47100.0,56747
 construction,2020-10-01,Central Valley,20527,46900.0,56747
 construction,2020-11-01,Central Valley,20352,46500.0,56747
 construction,2020-12-01,Central Valley,20396,46600.0,56747
+durable goods,2020-01-01,Central Valley,13304,32200.0,56747
+durable goods,2020-02-01,Central Valley,13469,32600.0,56747
+durable goods,2020-03-01,Central Valley,13511,32700.0,56747
+durable goods,2020-04-01,Central Valley,12519,30300.0,56747
+durable goods,2020-05-01,Central Valley,12643,30600.0,56747
+durable goods,2020-06-01,Central Valley,12891,31200.0,56747
+durable goods,2020-07-01,Central Valley,12808,31000.0,56747
+durable goods,2020-08-01,Central Valley,12726,30800.0,56747
+durable goods,2020-09-01,Central Valley,12726,30800.0,56747
+durable goods,2020-10-01,Central Valley,12726,30800.0,56747
+durable goods,2020-11-01,Central Valley,12850,31100.0,56747
+durable goods,2020-12-01,Central Valley,12850,31100.0,56747
 educational and health services,2020-01-01,Central Valley,106023,234100.0,56747
 educational and health services,2020-02-01,Central Valley,106702,235600.0,56747
 educational and health services,2020-03-01,Central Valley,106793,235800.0,56747
@@ -1451,6 +1547,18 @@ financial activities,2020-09-01,Central Valley,16578,40300.0,56747
 financial activities,2020-10-01,Central Valley,16661,40500.0,56747
 financial activities,2020-11-01,Central Valley,16619,40400.0,56747
 financial activities,2020-12-01,Central Valley,16619,40400.0,56747
+information,2020-01-01,Central Valley,4715,9300.0,56747
+information,2020-02-01,Central Valley,4563,9000.0,56747
+information,2020-03-01,Central Valley,4614,9100.0,56747
+information,2020-04-01,Central Valley,3752,7400.0,56747
+information,2020-05-01,Central Valley,3651,7200.0,56747
+information,2020-06-01,Central Valley,3600,7100.0,56747
+information,2020-07-01,Central Valley,3549,7000.0,56747
+information,2020-08-01,Central Valley,3600,7100.0,56747
+information,2020-09-01,Central Valley,3549,7000.0,56747
+information,2020-10-01,Central Valley,3549,7000.0,56747
+information,2020-11-01,Central Valley,3549,7000.0,56747
+information,2020-12-01,Central Valley,3600,7100.0,56747
 leisure and hospitality,2020-01-01,Central Valley,17951,128700.0,56747
 leisure and hospitality,2020-02-01,Central Valley,18175,130300.0,56747
 leisure and hospitality,2020-03-01,Central Valley,18007,129100.0,56747
@@ -1475,18 +1583,6 @@ local government,2020-09-01,Central Valley,96843,203400.0,56747
 local government,2020-10-01,Central Valley,97986,205800.0,56747
 local government,2020-11-01,Central Valley,98843,207600.0,56747
 local government,2020-12-01,Central Valley,98034,205900.0,56747
-manufacturing,2020-01-01,Central Valley,40993,108700.0,56747
-manufacturing,2020-02-01,Central Valley,41294,109500.0,56747
-manufacturing,2020-03-01,Central Valley,41370,109700.0,56747
-manufacturing,2020-04-01,Central Valley,39711,105300.0,56747
-manufacturing,2020-05-01,Central Valley,40088,106300.0,56747
-manufacturing,2020-06-01,Central Valley,40955,108600.0,56747
-manufacturing,2020-07-01,Central Valley,42124,111700.0,56747
-manufacturing,2020-08-01,Central Valley,43331,114900.0,56747
-manufacturing,2020-09-01,Central Valley,43482,115300.0,56747
-manufacturing,2020-10-01,Central Valley,41936,111200.0,56747
-manufacturing,2020-11-01,Central Valley,41181,109200.0,56747
-manufacturing,2020-12-01,Central Valley,40955,108600.0,56747
 mining and logging,2020-01-01,Central Valley,2004,9900.0,56747
 mining and logging,2020-02-01,Central Valley,2004,9900.0,56747
 mining and logging,2020-03-01,Central Valley,1984,9800.0,56747
@@ -1499,6 +1595,30 @@ mining and logging,2020-09-01,Central Valley,1558,7700.0,56747
 mining and logging,2020-10-01,Central Valley,1579,7800.0,56747
 mining and logging,2020-11-01,Central Valley,1558,7700.0,56747
 mining and logging,2020-12-01,Central Valley,1538,7600.0,56747
+natural resources mining and construction,2020-01-01,Central Valley,47904,75900.0,56747
+natural resources mining and construction,2020-02-01,Central Valley,48725,77200.0,56747
+natural resources mining and construction,2020-03-01,Central Valley,48661,77100.0,56747
+natural resources mining and construction,2020-04-01,Central Valley,43044,68200.0,56747
+natural resources mining and construction,2020-05-01,Central Valley,45190,71600.0,56747
+natural resources mining and construction,2020-06-01,Central Valley,46074,73000.0,56747
+natural resources mining and construction,2020-07-01,Central Valley,46137,73100.0,56747
+natural resources mining and construction,2020-08-01,Central Valley,46326,73400.0,56747
+natural resources mining and construction,2020-09-01,Central Valley,46137,73100.0,56747
+natural resources mining and construction,2020-10-01,Central Valley,46326,73400.0,56747
+natural resources mining and construction,2020-11-01,Central Valley,45758,72500.0,56747
+natural resources mining and construction,2020-12-01,Central Valley,45695,72400.0,56747
+nondurable goods,2020-01-01,Central Valley,24796,67300.0,56747
+nondurable goods,2020-02-01,Central Valley,24943,67700.0,56747
+nondurable goods,2020-03-01,Central Valley,24980,67800.0,56747
+nondurable goods,2020-04-01,Central Valley,24280,65900.0,56747
+nondurable goods,2020-05-01,Central Valley,24575,66700.0,56747
+nondurable goods,2020-06-01,Central Valley,25128,68200.0,56747
+nondurable goods,2020-07-01,Central Valley,26233,71200.0,56747
+nondurable goods,2020-08-01,Central Valley,27522,74700.0,56747
+nondurable goods,2020-09-01,Central Valley,27633,75000.0,56747
+nondurable goods,2020-10-01,Central Valley,26307,71400.0,56747
+nondurable goods,2020-11-01,Central Valley,25533,69300.0,56747
+nondurable goods,2020-12-01,Central Valley,25349,68800.0,56747
 other services,2020-01-01,Central Valley,7627,41200.0,56747
 other services,2020-02-01,Central Valley,7794,42100.0,56747
 other services,2020-03-01,Central Valley,7664,41400.0,56747
@@ -1559,6 +1679,18 @@ total farm,2020-09-01,Central Valley,31450,218200.0,56747
 total farm,2020-10-01,Central Valley,30427,211100.0,56747
 total farm,2020-11-01,Central Valley,28424,197200.0,56747
 total farm,2020-12-01,Central Valley,27011,187400.0,56747
+transportation warehousing and utilities,2020-01-01,Central Valley,27424,89400.0,56747
+transportation warehousing and utilities,2020-02-01,Central Valley,27209,88700.0,56747
+transportation warehousing and utilities,2020-03-01,Central Valley,27117,88400.0,56747
+transportation warehousing and utilities,2020-04-01,Central Valley,26166,85300.0,56747
+transportation warehousing and utilities,2020-05-01,Central Valley,27577,89900.0,56747
+transportation warehousing and utilities,2020-06-01,Central Valley,28406,92600.0,56747
+transportation warehousing and utilities,2020-07-01,Central Valley,28590,93200.0,56747
+transportation warehousing and utilities,2020-08-01,Central Valley,29909,97500.0,56747
+transportation warehousing and utilities,2020-09-01,Central Valley,30093,98100.0,56747
+transportation warehousing and utilities,2020-10-01,Central Valley,30645,99900.0,56747
+transportation warehousing and utilities,2020-11-01,Central Valley,31688,103300.0,56747
+transportation warehousing and utilities,2020-12-01,Central Valley,31749,103500.0,56747
 wholesale trade,2020-01-01,Central Valley,16133,46200.0,56747
 wholesale trade,2020-02-01,Central Valley,16307,46700.0,56747
 wholesale trade,2020-03-01,Central Valley,16272,46600.0,56747
@@ -2171,6 +2303,18 @@ manufacturing,2020-09-01,Shasta / Cascades,2494,7000.0,56468
 manufacturing,2020-10-01,Shasta / Cascades,2387,6700.0,56468
 manufacturing,2020-11-01,Shasta / Cascades,2280,6400.0,56468
 manufacturing,2020-12-01,Shasta / Cascades,2280,6400.0,56468
+natural resources mining and construction,2020-01-01,Shasta / Cascades,5433,8000.0,56468
+natural resources mining and construction,2020-02-01,Shasta / Cascades,5705,8400.0,56468
+natural resources mining and construction,2020-03-01,Shasta / Cascades,5705,8400.0,56468
+natural resources mining and construction,2020-04-01,Shasta / Cascades,5501,8100.0,56468
+natural resources mining and construction,2020-05-01,Shasta / Cascades,5773,8500.0,56468
+natural resources mining and construction,2020-06-01,Shasta / Cascades,6113,9000.0,56468
+natural resources mining and construction,2020-07-01,Shasta / Cascades,6045,8900.0,56468
+natural resources mining and construction,2020-08-01,Shasta / Cascades,6045,8900.0,56468
+natural resources mining and construction,2020-09-01,Shasta / Cascades,5909,8700.0,56468
+natural resources mining and construction,2020-10-01,Shasta / Cascades,6045,8900.0,56468
+natural resources mining and construction,2020-11-01,Shasta / Cascades,5705,8400.0,56468
+natural resources mining and construction,2020-12-01,Shasta / Cascades,5569,8200.0,56468
 other services,2020-01-01,Shasta / Cascades,1770,5800.0,56468
 other services,2020-02-01,Shasta / Cascades,1983,6500.0,56468
 other services,2020-03-01,Shasta / Cascades,1953,6400.0,56468
@@ -2231,6 +2375,18 @@ total farm,2020-09-01,Shasta / Cascades,1215,4100.0,56468
 total farm,2020-10-01,Shasta / Cascades,1452,4900.0,56468
 total farm,2020-11-01,Shasta / Cascades,1215,4100.0,56468
 total farm,2020-12-01,Shasta / Cascades,978,3300.0,56468
+transportation warehousing and utilities,2020-01-01,Shasta / Cascades,1615,3700.0,56468
+transportation warehousing and utilities,2020-02-01,Shasta / Cascades,1572,3600.0,56468
+transportation warehousing and utilities,2020-03-01,Shasta / Cascades,1572,3600.0,56468
+transportation warehousing and utilities,2020-04-01,Shasta / Cascades,1528,3500.0,56468
+transportation warehousing and utilities,2020-05-01,Shasta / Cascades,1572,3600.0,56468
+transportation warehousing and utilities,2020-06-01,Shasta / Cascades,1659,3800.0,56468
+transportation warehousing and utilities,2020-07-01,Shasta / Cascades,1659,3800.0,56468
+transportation warehousing and utilities,2020-08-01,Shasta / Cascades,1659,3800.0,56468
+transportation warehousing and utilities,2020-09-01,Shasta / Cascades,1659,3800.0,56468
+transportation warehousing and utilities,2020-10-01,Shasta / Cascades,1703,3900.0,56468
+transportation warehousing and utilities,2020-11-01,Shasta / Cascades,1746,4000.0,56468
+transportation warehousing and utilities,2020-12-01,Shasta / Cascades,1834,4200.0,56468
 wholesale trade,2020-01-01,Shasta / Cascades,761,4500.0,56468
 wholesale trade,2020-02-01,Shasta / Cascades,676,4000.0,56468
 wholesale trade,2020-03-01,Shasta / Cascades,676,4000.0,56468

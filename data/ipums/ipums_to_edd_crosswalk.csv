@@ -1,74 +1,24 @@
 NAICS Code,Industry,Crosswalk Value
-5111z,periodical book and directory publishers,18
-23,construction the cleaning of buildings and dwellings is incidental during construction and immediately after construction,4
-23,construction the cleaning of buildings and dwellings is incidental during construction and immediately after construction,5
-55,management of companies and enterprises,23
-55,management of companies and enterprises,24
-111,crop production,2
-112,animal production and aquaculture,2
-114,fishing hunting and trapping,2
-115,support activities for agriculture and forestry,1
-211,oil and gas extraction,3
-213,support activities for mining,1
-337,furniture and related products manufacturing,8
-337,furniture and related products manufacturing,9
-442,furniture and home furnishings stores,11
-442,furniture and home furnishings stores,13
-447,gasoline stations,11
-447,gasoline stations,13
-481,air transportation,11
-482,rail transportation,11
-483,water transportation,11
-484,truck transportation,11
-486,pipeline transportation,11
-487,scenic and sightseeing transportation,11
-488,services incidental to transportation,11
-491,postal service,11
-492,couriers and messengers,11
-493,warehousing and storage,11
-481,air transportation,14
-482,rail transportation,14
-483,water transportation,14
-484,truck transportation,14
-486,pipeline transportation,14
-487,scenic and sightseeing transportation,14
-488,services incidental to transportation,14
-491,postal service,14
-492,couriers and messengers,14
-493,warehousing and storage,14
-481,air transportation,16
-482,rail transportation,16
-483,water transportation,16
-484,truck transportation,16
-486,pipeline transportation,16
-487,scenic and sightseeing transportation,16
-488,services incidental to transportation,16
-491,postal service,16
-492,couriers and messengers,16
-493,warehousing and storage,17
-515,radio and television broadcasting and cable subscription programming,18
-515,broadcasting except internet,18
-524,insurance carriers and related activities,19
-531,real estate,19
-562,waste management and remediation services,22
-622,hospitals,26
-711,performing arts spectaor sports and related industries,29
-712,museums art galleries historical sites and similar institutions,29
-524,insurance carriers and related activities,20
-531,real estate,21
-562,waste management and remediation services,25
-622,hospitals,28
-711,performing arts spectaor sports and related industries,30
-712,museums art galleries historical sites and similar institutions,30
-814,private households,32
-814,private households,34
 814,private households,0
-923,administration of human resource programs,37
-923,administration of human resource programs,38
+8129,other personal services,0
+115,support activities for agriculture and forestry,1
+213,support activities for mining,1
 1133,logging,1
 2121,coal mining,1
 2122,metal ore mining,1
 2123,nonmetallic mineral mining and quarrying,1
+111,crop production,2
+112,animal production and aquaculture,2
+114,fishing hunting and trapping,2
+211,oil and gas extraction,3
+2121,coal mining,3
+2122,metal ore mining,3
+2123,nonmetallic mineral mining and quarrying,3
+32411,petroleum refining,3
+113m,forestry except logging,3
+23,construction the cleaning of buildings and dwellings is incidental during construction and immediately after construction,4
+23,construction the cleaning of buildings and dwellings is incidental during construction and immediately after construction,5
+337,furniture and related products manufacturing,8
 3113,sugar and confectionery products,8
 3114,fruit and vegetable preserving and specialty foods,8
 3115,dairy products,8
@@ -109,297 +59,13 @@ NAICS Code,Industry,Crosswalk Value
 3366,ship and boat building,8
 3369,other transportation equipment manufacturing,8
 3391,medical equipment and supplies,8
-4231,motor vehicle and motor vehicle parts and supplies merchant wholesalers,11
-4232,furniture and home furnishing merchant wholesalers,11
-4233,lumber and other construction materials merchant wholesalers,11
-4234,professional and commercial equipment and supplies merchant wholesalers,11
-4235,metals and minerals except petroleum merchant wholesalers,11
-4236,household appliances and electrical and electronic goods merchant wholesalers,11
-4237,hardware and plumbing and heating equipment and supplies merchant wholesalers,11
-4237,hardware plumbing and heating equipment and supplies merchant wholesalers,11
-4238,machinery equipment and supplies merchant wholesalers,11
-4241,paper and paper products mechant wholesalers,11
-4243,apparel piece goods and notions merchant wholesalers,11
-4244,grocery and related product merchant wholesalers,11
-4245,farm product raw materials merchant wholesalers,11
-4247,petroleum and petroleum products merchant wholesalers,11
-4248,alcoholic beverages merchat wholesalers,11
-4251,wholesale electronic markets agents and brokers,11
-4411,automobile dealers,11
-4412,other motor vehicle dealers,11
-4413,automotive parts accessories and tire stores,11
-4442,lawn and garden equipment and supplies stores,11
-4451,grocery stores,11
-4452,specialty food stores,11
-4453,beer wine and liquor stores,11
-4481,clothing stores,11
-4483,jewelry luggageand leather goods stores,11
-4523,general merchandise stores including warehouse clubs and supercenters,11
-4529,miscellaneous general merchandise stores,11
-4531,florists,11
-4531,retail florists,11
-4533,used merchandise stores,11
-4539,miscellaneous retail stores,11
-4542,vending machine operators,11
-4853,taxi and limousine service,11
-2121,coal mining,3
-2122,metal ore mining,3
-2123,nonmetallic mineral mining and quarrying,3
-3113,sugar and confectionery products,10
-3114,fruit and vegetable preserving and specialty foods,10
-3115,dairy products,10
-3116,animal slaughtering and processing,10
-3121,beverage,10
-3122,tobacco,10
-3131,fiber yarn and thread mills,10
-3133,textile and fabric finishing and fabric coating mills,10
-3152,cut and sew apparel manufacturing,10
-3159,apparel accessories and other apparel,10
-3162,footwear manufacturing,10
-3211,sawmills and wood preservation,10
-3212,veneer plywood and engineered wood products,10
-3221,pulp paper and paperboard mills,10
-3231,printing and related support activities,10
-3252,resin synthetic rubber and fibers and filaments,10
-3253,agricultural chemicals,10
-3254,pharmaceuticals and medicines,10
-3255,paint coating and adhesives,10
-3256,soap cleaning compound and cosmetics,10
-3261,plastics products,10
-3272,glass and glass products manufacturing,10
-3279,miscellaneous nonmetallic mineral products manufacturing,9
-3313,aluminum production and processing,9
-3314,nonferrous metal except aluminum production and processing,9
-3315,foundries,9
-3321,metal forgings and stampings,9
-3322,cutlery and hand tool manufacturing,9
-3327,machine shops turned product screw nut and bolt manufacturing,9
-3328,coating engraving heat treating and allied activities,9
-3333,commercial and service industry machinery manufacturing,9
-3335,metalworking machinery,9
-3336,engine turbine and power transmission equipment manufacturing,9
-3341,computer and peripheral equipment manufacturing,9
-3345,navigational measuring electromedical and control instruments,9
-3352,household appliances,9
-3365,railroad rolling stock manufacturing,9
-3366,ship and boat building,9
-3369,other transportation equipment manufacturing,9
-3391,medical equipment and supplies,9
-4231,motor vehicle and motor vehicle parts and supplies merchant wholesalers,12
-4232,furniture and home furnishing merchant wholesalers,12
-4233,lumber and other construction materials merchant wholesalers,12
-4234,professional and commercial equipment and supplies merchant wholesalers,12
-4235,metals and minerals except petroleum merchant wholesalers,12
-4236,household appliances and electrical and electronic goods merchant wholesalers,12
-4237,hardware and plumbing and heating equipment and supplies merchant wholesalers,12
-4237,hardware plumbing and heating equipment and supplies merchant wholesalers,12
-4238,machinery equipment and supplies merchant wholesalers,12
-4241,paper and paper products mechant wholesalers,12
-4243,apparel piece goods and notions merchant wholesalers,12
-4244,grocery and related product merchant wholesalers,12
-4245,farm product raw materials merchant wholesalers,12
-4247,petroleum and petroleum products merchant wholesalers,12
-4248,alcoholic beverages merchat wholesalers,12
-4251,wholesale electronic markets agents and brokers,12
-4411,automobile dealers,13
-4412,other motor vehicle dealers,13
-4413,automotive parts accessories and tire stores,13
-4442,lawn and garden equipment and supplies stores,13
-4451,grocery stores,13
-4452,specialty food stores,13
-4453,beer wine and liquor stores,13
-4481,clothing stores,13
-4483,jewelry luggageand leather goods stores,13
-4523,general merchandise stores including warehouse clubs and supercenters,13
-4529,miscellaneous general merchandise stores,13
-4531,florists,13
-4531,retail florists,13
-4533,used merchandise stores,13
-4539,miscellaneous retail stores,13
-4542,vending machine operators,13
-4853,taxi and limousine service,14
-5112,software publishers,18
-5121,motion pictures and video industries,18
-5122,sound recording industries,18
-5171,wired telecommunications carriers,18
-5182,data processing hosting and related services,18
-5241,insurance carriers,19
-5242,agencies brokerages and other insurance related activities,19
-5313,real estate property managers offices of real estate appraisers and other activities related to real estate,19
-5321,automotive equipment rental and leasing,19
-5411,legal services,22
-5412,accounting tax preparation bookkeeping and payroll services,22
-5413,architectural engineering and related services,22
-5414,specialized design services,22
-5415,computer systems design and related services,22
-5416,management scientific and technical consulting services,22
-5417,scientific research and development services,22
-5418,advertising public relations and related services,22
-5418,advertising and related services,22
-5613,employment services,22
-5614,business support services,22
-5615,travel arrangements and reservation services,22
-5616,investigation and security services,22
-6111,elementary and secondary schools,26
-6211,offices of physicians,26
-6212,offices of dentists,26
-6214,outpatient care centers,26
-6216,home health care services,26
-6222,psychiatric and substance abuse hospitals,26
-6231,nursing care facilities skilled nursing facilities,26
-6241,individual and family services,26
-6242,community food and housing and emergency services,26
-6243,vocational rehabilitation services,26
-6244,child day care services,26
-7111,performing arts companies,29
-7112,spectator sports,29
-7115,independent artists writers and performers,29
-7211,traveler accommodation,29
-7224,drinking places alcohol beverages,29
-8112,electronic and precision equipment repair and maintenance,32
-8113,commercial and industrial machinery and equipment repair and maintenance,32
-8114,personal and household goods repair and maintenance,32
-8122,funeral homes cemeteries and crematories,32
-8123,drycleaning and laundry services,32
-5241,insurance carriers,20
-5242,agencies brokerages and other insurance related activities,20
-5313,real estate property managers offices of real estate appraisers and other activities related to real estate,21
-5321,automotive equipment rental and leasing,21
-5411,legal services,23
-5412,accounting tax preparation bookkeeping and payroll services,23
-5413,architectural engineering and related services,23
-5414,specialized design services,23
-5415,computer systems design and related services,23
-5416,management scientific and technical consulting services,23
-5417,scientific research and development services,23
-5418,advertising public relations and related services,23
-5418,advertising and related services,23
-5613,employment services,23
-5614,business support services,23
-5615,travel arrangements and reservation services,23
-5616,investigation and security services,23
-6111,elementary and secondary schools,27
-6211,offices of physicians,28
-6212,offices of dentists,28
-6214,outpatient care centers,28
-6216,home health care services,28
-6222,psychiatric and substance abuse hospitals,28
-6231,nursing care facilities skilled nursing facilities,28
-6241,individual and family services,28
-6242,community food and housing and emergency services,28
-6243,vocational rehabilitation services,28
-6244,child day care services,28
-7111,performing arts companies,30
-7112,spectator sports,30
-7115,independent artists writers and performers,30
-7211,traveler accommodation,31
-7224,drinking places alcohol beverages,31
-8112,electronic and precision equipment repair and maintenance,33
-8113,commercial and industrial machinery and equipment repair and maintenance,33
-8114,personal and household goods repair and maintenance,34
-8122,funeral homes cemeteries and crematories,34
-8123,drycleaning and laundry services,34
-8129,other personal services,32
-8129,other personal services,34
-8129,other personal services,0
-8131,religious organizations,32
-22132,sewage treatment facilities,22
 31411,carpet and rug mills,8
 32221,paperboard container manufacturing,8
-8131,religious organizations,35
-22132,sewage treatment facilities,25
-31411,carpet and rug mills,10
-32221,paperboard container manufacturing,10
-32411,petroleum refining,3
 32621,tires,8
 32711,pottery ceramics and plumbing fixture manufacturing,8
 33311,agricultural implements,8
-42393,recyclable material merchant wholesalers,11
-42491,farm supplies merchant wholesalers,11
-44413,hardware stores,11
-44511,supermarkets and grocery except convenience stores,11
-44512,convenience stores,11
-44611,pharmacies and drug stores,11
-44821,shoe stores,11
-45113,sewing needlework and piece goods stores,11
-45114,musical instrument and supplies stores,11
-45121,book stores and news dealers,11
-45211,department stores and discount stores,11
-45221,department stores,11
-45321,office supplies and stationary stores,11
-45322,gift novelty and souvenir shops,11
-45439,other direct selling establishments,11
-32621,tires,10
-32711,pottery ceramics and plumbing fixture manufacturing,10
-33311,agricultural implements,9
-42393,recyclable material merchant wholesalers,12
-42491,farm supplies merchant wholesalers,12
-44413,hardware stores,13
-44511,supermarkets and grocery except convenience stores,13
-44512,convenience stores,13
-44611,pharmacies and drug stores,13
-44821,shoe stores,13
-45113,sewing needlework and piece goods stores,13
-45114,musical instrument and supplies stores,13
-45121,book stores and news dealers,13
-45211,department stores and discount stores,13
-45221,department stores,13
-45321,office supplies and stationary stores,13
-45322,gift novelty and souvenir shops,13
-45439,other direct selling establishments,13
-51111,newspaper publishers,18
-51912,libraries and archives,18
-51913,internet publishing and broadcasting and web search portals,18
-53223,video tape and disk rental,18
-54194,veterinary services,22
-56173,landscaping services,22
-62131,office of chiropractors,26
-62132,offices of optometrists,26
-71395,bowling centers,29
-81393,labor unions,32
-54194,veterinary services,23
-56173,landscaping services,23
-62131,office of chiropractors,28
-62132,offices of optometrists,28
-71395,bowling centers,30
-81393,labor unions,35
-92113,public finance activities,36
-92119,other general government and support,36
-92113,public finance activities,37
-92119,other general government and support,37
-92113,public finance activities,38
-92119,other general government and support,38
 311811,retail bakeries,8
 327120,clay building material and refractories manufacturing,8
-443141,household appliance stores,11
-443142,electronics stores,11
-454110,electronic shopping and mailorder houses,11
-454111,electronic shopping and mailorder houses,11
-454112,electronic auctions,11
-454113,mailorder houses,11
-454310,fuel dealers,11
-311811,retail bakeries,10
-327120,clay building material and refractories manufacturing,10
-443141,household appliance stores,13
-443142,electronics stores,13
-454110,electronic shopping and mailorder houses,13
-454111,electronic shopping and mailorder houses,13
-454112,electronic auctions,13
-454113,mailorder houses,13
-454310,fuel dealers,13
-517311,wired telecommunications carriers,18
-811192,car washes,32
-812111,barber shops,32
-812112,beauty salons,32
-811192,car washes,34
-812111,barber shops,34
-812112,beauty salons,34
-113m,forestry except logging,3
-2211p,electric power generation transmission and distribution,11
-2212p,natural gas distribution,11
-2213m,water steam air conditioning and irrigation systems,11
-221mp,electric and gas and other combinations,11
-22s,not specified utilities,11
 3118z,bakeries and tortilla manufacturing except retail bakeries,8
 311m1,animal food grain and oilseed milling,8
 311m2,seafood and other miscellaneous foods nec,8
@@ -433,18 +99,69 @@ NAICS Code,Industry,Crosswalk Value
 3399zm,miscellaneous manufacturing nec,8
 33ms,not specified metal industries,8
 3ms,not specified industries,8
-4239z,miscellaneous durable goods merchant wholesalers,11
-4249z,miscellaneous nondurable goods merchant wholesalers,11
-424m,drugs sundries and chemical and allied product merchant wholesalers,11
-42s,not specified wholesale trade,11
-4441z,building material and supplies dealers,11
-446z,health and personal care except drug stores,11
-4511m,sporting goods and hobby and toy stores,11
-2211p,electric power generation transmission and distribution,15
-2212p,natural gas distribution,15
-2213m,water steam air conditioning and irrigation systems,15
-221mp,electric and gas and other combinations,15
-22s,not specified utilities,15
+337,furniture and related products manufacturing,9
+3279,miscellaneous nonmetallic mineral products manufacturing,9
+3313,aluminum production and processing,9
+3314,nonferrous metal except aluminum production and processing,9
+3315,foundries,9
+3321,metal forgings and stampings,9
+3322,cutlery and hand tool manufacturing,9
+3327,machine shops turned product screw nut and bolt manufacturing,9
+3328,coating engraving heat treating and allied activities,9
+3333,commercial and service industry machinery manufacturing,9
+3335,metalworking machinery,9
+3336,engine turbine and power transmission equipment manufacturing,9
+3341,computer and peripheral equipment manufacturing,9
+3345,navigational measuring electromedical and control instruments,9
+3352,household appliances,9
+3365,railroad rolling stock manufacturing,9
+3366,ship and boat building,9
+3369,other transportation equipment manufacturing,9
+3391,medical equipment and supplies,9
+33311,agricultural implements,9
+331m,iron and steel mills and steel products manufacturing,9
+33299m,ordnance,9
+332m,structural metals and boiler tank and shipping container manufacturing,9
+332mz,miscellaneous fabricated metal products manufacturing,9
+3331m,construction and mining and oil and gas field machinery,9
+333ms,machinery manufacturing nec or not specified,9
+334m1,communications audio and video equipment,9
+334m2,electronic components and products nec,9
+335m,electric lighting and electrical equipment manufacturing and other electrical component manufacturing nec,9
+33641m1,aircraft and parts manufacturing,9
+33641m2,aerospace products and parts manufacturing,9
+336m,motor vehicles and motor vehicle equipment manufacturing,9
+3399m,sporting and athletic goods and doll toy and game manufacturing,9
+3399zm,miscellaneous manufacturing nec,9
+33ms,not specified metal industries,9
+3113,sugar and confectionery products,10
+3114,fruit and vegetable preserving and specialty foods,10
+3115,dairy products,10
+3116,animal slaughtering and processing,10
+3121,beverage,10
+3122,tobacco,10
+3131,fiber yarn and thread mills,10
+3133,textile and fabric finishing and fabric coating mills,10
+3152,cut and sew apparel manufacturing,10
+3159,apparel accessories and other apparel,10
+3162,footwear manufacturing,10
+3211,sawmills and wood preservation,10
+3212,veneer plywood and engineered wood products,10
+3221,pulp paper and paperboard mills,10
+3231,printing and related support activities,10
+3252,resin synthetic rubber and fibers and filaments,10
+3253,agricultural chemicals,10
+3254,pharmaceuticals and medicines,10
+3255,paint coating and adhesives,10
+3256,soap cleaning compound and cosmetics,10
+3261,plastics products,10
+3272,glass and glass products manufacturing,10
+31411,carpet and rug mills,10
+32221,paperboard container manufacturing,10
+32621,tires,10
+32711,pottery ceramics and plumbing fixture manufacturing,10
+311811,retail bakeries,10
+327120,clay building material and refractories manufacturing,10
 3118z,bakeries and tortilla manufacturing except retail bakeries,10
 311m1,animal food grain and oilseed milling,10
 311m2,seafood and other miscellaneous foods nec,10
@@ -462,36 +179,201 @@ NAICS Code,Industry,Crosswalk Value
 325m,industrial and miscellaneous chemicals,10
 3262m,rubber products except tires,10
 327m,cement concrete lime and gypsum products manufacturing,10
-331m,iron and steel mills and steel products manufacturing,9
-33299m,ordnance,9
-332m,structural metals and boiler tank and shipping container manufacturing,9
-332mz,miscellaneous fabricated metal products manufacturing,9
-3331m,construction and mining and oil and gas field machinery,9
-333ms,machinery manufacturing nec or not specified,9
-334m1,communications audio and video equipment,9
-334m2,electronic components and products nec,9
-335m,electric lighting and electrical equipment manufacturing and other electrical component manufacturing nec,9
-33641m1,aircraft and parts manufacturing,9
-33641m2,aerospace products and parts manufacturing,9
-336m,motor vehicles and motor vehicle equipment manufacturing,9
-3399m,sporting and athletic goods and doll toy and game manufacturing,9
-3399zm,miscellaneous manufacturing nec,9
-33ms,not specified metal industries,9
+442,furniture and home furnishings stores,11
+447,gasoline stations,11
+481,air transportation,11
+482,rail transportation,11
+483,water transportation,11
+484,truck transportation,11
+486,pipeline transportation,11
+487,scenic and sightseeing transportation,11
+488,services incidental to transportation,11
+491,postal service,11
+492,couriers and messengers,11
+493,warehousing and storage,11
+4231,motor vehicle and motor vehicle parts and supplies merchant wholesalers,11
+4232,furniture and home furnishing merchant wholesalers,11
+4233,lumber and other construction materials merchant wholesalers,11
+4234,professional and commercial equipment and supplies merchant wholesalers,11
+4235,metals and minerals except petroleum merchant wholesalers,11
+4236,household appliances and electrical and electronic goods merchant wholesalers,11
+4237,hardware and plumbing and heating equipment and supplies merchant wholesalers,11
+4237,hardware plumbing and heating equipment and supplies merchant wholesalers,11
+4238,machinery equipment and supplies merchant wholesalers,11
+4241,paper and paper products mechant wholesalers,11
+4243,apparel piece goods and notions merchant wholesalers,11
+4244,grocery and related product merchant wholesalers,11
+4245,farm product raw materials merchant wholesalers,11
+4247,petroleum and petroleum products merchant wholesalers,11
+4248,alcoholic beverages merchat wholesalers,11
+4251,wholesale electronic markets agents and brokers,11
+4411,automobile dealers,11
+4412,other motor vehicle dealers,11
+4413,automotive parts accessories and tire stores,11
+4442,lawn and garden equipment and supplies stores,11
+4451,grocery stores,11
+4452,specialty food stores,11
+4453,beer wine and liquor stores,11
+4481,clothing stores,11
+4483,jewelry luggageand leather goods stores,11
+4523,general merchandise stores including warehouse clubs and supercenters,11
+4529,miscellaneous general merchandise stores,11
+4531,florists,11
+4531,retail florists,11
+4533,used merchandise stores,11
+4539,miscellaneous retail stores,11
+4542,vending machine operators,11
+4853,taxi and limousine service,11
+42393,recyclable material merchant wholesalers,11
+42491,farm supplies merchant wholesalers,11
+44413,hardware stores,11
+44511,supermarkets and grocery except convenience stores,11
+44512,convenience stores,11
+44611,pharmacies and drug stores,11
+44821,shoe stores,11
+45113,sewing needlework and piece goods stores,11
+45114,musical instrument and supplies stores,11
+45121,book stores and news dealers,11
+45211,department stores and discount stores,11
+45221,department stores,11
+45321,office supplies and stationary stores,11
+45322,gift novelty and souvenir shops,11
+45439,other direct selling establishments,11
+443141,household appliance stores,11
+443142,electronics stores,11
+454110,electronic shopping and mailorder houses,11
+454111,electronic shopping and mailorder houses,11
+454112,electronic auctions,11
+454113,mailorder houses,11
+454310,fuel dealers,11
+2211p,electric power generation transmission and distribution,11
+2212p,natural gas distribution,11
+2213m,water steam air conditioning and irrigation systems,11
+221mp,electric and gas and other combinations,11
+22s,not specified utilities,11
+4239z,miscellaneous durable goods merchant wholesalers,11
+4249z,miscellaneous nondurable goods merchant wholesalers,11
+424m,drugs sundries and chemical and allied product merchant wholesalers,11
+42s,not specified wholesale trade,11
+4441z,building material and supplies dealers,11
+446z,health and personal care except drug stores,11
+4511m,sporting goods and hobby and toy stores,11
+485m,bus service and urban transit,11
+4ms,not specified retail trade,11
+4231,motor vehicle and motor vehicle parts and supplies merchant wholesalers,12
+4232,furniture and home furnishing merchant wholesalers,12
+4233,lumber and other construction materials merchant wholesalers,12
+4234,professional and commercial equipment and supplies merchant wholesalers,12
+4235,metals and minerals except petroleum merchant wholesalers,12
+4236,household appliances and electrical and electronic goods merchant wholesalers,12
+4237,hardware and plumbing and heating equipment and supplies merchant wholesalers,12
+4237,hardware plumbing and heating equipment and supplies merchant wholesalers,12
+4238,machinery equipment and supplies merchant wholesalers,12
+4241,paper and paper products mechant wholesalers,12
+4243,apparel piece goods and notions merchant wholesalers,12
+4244,grocery and related product merchant wholesalers,12
+4245,farm product raw materials merchant wholesalers,12
+4247,petroleum and petroleum products merchant wholesalers,12
+4248,alcoholic beverages merchat wholesalers,12
+4251,wholesale electronic markets agents and brokers,12
+42393,recyclable material merchant wholesalers,12
+42491,farm supplies merchant wholesalers,12
 4239z,miscellaneous durable goods merchant wholesalers,12
 4249z,miscellaneous nondurable goods merchant wholesalers,12
 424m,drugs sundries and chemical and allied product merchant wholesalers,12
 42s,not specified wholesale trade,12
+442,furniture and home furnishings stores,13
+447,gasoline stations,13
+4411,automobile dealers,13
+4412,other motor vehicle dealers,13
+4413,automotive parts accessories and tire stores,13
+4442,lawn and garden equipment and supplies stores,13
+4451,grocery stores,13
+4452,specialty food stores,13
+4453,beer wine and liquor stores,13
+4481,clothing stores,13
+4483,jewelry luggageand leather goods stores,13
+4523,general merchandise stores including warehouse clubs and supercenters,13
+4529,miscellaneous general merchandise stores,13
+4531,florists,13
+4531,retail florists,13
+4533,used merchandise stores,13
+4539,miscellaneous retail stores,13
+4542,vending machine operators,13
+44413,hardware stores,13
+44511,supermarkets and grocery except convenience stores,13
+44512,convenience stores,13
+44611,pharmacies and drug stores,13
+44821,shoe stores,13
+45113,sewing needlework and piece goods stores,13
+45114,musical instrument and supplies stores,13
+45121,book stores and news dealers,13
+45211,department stores and discount stores,13
+45221,department stores,13
+45321,office supplies and stationary stores,13
+45322,gift novelty and souvenir shops,13
+45439,other direct selling establishments,13
+443141,household appliance stores,13
+443142,electronics stores,13
+454110,electronic shopping and mailorder houses,13
+454111,electronic shopping and mailorder houses,13
+454112,electronic auctions,13
+454113,mailorder houses,13
+454310,fuel dealers,13
 4441z,building material and supplies dealers,13
 446z,health and personal care except drug stores,13
 4511m,sporting goods and hobby and toy stores,13
-485m,bus service and urban transit,11
-485m,bus service and urban transit,14
-485m,bus service and urban transit,16
-4ms,not specified retail trade,11
 4ms,not specified retail trade,13
+481,air transportation,14
+482,rail transportation,14
+483,water transportation,14
+484,truck transportation,14
+486,pipeline transportation,14
+487,scenic and sightseeing transportation,14
+488,services incidental to transportation,14
+491,postal service,14
+492,couriers and messengers,14
+493,warehousing and storage,14
+4853,taxi and limousine service,14
+485m,bus service and urban transit,14
+2211p,electric power generation transmission and distribution,15
+2212p,natural gas distribution,15
+2213m,water steam air conditioning and irrigation systems,15
+221mp,electric and gas and other combinations,15
+22s,not specified utilities,15
+481,air transportation,16
+482,rail transportation,16
+483,water transportation,16
+484,truck transportation,16
+486,pipeline transportation,16
+487,scenic and sightseeing transportation,16
+488,services incidental to transportation,16
+491,postal service,16
+492,couriers and messengers,16
+485m,bus service and urban transit,16
+493,warehousing and storage,17
+5111z,periodical book and directory publishers,18
+515,radio and television broadcasting and cable subscription programming,18
+515,broadcasting except internet,18
+5112,software publishers,18
+5121,motion pictures and video industries,18
+5122,sound recording industries,18
+5171,wired telecommunications carriers,18
+5182,data processing hosting and related services,18
+51111,newspaper publishers,18
+51912,libraries and archives,18
+51913,internet publishing and broadcasting and web search portals,18
+53223,video tape and disk rental,18
+517311,wired telecommunications carriers,18
 517z,telecommunications except wired telecommunications carriers,18
 517z,other telecommunication services,18
 5191zm,other information services except libraries and archives and internet publishing and broadcasting and web search portals,18
+524,insurance carriers and related activities,19
+531,real estate,19
+5241,insurance carriers,19
+5242,agencies brokerages and other insurance related activities,19
+5313,real estate property managers offices of real estate appraisers and other activities related to real estate,19
+5321,automotive equipment rental and leasing,19
 5221m,savings institutions including credit unions,19
 522m,nondepository credit and related activities,19
 52m1,banking and related activities,19
@@ -500,9 +382,76 @@ NAICS Code,Industry,Crosswalk Value
 532m,other consumer goods rental,19
 532m2,other consumer goods rental,19
 53m,commercial industrial and other intangible assets rental and leasing,19
+524,insurance carriers and related activities,20
+5241,insurance carriers,20
+5242,agencies brokerages and other insurance related activities,20
+5221m,savings institutions including credit unions,20
+522m,nondepository credit and related activities,20
+52m1,banking and related activities,20
+52m2,securities commodities funds trusts and other financial investments,20
+531,real estate,21
+5313,real estate property managers offices of real estate appraisers and other activities related to real estate,21
+5321,automotive equipment rental and leasing,21
+531m,lessors of real estate and offices of real estate agents and brokers,21
+532m,other consumer goods rental,21
+532m2,other consumer goods rental,21
+53m,commercial industrial and other intangible assets rental and leasing,21
+562,waste management and remediation services,22
+5411,legal services,22
+5412,accounting tax preparation bookkeeping and payroll services,22
+5413,architectural engineering and related services,22
+5414,specialized design services,22
+5415,computer systems design and related services,22
+5416,management scientific and technical consulting services,22
+5417,scientific research and development services,22
+5418,advertising public relations and related services,22
+5418,advertising and related services,22
+5613,employment services,22
+5614,business support services,22
+5615,travel arrangements and reservation services,22
+5616,investigation and security services,22
+22132,sewage treatment facilities,22
+54194,veterinary services,22
+56173,landscaping services,22
 5419z,other professional scientific and technical services,22
 5617z,services to buildings and dwellings except cleaning during construction and immediately after construction,22
 561m,other administrative and other support services,22
+55,management of companies and enterprises,23
+5411,legal services,23
+5412,accounting tax preparation bookkeeping and payroll services,23
+5413,architectural engineering and related services,23
+5414,specialized design services,23
+5415,computer systems design and related services,23
+5416,management scientific and technical consulting services,23
+5417,scientific research and development services,23
+5418,advertising public relations and related services,23
+5418,advertising and related services,23
+5613,employment services,23
+5614,business support services,23
+5615,travel arrangements and reservation services,23
+5616,investigation and security services,23
+54194,veterinary services,23
+56173,landscaping services,23
+5419z,other professional scientific and technical services,23
+55,management of companies and enterprises,24
+562,waste management and remediation services,25
+22132,sewage treatment facilities,25
+5617z,services to buildings and dwellings except cleaning during construction and immediately after construction,25
+561m,other administrative and other support services,25
+622,hospitals,26
+6111,elementary and secondary schools,26
+6211,offices of physicians,26
+6212,offices of dentists,26
+6214,outpatient care centers,26
+6216,home health care services,26
+6222,psychiatric and substance abuse hospitals,26
+6231,nursing care facilities skilled nursing facilities,26
+6241,individual and family services,26
+6242,community food and housing and emergency services,26
+6243,vocational rehabilitation services,26
+6244,child day care services,26
+62131,office of chiropractors,26
+62132,offices of optometrists,26
 611m1,colleges universities and professional schools including junior colleges,26
 611m2,business technical and trade schools and training,26
 611m3,other schools and instruction and educational support services,26
@@ -510,42 +459,87 @@ NAICS Code,Industry,Crosswalk Value
 621m,other health care services,26
 622m,general medical and surgical hospitals and specialty except psychiatric and substance abuse hospitals,26
 623m,residential care facilities except skilled nursing,26
+6111,elementary and secondary schools,27
+611m1,colleges universities and professional schools including junior colleges,27
+611m2,business technical and trade schools and training,27
+611m3,other schools and instruction and educational support services,27
+622,hospitals,28
+6211,offices of physicians,28
+6212,offices of dentists,28
+6214,outpatient care centers,28
+6216,home health care services,28
+6222,psychiatric and substance abuse hospitals,28
+6231,nursing care facilities skilled nursing facilities,28
+6241,individual and family services,28
+6242,community food and housing and emergency services,28
+6243,vocational rehabilitation services,28
+6244,child day care services,28
+62131,office of chiropractors,28
+62132,offices of optometrists,28
+6213zm,offices of other health practitioners,28
+621m,other health care services,28
+622m,general medical and surgical hospitals and specialty except psychiatric and substance abuse hospitals,28
+623m,residential care facilities except skilled nursing,28
+711,performing arts spectaor sports and related industries,29
+712,museums art galleries historical sites and similar institutions,29
+7111,performing arts companies,29
+7112,spectator sports,29
+7115,independent artists writers and performers,29
+7211,traveler accommodation,29
+7224,drinking places alcohol beverages,29
+71395,bowling centers,29
 711m,promoters of performing arts sports and similar events agents and managers for artists athletes entertainers and other public figures,29
 713z,other amusement gambling and recreation industries,29
 721m,recreational vehicle parks and camps and rooming and boarding houses dormitories and workers camps,29
 721m,recreational vehicle parks and camps and rooming and boarding houses,29
 722z,restaurants and other food services,29
+711,performing arts spectaor sports and related industries,30
+712,museums art galleries historical sites and similar institutions,30
+7111,performing arts companies,30
+7112,spectator sports,30
+7115,independent artists writers and performers,30
+71395,bowling centers,30
+711m,promoters of performing arts sports and similar events agents and managers for artists athletes entertainers and other public figures,30
+713z,other amusement gambling and recreation industries,30
+7211,traveler accommodation,31
+7224,drinking places alcohol beverages,31
+721m,recreational vehicle parks and camps and rooming and boarding houses dormitories and workers camps,31
+721m,recreational vehicle parks and camps and rooming and boarding houses,31
+722z,restaurants and other food services,31
+814,private households,32
+8112,electronic and precision equipment repair and maintenance,32
+8113,commercial and industrial machinery and equipment repair and maintenance,32
+8114,personal and household goods repair and maintenance,32
+8122,funeral homes cemeteries and crematories,32
+8123,drycleaning and laundry services,32
+8129,other personal services,32
+8131,religious organizations,32
+81393,labor unions,32
+811192,car washes,32
+812111,barber shops,32
+812112,beauty salons,32
 8111z,automotive repair and maintenance,32
 8121m,nail salons and other personal care services,32
 8139z,business professional political and similar organizations,32
 813m,civic social advocacy organizations and grantmaking and giving services,32
-5221m,savings institutions including credit unions,20
-522m,nondepository credit and related activities,20
-52m1,banking and related activities,20
-52m2,securities commodities funds trusts and other financial investments,20
-531m,lessors of real estate and offices of real estate agents and brokers,21
-532m,other consumer goods rental,21
-532m2,other consumer goods rental,21
-53m,commercial industrial and other intangible assets rental and leasing,21
-5419z,other professional scientific and technical services,23
-5617z,services to buildings and dwellings except cleaning during construction and immediately after construction,25
-561m,other administrative and other support services,25
-611m1,colleges universities and professional schools including junior colleges,27
-611m2,business technical and trade schools and training,27
-611m3,other schools and instruction and educational support services,27
-6213zm,offices of other health practitioners,28
-621m,other health care services,28
-622m,general medical and surgical hospitals and specialty except psychiatric and substance abuse hospitals,28
-623m,residential care facilities except skilled nursing,28
-711m,promoters of performing arts sports and similar events agents and managers for artists athletes entertainers and other public figures,30
-713z,other amusement gambling and recreation industries,30
-721m,recreational vehicle parks and camps and rooming and boarding houses dormitories and workers camps,31
-721m,recreational vehicle parks and camps and rooming and boarding houses,31
-722z,restaurants and other food services,31
+8112,electronic and precision equipment repair and maintenance,33
+8113,commercial and industrial machinery and equipment repair and maintenance,33
 8111z,automotive repair and maintenance,33
+814,private households,34
+8114,personal and household goods repair and maintenance,34
+8122,funeral homes cemeteries and crematories,34
+8123,drycleaning and laundry services,34
+8129,other personal services,34
+811192,car washes,34
+812111,barber shops,34
+812112,beauty salons,34
 8121m,nail salons and other personal care services,34
+8131,religious organizations,35
+81393,labor unions,35
 8139z,business professional political and similar organizations,35
 813m,civic social advocacy organizations and grantmaking and giving services,35
+92113,public finance activities,36
+92119,other general government and support,36
 9211mp,executive offices and legislative bodies,36
 928110p1,us army,36
 928110p2,us air force,36
@@ -558,3 +552,9 @@ NAICS Code,Industry,Crosswalk Value
 92m1,administration of environmental quality and housing programs,36
 92m2,administration of economic programs and space research,36
 92mp,justice public order and safety activities,36
+923,administration of human resource programs,37
+92113,public finance activities,37
+92119,other general government and support,37
+923,administration of human resource programs,38
+92113,public finance activities,38
+92119,other general government and support,38
