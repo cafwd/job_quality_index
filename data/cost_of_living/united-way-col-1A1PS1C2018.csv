@@ -1,89 +1,15 @@
-﻿Regions,Cost of Living
-Bay Area,95849
-Central Coast,74219
-Central Valley,56969
-Inland Empire,62632
-Los Angeles,77533
-Orange,84269
-Redwood Coast,57976
-Sacramento,62887
-San Diego-Imperial,54053
-Shasta / Cascades,55587
-Sierra Nevada,58292
-California,73876
-Urban,78626
-Rural,59093
-Bay Area Rural,79305
-Bay Area Urban,96995
-Central Coast Rural,70884
-Central Coast Urban,75720
-Central Valley Rural,56569
-Central Valley Urban,57192
-Inland Empire Urban,62632
-Los Angeles Urban,77533
-Orange Urban,84269
-Redwood Coast Rural,57976
-Sacramento Rural,63015
-Sacramento Urban,61543
-San Diego-Imperial Rural,52762
-San Diego-Imperial Urban,77754
-Shasta / Cascades Rural,55587
-Sierra Nevada Rural,58292
-Alameda,94427
-Contra Costa,90526
-Marin,117692
-Napa,76173
-San Francisco,117749
-San Mateo,116807
-Santa Clara,102410
-Solano,65648
-Sonoma,79305
-Monterey,71103
-San Benito,71103
-San Luis Obispo,70745
-Santa Barbara,75339
-Santa Cruz,78250
-Ventura,77291
-Fresno,57671
+Regions,Cost of Living
+Bay Area,98543
+Central Coast,74939
+Central San Joaquin,56810
+Eastern Sierra,60044
+Inland Empire,62623
 Kern,56288
-Kings,56347
-Madera,58347
-Merced,53790
-San Joaquin,59084
-Stanislaus,58674
-Tulare,54610
-Riverside,62554
-San Bernardino,62701
 Los Angeles,77533
+North State,56942
+Northern San Joaquin,58018
 Orange,84269
-Del Norte,53117
-Humboldt,59054
-Mendocino,57829
-El Dorado,63456
-Placer,62311
-Sacramento,61543
-Sutter,56209
-Yolo,64662
-Yuba,56209
-Imperial,52762
-San Diego,77754
-Butte,58578
-Colusa,52907
-Glenn,52907
-Lake,57829
-Shasta,56547
-Siskiyou,53117
-Tehama,52907
-Trinity,52907
-Alpine,60044
-Amador,60044
-Calaveras,60044
-Inyo,60044
-Lassen,53117
-Mariposa,60044
-Modoc,53117
-Mono,60044
-Nevada,61956
-Plumas,53117
-Sierra,61956
-Tuolumne,60044
+Redwood Coast,57946
+Sacramento,61634
+San Diego-Imperial,76463
+California,76410
