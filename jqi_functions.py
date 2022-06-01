@@ -85,30 +85,30 @@ def add_to_region_df(df):
     df['above_region_thresh'] = df['INCWAGE'] > df['Regional COL']
     df["above_region_thresh"] = df["above_region_thresh"].astype(int)
     df["wt_reg_above_thresh"] = df["above_region_thresh"] * df['PERWT']
-    df_agg = df.groupby(['Crosswalk Value','Regions']).agg(wt_reg_ind_counts = ('PERWT','sum'),
+    df_agg = df.groupby(['Crosswalk Value','CERF Regions']).agg(wt_reg_ind_counts = ('PERWT','sum'),
                                                      wt_reg_high_wage_count = ('wt_reg_above_thresh','sum'),
                                                      unwt_reg_ind_counts = ('Crosswalk Value','count')).reset_index() 
-    df = pd.merge(df, df_agg, on=['Crosswalk Value', 'Regions'])
+    df = pd.merge(df, df_agg, on=['Crosswalk Value', 'CERF Regions'])
     df['wt_reg_high_wage_perc'] = (df['wt_reg_high_wage_count'] / df['wt_reg_ind_counts']) * 100
-    df = df.rename(columns={"Regions_x": "Regions", 'wt_reg_high_wage_count_x':'wt_reg_high_wage_count','wt_reg_ind_counts_x':'wt_reg_ind_counts',
+    df = df.rename(columns={'wt_reg_high_wage_count_x':'wt_reg_high_wage_count','wt_reg_ind_counts_x':'wt_reg_ind_counts',
                            'unwt_reg_ind_counts_x':'unwt_reg_ind_counts'})
     return df
 
-def add_to_community_df(df):
-    """
-    Add high wage threshold and percentage features at the rural/urban level.
-    """
-    df['above_comm_thresh'] = df['INCWAGE'] > df['Rural/Urban COL']
-    df["above_comm_thresh"] = df["above_comm_thresh"].astype(int)
-    df["wt_comm_above_thresh"] = df["above_comm_thresh"] * df['PERWT'] 
-    df_agg = df.groupby(['Crosswalk Value','Rural/Urban']).agg(wt_comm_ind_counts = ('PERWT','sum'),
-                                                     wt_comm_high_wage_count = ('wt_comm_above_thresh','sum'),
-                                                     unwt_comm_ind_counts = ('Crosswalk Value','count')).reset_index()
-    df = pd.merge(df, df_agg, on=['Crosswalk Value', 'Rural/Urban'])
-    df['wt_comm_high_wage_perc'] = (df['wt_comm_high_wage_count'] / df['wt_comm_ind_counts']) * 100
-    df = df.rename(columns={"Rural/Urban_x": "Rural/Urban", 'wt_comm_high_wage_count_x':'wt_comm_high_wage_count','wt_comm_ind_counts_x':'wt_comm_ind_counts',
-                           'unwt_comm_ind_counts_x':'unwt_comm_ind_counts'})
-    return df
+# def add_to_community_df(df):
+#     """
+#     Add high wage threshold and percentage features at the rural/urban level.
+#     """
+#     df['above_comm_thresh'] = df['INCWAGE'] > df['Rural/Urban COL']
+#     df["above_comm_thresh"] = df["above_comm_thresh"].astype(int)
+#     df["wt_comm_above_thresh"] = df["above_comm_thresh"] * df['PERWT'] 
+#     df_agg = df.groupby(['Crosswalk Value','Rural/Urban']).agg(wt_comm_ind_counts = ('PERWT','sum'),
+#                                                      wt_comm_high_wage_count = ('wt_comm_above_thresh','sum'),
+#                                                      unwt_comm_ind_counts = ('Crosswalk Value','count')).reset_index()
+#     df = pd.merge(df, df_agg, on=['Crosswalk Value', 'Rural/Urban'])
+#     df['wt_comm_high_wage_perc'] = (df['wt_comm_high_wage_count'] / df['wt_comm_ind_counts']) * 100
+#     df = df.rename(columns={"Rural/Urban_x": "Rural/Urban", 'wt_comm_high_wage_count_x':'wt_comm_high_wage_count','wt_comm_ind_counts_x':'wt_comm_ind_counts',
+#                            'unwt_comm_ind_counts_x':'unwt_comm_ind_counts'})
+#     return df
 
 def add_geo_high_wages(df):
     """
@@ -118,7 +118,7 @@ def add_geo_high_wages(df):
     """
     df_new = df.copy() # initialize new dataframe
     df_new = add_to_state_df(df_new) # creating state level counts
-    df_new = add_to_community_df(df_new) # creating rural/urban level counts
+#     df_new = add_to_community_df(df_new) # creating rural/urban level counts
     df_new = add_to_region_df(df_new) # creating regional level counts
     return df_new
 
@@ -130,10 +130,10 @@ def edd_to_hw(edd_df, ipums_df_hw, region: str, crosswalk_val: int, date: str, s
     # filter edd by date, region, and industry via crosswalk value
     edd_df = edd_df.loc[edd_df['Date'] == date].copy()
     edd_df = edd_df.loc[edd_df['Crosswalk Value'] == crosswalk_val].copy()
-    edd_df = edd_df.loc[edd_df['Regions'] == region]
+    edd_df = edd_df.loc[edd_df['CERF Regions'] == region]
     
     # merge naics with edd on crosswalk value
-    edd_df = pd.merge(edd_df, ipums_df_hw, on=['Crosswalk Value', 'Regions', 'County', 'Rural/Urban'])
+    edd_df = pd.merge(edd_df, ipums_df_hw, on=['Crosswalk Value', 'CERF Regions', 'County', 'Rural/Urban'])
     if len(edd_df) == 0:
         return np.nan, np.nan, np.nan, np.nan
     employment_count = edd_df.groupby('County').mean()['Current Employment'].sum()
@@ -141,10 +141,12 @@ def edd_to_hw(edd_df, ipums_df_hw, region: str, crosswalk_val: int, date: str, s
     # sample size logic
     if edd_df['unwt_reg_ind_counts'].values[0] >= sample_size:
         hw_perc = edd_df['wt_reg_high_wage_perc'].values[0]
-    elif edd_df['unwt_comm_ind_counts'].values[0] >= sample_size:
-        hw_perc = edd_df['wt_comm_high_wage_perc'].values[0]
+#     elif edd_df['unwt_comm_ind_counts'].values[0] >= sample_size:
+#         hw_perc = edd_df['wt_comm_high_wage_perc'].values[0]
     elif edd_df['unwt_ind_counts'].values[0] >= sample_size:
         hw_perc = edd_df['wt_CA_high_wage_perc'].values[0]
+    else:
+        hw_perc = -1
     hw_count = (employment_count * hw_perc) / 100
     industry = edd_df['Industry Title_x'].values[0]
     return hw_count, hw_perc, employment_count, industry
@@ -173,37 +175,45 @@ region_series_codes = {'Bay Area':[10000000, 11000000, 15000000, 20000000, 30000
                                         41000000, 42000000, 43000000, 55000000, 
                                         60000000, 65000000, 
                                         70000000, 80000000, 90910000, 90920000, 90930000],
-                       'Central Valley':[10000000, 11000000, 15000000, 20000000, 
+                       'Central San Joaquin':[10000000, 11000000, 15000000, 20000000, 
                                          31000000, 32000000, 41000000, 42000000, 43000000, 50000000, 55000000, 
                                          60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Eastern Sierra':[8999999, 10000000, 11000000, 15000000, 20000000, 
+                                         31000000, 32000000, 41000000, 42000000, 43000000, 
+                                         50000000, 55000000, 60000000, 65000000, 70000000, 
+                                         80000000, 90910000, 90920000, 90930000],
                        'Inland Empire':[10000000, 11000000, 20000000, 31000000, 32000000, 
                                         41000000, 42000000, 43000000, 55000000, 
                                         60540000, 60550000, 60560000, 65610000, 65620000, 
                                         70710000, 70720000, 80000000, 90910000, 90920000, 90930000],
-                       'Los Angeles':[10000000, 11000000, 15000000, 20000000, 
+                       'Kern':[10000000, 11000000, 15000000, 20000000, 31000000, 32000000, 
+                               41000000, 42000000, 43000000, 50000000, 55520000, 55530000, 
+                               60540000, 60550000, 60560000, 65610000, 65620000, 70710000, 70720000, 
+                               80000000, 90910000, 90920000, 90930000],
+                       'Los Angeles':[10000000, 11000000, 15000000, 2000000, 
                                       31000000, 32000000, 41000000, 42000000, 43220000, 43400089, 
                                       50000000, 55000000, 60540000, 60550000, 60560000, 65610000, 65620000, 
                                       70710000, 70720000, 80811000, 80812000, 80813000, 90910000, 90920000, 90930000],
-                       'Orange':[10000000, 11000000, 20000000, 
-                                 31000000, 32000000, 41000000, 42000000, 43220000, 43400089, 
-                                 50000000, 55520000, 55530000, 60540000, 60550000, 60560000, 65610000, 65620000, 
-                                 70710000, 70720000, 80000000, 90910000, 90920000, 90930000],
-                       'Redwood Coast':[10000000, 11000000, 20000000, 
-                                        31000000, 32000000, 40000000, 50000000, 55000000, 
-                                        60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
-                       'Sacramento':[10000000, 11000000, 15000000, 20000000, 
-                                     30000000, 40000000, 50000000, 55000000, 
-                                     60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
-                       'San Diego-Imperial':[10000000, 11000000, 20000000, 
-                                             31000000, 32000000, 41000000, 42000000, 43220000, 43400089, 43493000, 
+                       'North State':[8999999, 10000000, 11000000, 15000000, 20000000, 
+                                      30000000, 41000000, 42000000, 43000000, 50000000, 55000000, 
+                                      60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Northern San Joaquin':[10000000, 11000000, 15000000, 20000000, 30000000, 
+                                               41000000, 42000000, 43000000, 50000000, 55000000, 
+                                               60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Orange':[10000000, 11000000, 20000000, 31000000, 32000000, 
+                                 41000000, 42000000, 43220000, 43400089, 50000000, 55520000, 55530000, 
+                                 60540000, 60550000, 60560000, 65610000, 65620000, 70710000, 70720000, 
+                                 80000000, 90910000, 90920000, 90930000],
+                       'Redwood Coast':[10000000, 11000000, 20000000, 31000000, 32000000, 
+                                        40000000, 50000000, 55000000, 60000000, 65000000, 
+                                        70000000, 80000000, 90910000, 90920000, 90930000],
+                       'Sacramento':[10000000, 11000000, 15000000, 20000000, 30000000, 
+                                     40000000, 50000000, 55000000, 60000000, 65000000, 
+                                     70000000, 80000000, 90910000, 90920000, 90930000],
+                       'San Diego-Imperial':[10000000, 11000000, 20000000, 31000000, 32000000, 
+                                             41000000, 42000000, 43220000, 43400089, 43493000, 
                                              50000000, 55000000, 60540000, 60550000, 60560000, 65000000, 
-                                             70000000, 80000000, 90910000, 90920000, 90930000],
-                       'Shasta / Cascades':[8999999, 10000000, 11000000, 15000000, 20000000, 
-                                            30000000, 41000000, 42000000, 43000000, 50000000, 55000000, 
-                                            60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000],
-                       'Sierra Nevada':[8999999, 10000000, 11000000, 15000000, 20000000, 
-                                        30000000, 41000000, 42000000, 43000000, 50000000, 55000000, 
-                                        60000000, 65000000, 70000000, 80000000, 90910000, 90920000, 90930000]
+                                             70000000, 80000000, 90910000, 90920000, 90930000]
 }
     
 def filter_edd(edd, region_series_codes):
@@ -211,32 +221,36 @@ def filter_edd(edd, region_series_codes):
     Filter EDD data to have only the industries that properly represent the population of each region.
     """
     # separate dataframes
-    ba = edd.loc[edd['Regions'] == 'Bay Area']
-    cc = edd.loc[edd['Regions'] == 'Central Coast']
-    cv = edd.loc[edd['Regions'] == 'Central Valley']
-    ie = edd.loc[edd['Regions'] == 'Inland Empire']
-    la = edd.loc[edd['Regions'] == 'Los Angeles']
-    oc = edd.loc[edd['Regions'] == 'Orange']
-    rc = edd.loc[edd['Regions'] == 'Redwood Coast']
-    sac = edd.loc[edd['Regions'] == 'Sacramento']
-    sd = edd.loc[edd['Regions'] == 'San Diego-Imperial']
-    shas = edd.loc[edd['Regions'] == 'Shasta / Cascades']
-    sn = edd.loc[edd['Regions'] == 'Sierra Nevada']
+    ba = edd.loc[edd['CERF Regions'] == 'Bay Area']
+    cc = edd.loc[edd['CERF Regions'] == 'Central Coast']
+    csj = edd.loc[edd['CERF Regions'] == 'Central San Joaquin']
+    es = edd.loc[edd['CERF Regions'] == 'Eastern Sierra']
+    ie = edd.loc[edd['CERF Regions'] == 'Inland Empire']
+    kern = edd.loc[edd['CERF Regions'] == 'Kern']
+    la = edd.loc[edd['CERF Regions'] == 'Los Angeles']
+    ns = edd.loc[edd['CERF Regions'] == 'North State']
+    nsj = edd.loc[edd['CERF Regions'] == 'Northern San Joaquin']
+    oc = edd.loc[edd['CERF Regions'] == 'Orange']
+    rc = edd.loc[edd['CERF Regions'] == 'Redwood Coast']
+    sac = edd.loc[edd['CERF Regions'] == 'Sacramento']
+    sd = edd.loc[edd['CERF Regions'] == 'San Diego-Imperial']
     
     # filter out series codes
     ba = ba.loc[ba['Series Code'].isin(region_series_codes['Bay Area'])]
     cc = cc.loc[cc['Series Code'].isin(region_series_codes['Central Coast'])]
-    cv = cv.loc[cv['Series Code'].isin(region_series_codes['Central Valley'])]
+    csj = csj.loc[csj['Series Code'].isin(region_series_codes['Central San Joaquin'])]
+    es = es.loc[es['Series Code'].isin(region_series_codes['Eastern Sierra'])]
     ie = ie.loc[ie['Series Code'].isin(region_series_codes['Inland Empire'])]
+    kern = kern.loc[kern['Series Code'].isin(region_series_codes['Kern'])]
     la = la.loc[la['Series Code'].isin(region_series_codes['Los Angeles'])]
+    ns = ns.loc[ns['Series Code'].isin(region_series_codes['North State'])]
+    nsj = nsj.loc[nsj['Series Code'].isin(region_series_codes['Northern San Joaquin'])]
     oc = oc.loc[oc['Series Code'].isin(region_series_codes['Orange'])]
     rc = rc.loc[rc['Series Code'].isin(region_series_codes['Redwood Coast'])]
     sac = sac.loc[sac['Series Code'].isin(region_series_codes['Sacramento'])]
     sd = sd.loc[sd['Series Code'].isin(region_series_codes['San Diego-Imperial'])]
-    shas = shas.loc[shas['Series Code'].isin(region_series_codes['Shasta / Cascades'])]
-    sn = sn.loc[sn['Series Code'].isin(region_series_codes['Sierra Nevada'])]
     
-    dfs = [ba, cc, cv, ie, la, oc, rc, sac, sd, shas, sn]
+    dfs = [ba, cc, csj, es, ie, kern, la, ns, nsj, oc, rc, sac, sd]
     final_edd = pd.concat(dfs)
     
     return final_edd
@@ -261,22 +275,27 @@ def clean_edd(edd, edd_titles_crosswalk, edd_to_ipums_crosswalk, county_info):
     edd = pd.merge(edd, edd_to_ipums_crosswalk, on='Series Code')
     edd = edd[['Area Type', 'Area Name', 'Year', 'Month', 'Date', 'Series Code',
        'Seasonally Adjusted', 'Current Employment', 'Industry Title',
-       'FIPS', 'COUNTYFIP', 'County', 'Rural/Urban', 'Regions', 'Crosswalk Value']]
+       'COUNTYFIP', 'County', 'Rural/Urban', 'CERF Regions', 'Crosswalk Value']]
     return edd
 
-def cleaned_ipums_demo(year: str): # need to update to match cleaned_ipums
+def cleaned_ipums_demo(year: str):
     """
     Function to clean IPUMS data specifically for a race/demographics breakdown for the specified year.
     Currently has hardcoded file paths for naics_parsed_crosswalk and 
     ind_indnaics_crosswalk_2000_onward_without_code_descriptions csv files.
+    Assumption of full time employees is anyone with INCWAGE >= minimum wage * 30 hours * 50 weeks
     """
     cwd = os.getcwd()
-    if int(year) < 2015: # change later
+    
+    if int(year) < 2014:
         print('Invalid year')
         return None
+    min_wages = {2014:9, 2015:9, 2016:10, 2017:10, 2018:10.5, 2019:11, 2020:12}
+    min_wage = min_wages[int(year)] * 30 * 50
     ipums = pd.read_csv(f'{cwd}/data/ipums/IPUMS_{year}.csv')
-    ipums = ipums[['YEAR','STATEFIP', 'COUNTYFIP', 'INDNAICS','PERWT','RACE','HISPAN','INCWAGE']]
-    ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy().reset_index().iloc[:,1:]
+    ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy()
+    ca_ipums = ca_ipums[['YEAR', 'COUNTYFIP', 'INDNAICS','PERWT','RACE','HISPAN','INCWAGE']]
+    ca_ipums = ca_ipums.loc[ca_ipums['INCWAGE'] >= min_wage].reset_index().iloc[:,1:] # filter by full time employees
     ipums_titles = pd.read_csv(f'{cwd}/data/ipums/ind_indnaics_crosswalk_2000_onward_without_code_descriptions.csv')
     ipums_titles = ipums_titles.iloc[2:]
     ipums_titles = ipums_titles.iloc[:,9:]
@@ -291,4 +310,7 @@ def cleaned_ipums_demo(year: str): # need to update to match cleaned_ipums
         ipums_titles = ipums_titles[['2013-2017 ACS/PRCS INDNAICS CODE', 'Industry Title']]
         merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2013-2017 ACS/PRCS INDNAICS CODE')
         merged_ipums = merged_ipums.rename(columns={"2013-2017 ACS/PRCS INDNAICS CODE": "NAICS Code"})
+    merged_ipums['Industry Title'] = normalize_titles(merged_ipums['Industry Title'])
+    ipums_to_edd = pd.read_csv(f'{cwd}/data/ipums/ipums_to_edd_crosswalk.csv')
+    merged_ipums = pd.merge(merged_ipums, ipums_to_edd, on='NAICS Code')
     return merged_ipums
