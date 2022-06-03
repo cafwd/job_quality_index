@@ -1,0 +1,279 @@
+Series Code,EDD Industry Title,LMID Industry Title
+10000000,Mining and Logging,Mining and Logging
+11000000,Total Farm,Total Farm
+15000000,"Natural Resources, Mining and Constructi","Natural Resources, Mining and Construction"
+20000000,Construction,Construction
+30000000,Manufacturing,Manufacturing
+31000000,Durable Goods,Durable Goods
+32000000,Nondurable Goods,Nondurable Goods
+40000000,"Trade, Transportation and Utilities","Transportation, Warehousing & Utilities"
+41000000,Wholesale Trade,Wholesale Trade
+42000000,Retail Trade,Retail Trade
+43000000,"Transportation, Warehousing & Utilitie","Transportation, Warehousing & Utilities"
+50000000,Information,Information
+55000000,Financial Activities,Financial Activities
+60000000,Professional and Business Services,Professional & Business Services
+65000000,Educational and Health Services,Educational & Health Services
+70000000,Leisure and Hospitality,Leisure & Hospitality
+80000000,Other Services,Other Services
+90000000,Government,Government
+10113300,Logging,Logging
+10210000,Mining,Mining
+10211000,Oil & Gas Extraction,Oil & Gas Extraction
+10212000,"Mining, except Oil & Gas","Mining, except Oil & Gas"
+10213000,Support Activities for Mining,Support Activities for Mining
+43220000,Utilities,Utilities
+43221100,"Electric Power Gen, Trans & Distribution","Electric Power Generation, Trans & Distribution"
+43221200,Natural Gas Distribution,Natural Gas Distribution
+20236000,Construction of Buildings,Construction of Buildings
+20236100,Residential Building Construction,Residential Building Construction
+20236200,Nonresidential Building Construction,Nonresidential Building Construction
+20237000,Heavy and Civil Engineering Construction,Heavy & Civil Engineering Construction
+20237100,Utility System Const.,Utility System Construction
+20237200,Land Subdivision,Land Subdivision
+20237300,"Highway, Street, and Bridge Const","Highway, Street, & Bridge Construction"
+20237900,Other Heavy & Civil Engineer,Other Heavy & Civil Engineering Construction
+20238000,Specialty Trade Contractors,Specialty Trade Contractors
+20238100,Building Foundation and Exterior Contrac,Building Foundation & Exterior Contractors
+20238200,Building Equipment Contractors,Building Equipment Contractors
+20238300,Building Finishing Contractors,Building Finishing Contractors
+20238900,Other Specialty Trade Contract,Other Specialty Trade Contractors
+32311000,Food Manufacturing,Food Manufacturing
+32311400,Fruit & Vegetable Preserving & Specialty,Fruit & Vegetable Preserving & Specialty Food
+32311500,Dairy Product Manufacturing,Dairy Product Manufacturing
+32311600,Animal Slaughtering and Processing,Animal Slaughtering & Processing
+32311800,Bakeries and Tortilla Manufacturing,Bakeries & Tortilla Manufacturing
+32311900,Other Food Mfg.,Other Food Manufacturing
+32312000,Beverage and Tobacco Product Mfg,Beverage & Tobacco Product Manufacturing
+32313000,ResidualTextile Mills,Textile Mills
+32314000,Textile Product Mills,Textile Product Mills
+32315000,Apparel Manufacturing,Apparel Manufacturing
+32315100,Apparel Knitting Mills,Apparel Knitting Mills
+32315200,Cut and Sew Apparel Manufacturing,Cut & Sew Apparel Manufacturing
+31321000,Wood Product Manufacturing,Wood Product Manufacturing
+31321900,Other Wood Product Mfg.,Other Wood Product Manufacturing
+32322000,Paper Manufacturing,Paper Manufacturing
+32322200,Converted Paper Product Mfg.,Converted Paper Product Manufacturing
+32323000,Printing and Related Support Activities,Printing & Related Support Activities
+32324000,Petroleum and Coal Products Manufacturin,Petroleum & Coal Products Manufacturing
+32325000,Chemical Manufacturing,Chemical Manufacturing
+32325400,Pharmaceutical and Medicine Manufacturin,Pharmaceutical & Medicine Manufacturing
+32325600,"Soap, Cleaning Compound & Toiletry Mfg.","Soap, Cleaning Compound & Toiletry Manufacturing"
+32326000,Plastics and Rubber Products Manufacturi,Plastics & Rubber Products Manufacturing
+31327000,Nonmetallic Mineral Product Mfg.,Nonmetallic Mineral Product Manufacturing
+31331000,Primary Metal Manufacturing,Primary Metal Manufacturing
+31332000,Fabricated Metal Product Mfg,Fabricated Metal Product Manufacturing
+31332300,Architectural & Structural Metals Mfg.,Architectural & Structural Metals Manufacturing
+31332700,Machine Shops & Threaded Product Mfg.,Machine Shops & Threaded Product Manufacturing
+31332900,Other Fabricated Metal Product Mfg.,Other Fabricated Metal Product Manufacturing
+31333000,Machinery Manufacturing,Machinery Manufacturing
+31333200,Industrial Machinery Manufacturing,Industrial Machinery Manufacturing
+31333300,Commercial and Service Industry Manufact,Commercial & Service Industry Manufacturing
+31333500,Metalworking Machinery Mfg.,Metalworking Machinery Manufacturing
+31333900,ResidualOther General Purpose Machinery,Other General Purpose Machinery Manufacturing
+31334000,Computer and Electronic Product Manufact,Computer & Electronic Product Manufacturing
+31334100,Computer and Peripheral Equipment Manufa,Computer & Peripheral Equipment Manufacturing
+31334111,Electronic Computer Manufacturing,Electronic Computer Manufacturing
+31334200,Communications Equipment Manufacturing,Communications Equipment Manufacturing
+31334400,Semiconductor and Electronic Component M,Semiconductor & Electronic Component Mfg
+31334412,Bare Printed Circuit Board Manufacturing,Bare Printed Circuit Board Manufacturing
+31334413,Semiconductor and Related Devices Manufa,Semiconductor & Related Devices Manufacturing
+31334500,Electronic Instrument Manufacturing,Electronic Instrument Manufacturing
+31335000,Electrical Equipment and Appliance Manuf,Electrical Equipment & Appliance Manufacturing
+31336000,Transportation Equipment Manufacturing,Transportation Equipment Manufacturing
+31336100,Motor Vehicle Mfg.,Motor Vehicle Manufacturing
+31336400,Aerospace Product and Parts Manufacturin,Aerospace Product & Parts Manufacturing
+31336600,Ship and Boat Building,Ship & Boat Building
+31337000,Furniture and Related Product Manufactur,Furniture & Related Product Manufacturing
+31337100,Household and Institutional Furniture Ma,Household & Institutional Furniture Mfg
+31339000,Miscellaneous Durable Goods Manufacturing,Miscellaneous Durable Goods Manufacturing
+31339100,Medical Equipment & Supplies Mfg.,Medical Equipment & Supplies Manufacturing
+31339900,Other Miscellaneous Durable Goods Mfg.,Other Miscellaneous Durable Goods Manufacturing
+43400089,Transportation and Warehousing,Transportation & Warehousing
+41423000,"Merchant Wholesalers, Durable Goods","Merchant Wholesalers, Durable Goods"
+41423100,Motor Vehicle and Motor Vehicle Parts Me,Motor Vehicle & Parts Merchant Wholesalers
+41423200,Furniture & Home Furnish Merch whole,Furniture & Home Furnishing Merchant Wholesalers
+41423300,Lumber & Other Const. Mat Merch whole,Lumber & Other Const Materials Merch Wholesalers
+41423400,Professional and Commercial Equipment Me,Prof & Commercial Equip Merchant Wholesalers
+41423600,Electrical and Electronic Goods Merchant,Electrical & Electronic Goods Merch Wholesalers
+41423700,"Hdwr, Plumb & Heating Merchant whole","Hardware, Plumb & Heating Merchant Wholesalers"
+41423800,"Machinery, Equipment and Supplies Mercha","Machinery, Equip & Supplies Merchant Wholesalers"
+41424000,"Merchant Wholesalers, Nondurable Goods","Merchant Wholesalers, Nondurable Goods"
+41424100,Paper & Paper Products Merchant whole,Paper & Paper Products Merchant Wholesalers
+41424300,"Apparel, Piece Gds & Notions Merch whole","Apparel, Piece Goods & Notions Merch Wholesalers"
+41424400,Grocery & Related Products Merchant whol,Grocery & Related Products Merchant Wholesalers
+41424600,Chemical & Allied Products Merchant whol,Chemical & Allied Products Merchant Wholesalers
+41424900,Misc Nondurable Merchant Wholesalers,Misc Nondurable Goods Merchant Wholesalers
+41425000,Wholesale Electronic Markets and Agents,Wholesalers Electronic Markets Agents & Brokers
+42441000,Motor Vehicle and Parts Dealer,Motor Vehicle & Parts Dealer
+42441100,Automobile Dealers,Automobile Dealers
+42441200,Other Motor Vehicle Dealers,Other Motor Vehicle Dealers
+42441300,"Automotive Parts, Accessories and Tire S","Auto Parts, Accessories & Tire Stores"
+42442000,Furniture and Home Furnishings Stores,Furniture & Home Furnishings Stores
+42442100,Furniture Stores,Furniture Stores
+42442200,Home Furnishings Stores,Home Furnishings Stores
+42443000,Electronics and Appliance Stores,Electronics & Appliance Stores
+42444000,Building Material and Garden Equipment S,Building Material & Garden Equip Stores
+42444100,Building Material and Supplies Dealers,Building Material & Supplies Dealers
+42445000,Food and Beverage Stores,Food & Beverage Stores
+42445100,Grocery Stores,Grocery Stores
+42445200,Specialty Food Stores,Specialty Food Stores
+42445300,"Beer, Wine, & Liquor Stores","Beer, Wine & Liquor Stores"
+42446000,Health and Personal Care Stores,Health & Personal Care Stores
+42447000,Gasoline Stations,Gasoline Stations
+42448000,Clothing and Clothing Accessories Stores,Clothing & Clothing Accessories Stores
+42448100,Clothing Stores,Clothing Stores
+42448300,"Jewelry, Luggage & Leather Gds Stores","Jewelry, Luggage & Leather Goods Stores"
+42451000,"Sporting Goods, Hobby, Book and Music St","Sporting Goods, Hobby, Book & Music Stores"
+42451100,"Sporting Goods, Hobby and Musical Instru","Sporting Goods, Hobby & Musical Instrument Store"
+42451200,"Book, Periodical and Music Stores","Book, Periodical & Music Stores"
+42452000,General Merchandise Stores,General Merchandise Stores
+42452200,Department Stores,Department Stores
+42452300,"General Merchandise Stores, including Warehouse Clubs and Supercenters",General Merchandise Stores
+42453000,Miscellaneous Store Retailers,Miscellaneous Store Retailers
+42453200,"Office Supplies, Stationery & Gift Store","Office Supplies, Stationery & Gift Stores"
+42453300,Used Merch&ise Stores,Used Merchandise Stores
+42453900,Other Miscellaneous Store Retailers,Other Miscellaneous Store Retailers
+42454000,Nonstore Retailers,Nonstore Retailers
+42454100,Electronic Shopping & Mail-Order,Electronic Shopping & Mail-Order
+43481000,Air Transportation,Air Transportation
+43481100,Scheduled Air transp.,Scheduled Air Transportation
+43484000,Truck Transportation,Truck Transportation
+43484100,General Freight Trucking,General Freight Trucking
+43484200,Specialized Freight Trucking,Specialized Freight Trucking
+43485000,Transit and Ground Passenger Transportat,Transit & Ground Passenger Transportation
+43488000,Support Activities for Transportation,Support Activities for Transportation
+43488300,Support Activities for Water transp.,Support Activities for Water Transportation
+43488400,Support Activities for Road transp.,Support Activities for Road Transportation
+43488500,Freight transp. Arrangement,Freight Transportation Arrangement
+43492000,Couriers and Messengers,Couriers & Messengers
+43493000,Warehousing and Storage,Warehousing & Storage
+50511000,Publishing Industries (except Internet),Publishing Industries (except Internet)
+50511100,"Newspaper, Periodical, Book and Director","Newspaper, Periodical, Book & Directory Publishers"
+50511200,Software Publishers,Software Publishers
+50512000,Motion Picture and Sound Recording,Motion Picture & Sound Recording Industries
+50512100,Motion Picture & Video Industries,Motion Picture & Video Industries
+50512110,Motion Picture & Video Production,Motion Picture & Video Production
+50515000,Broadcasting (except Internet),Broadcasting (except Internet)
+50515100,Radio and Television Broadcasting,Radio & Television Broadcasting
+50515200,Cable and Other Subscription Programming,Cable & Other Subscription Programming
+50517000,Telecommunications,Telecommunications
+50517311,Wired Telecommunications Carriers,Wired Telecommunications Carriers
+50518000,"Data Processing, Hosting & Related Services","Data Processing, Hosting & Related Services"
+50519000,Other Information Serv.,Other Information Services
+55520000,Finance and Insurance,Finance & Insurance
+55522000,Credit Intermediation and Related Activi,Credit Intermediation & Related Activities
+55522100,Depository Credit Intermediation,Depository Credit Intermediation
+55522200,Nondepository Credit Intermediation,Nondepository Credit Intermediation
+55522300,Activities Related to Credit Intermediat,Activities Related to Credit Intermediation
+55523000,"Securities, Commodity Contracts and Inve","Securities, Commodity Contracts & Investments"
+55523100,Securities & Commodity Contracts,Securities & Commodity Contracts
+55523900,Other Financial Investment Activities,Other Financial Investment Activities
+55524000,Insurance Carriers and Related,Insurance Carriers & Related Activities
+55524100,Insurance Carriers,Insurance Carriers
+55524200,"Agencies, Brokerages, and Other Insuranc","Agencies, Broker & Other Insurance Related Act"
+55530000,Real Estate and Rental and Leasing,Real Estate & Rental & Leasing
+55531000,Real Estate,Real Estate
+55531100,Lessors of Real Estate,Lessors of Real Estate
+55531200,Offices of Real Estate Agents and Broker,Offices of Real Estate Agents & Brokers
+55531300,Activities Related to Real Estate,Activities Related to Real Estate
+55532000,Rental and Leasing Services,Rental & Leasing Services
+55532100,Automotive Equipment Rental and Leasing,Auto Equipment Rental & Leasing
+55532200,Consumer Goods Rental,Consumer Goods Rental
+55532300,General Rental Centers,General Rental Centers
+55532400,Comm & Industrial Mach Rental & Leasing,Commercial & Industrial Mach Rental & Leasing
+60540000,"Professional, Scientific and Technical S","Professional, Scientific & Technical Services"
+60541100,Legal Services,Legal Services
+60541200,"Accounting, Tax Preparation and Bookkeep","Accounting, Tax Preparation & Bookkeeping Services"
+60541300,"Architectural, Engineering and Related S","Architectural, Engineering & Related Services"
+60541400,Specialized Design Services,Specialized Design Services
+60541500,Computer Systems Design and Related Serv,Computer Systems Design & Related Services
+60541600,"Management, Scientific and Technical Con","Mgmt, Scientific & Technical Consulting Services"
+60541700,Scientific Research and Development Serv,Scientific Research & Development Services
+60541800,Advertising and Related Services,Advertising & Related Services
+60541900,"Other Professional, Scientific and Techn","Other Prof., Scientific & Technical Services"
+60550000,Management of Companies and Enterprises,Management of Companies & Enterprises
+60560000,Administrative and Support and Waste Ser,Administrative & Support & Waste Services
+60561000,Administrative and Support Services,Administrative & Support Services
+60561100,Office Administrative Services,Office Administrative Services
+60561200,Facilities Support Serv.,Facilities Support Services
+60561300,Employment Services,Employment Services
+60561400,Business Support Services,Business Support Services
+60561500,Travel Arrangement and Reservation Servi,Travel Arrangement & Reservation Services
+60561600,Investigation and Security Services,Investigation & Security Services
+60561700,Services to Buildings and Dwellings,Services to Buildings & Dwellings
+60561900,ResidualOther Support Services,Other Support Services
+60562000,Waste Management and Remediation Service,Waste Management & Remediation Services
+65610000,Educational Services,Educational Services
+65611100,Elementary and Secondary Schools,Elementary & Secondary Schools
+65611200,Junior Colleges,Junior Colleges
+65611300,"Colleges, Universities and Professional","Colleges, Universities & Professional Schools"
+65611600,Other Schools & Instruction,Other Schools & Instruction
+65620000,Health Care and Social Assistance,Health Care & Social Assistance
+65621000,Ambulatory Health Care Services,Ambulatory Health Care Services
+65621100,Offices of Physicians,Offices of Physicians
+65621200,Offices of Dentists,Offices of Dentists
+65621300,Offices of Other Health Practitioners,Offices of Other Health Practitioners
+65621400,Outpatient Care Centers,Outpatient Care Centers
+65621500,Medical & Diagnostic Laboratories,Medical & Diagnostic Laboratories
+65621600,Home Health Care Serv.,Home Health Care Services
+65621900,Other Ambulatory Health Care Serv.,Other Ambulatory Health Care Services
+65622000,Hospitals,Hospitals
+65622100,General Medical & Surgical Hosp.s,General Medical & Surgical Hospitals
+65622200,Psychiatric & Substance Abuse Hosp,Psychiatric & Substance Abuse Hospitals
+65622300,"Specialty (not Psych, Sub Abuse) Hosp.","Specialty (not Psych, Sub Abuse) Hospitals"
+65623000,Nursing and Residential Care Facilities,Nursing & Residential Care Facilities
+65623100,Nursing Care Facilities,Nursing Care Facilities
+65623200,"Residential Mental Retardation, Mental a",Resident Mental Retardation & Substance Abuse
+65623300,Comm Care Facilities for the Elderly,Community Care Facilities for the Elderly
+65623900,Other Residential Care Facilities,Other Residential Care Facilities
+65624000,Social Assistance,Social Assistance
+65624100,Individual and Family Services,Individual & Family Services
+65624200,"Community Food & Housing, & Emergency &",Community Emergency & Other Relief Services
+65624300,Vocational Rehabilitation Services,Vocational Rehabilitation Services
+65624400,Child Day Care Services,Child Day Care Services
+70710000,"Arts, Entertainment, and Recreation","Arts, Entertainment & Recreation"
+70711000,"Performing Arts, Spectator Sports","Performing Arts, Spectator Sports"
+70711100,Performing Arts Companies,Performing Arts Companies
+70711200,Spectator Sports,Spectator Sports
+70711500,"Independent Artists, Writers, and Perfor","Independent Artists, Writers & Performers"
+70712000,"Museums, Historical Sites, and Similar I","Museums, Historical Sites & Similar Institutions"
+70713000,"Amusement, Gambling, and Recreation","Amusement, Gambling & Recreation Industries"
+70713100,Amusement Parks and Arcades,Amusement Parks & Arcades
+70713200,Gambling Industries,Gambling Industries
+70713900,Other Amusement and Recreation,Other Amusement & Recreation Industries
+70720000,Accommodation and Food Service,Accommodation & Food Services
+70721000,Accommodation,Accommodation
+70722000,Food Services and Drinking Places,Food Services & Drinking Places
+70722300,Special Food Services,Special Food Services
+70722400,Drinking Places (Alcoholic Beverages),Drinking Places (Alcoholic Beverages)
+70722511,Full-Service Restaurants,Full-Service Restaurants
+70722590,Limited-Service Eating Places,Limited-Service Eating Places
+80811000,Repair and Maintenance,Repair & Maintenance
+80811100,Auto Repair & Maintenance,Automotive Repair & Maintenance
+80811300,Commercial & Industrial Machinery,Commercial & Industrial Machinery
+80811400,Personal & Household Goods Repair,Personal & Household Goods Repair
+80812000,Personal and Laundry Services,Personal & Laundry Services
+80812100,Personal Care Serv.,Personal Care Services
+80812300,Drycleaning & Laundry Serv.,Drycleaning & Laundry Services
+80812900,Other Personal Services,Other Personal Services
+80813000,"Religious, Grantmaking, Civic, Professio","Religious, Grants, Civic, Professional & Like Org"
+80813100,Religious Organizations,Religious Organizations
+80813200,Grantmaking & Giving Serv.,Grantmaking & Giving Services
+80813300,Social Advocacy Organizations,Social Advocacy Organizations
+80813400,Civic & Social Organizations,Civic & Social Organizations
+80813900,"Bus,Labor, Political & Other like Org.","Business, Labor, Political & Similar Organizations"
+90910000,Federal Government,Federal Government
+90912991,Federal Government excluding Department of Defense,Federal Government excluding Department of Defense
+90919110,Department of Defense,Department of Defense
+90920000,State Government,State Government
+90921611,State Government Education,State Government Education
+90922000,State Government Excluding Education,State Government Excluding Education
+90930000,Local Government,Local Government
+90931150,Indian Tribes,Indian Tribes
+90931611,Local Government Education,Local Government Education
+90932000,Local Government Excluding Education,Local Government Excluding Education
+90939012,County,County
+90939022,City,City
+90939032,Special Districts,Special Districts
+90940000,State and Local Government,State & Local Government
