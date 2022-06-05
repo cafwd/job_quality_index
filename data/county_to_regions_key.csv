@@ -1,59 +1,59 @@
 COUNTYFIP,County,Rural/Urban,CDI Regions,CERF Regions,Population
-1,Alameda,Urban,Bay Area,Bay Area,"1,656,754"
-13,Contra Costa,Urban,Bay Area,Bay Area,"1,142,251"
-95,Solano,Urban,Bay Area,Bay Area,"441,829"
-81,San Mateo,Urban,Bay Area,Bay Area,"767,423"
-85,Santa Clara,Urban,Bay Area,Bay Area,"1,927,470"
-41,Marin,Urban,Bay Area,Bay Area,"259,943"
-55,Napa,Rural,Bay Area,Bay Area,"139,623"
-75,San Francisco,Urban,Bay Area,Bay Area,"874,961"
-97,Sonoma,Rural,Bay Area,Bay Area,"499,772"
-53,Monterey,Urban,Central Coast,Central Coast,"433,410"
-79,San Luis Obispo,Rural,Central Coast,Central Coast,"282,165"
-83,Santa Barbara,Urban,Central Coast,Central Coast,"444,829"
-69,San Benito,Rural,Central Coast,Central Coast,"60,376"
-87,Santa Cruz,Urban,Central Coast,Central Coast,"273,962"
-43,Mariposa,Rural,Sierra Nevada,Eastern Sierra,"17,420"
-39,Madera,Rural,Central Valley,Central San Joaquin,"155,433"
-51,Mono,Rural,Sierra Nevada,Eastern Sierra,"14,310"
-77,San Joaquin,Urban,Central Valley,Northern San Joaquin,"742,603"
-19,Fresno,Urban,Central Valley,Central San Joaquin,"984,521"
-29,Kern,Urban,Central Valley,Kern,"887,641"
-107,Tulare,Rural,Central Valley,Central San Joaquin,"461,898"
-99,Stanislaus,Urban,Central Valley,Northern San Joaquin,"543,194"
-3,Alpine,Rural,Sierra Nevada,Eastern Sierra,"1,039"
-5,Amador,Rural,Sierra Nevada,Eastern Sierra,"38,429"
-9,Calaveras,Rural,Sierra Nevada,Eastern Sierra,"45,514"
-27,Inyo,Rural,Sierra Nevada,Eastern Sierra,"17,977"
-109,Tuolumne,Rural,Sierra Nevada,Eastern Sierra,"54,045"
-47,Merced,Rural,Central Valley,Northern San Joaquin,"271,382"
-31,Kings,Urban,Central Valley,Central San Joaquin,"150,691"
-111,Ventura,Urban,Central Coast,Central Coast,"847,263"
-37,Los Angeles,Urban,Los Angeles,Los Angeles,"10,081,570"
-71,San Bernardino,Urban,Inland Empire,Inland Empire,"2,149,031"
-65,Riverside,Urban,Inland Empire,Inland Empire,"2,411,439"
-15,Del Norte,Rural,Redwood Coast,Redwood Coast,"27,495"
-23,Humboldt,Rural,Redwood Coast,Redwood Coast,"135,940"
-103,Tehama,Rural,Shasta / Cascades,North State,"63,912"
-93,Siskiyou,Rural,Shasta / Cascades,North State,"43,468"
-35,Lassen,Rural,Sierra Nevada,North State,"30,818"
-57,Nevada,Rural,Sierra Nevada,North State,"99,244"
-63,Plumas,Rural,Sierra Nevada,North State,"18,660"
-49,Modoc,Rural,Sierra Nevada,North State,"8,907"
-89,Shasta,Rural,Shasta / Cascades,North State,"179,212"
-7,Butte,Rural,Shasta / Cascades,North State,"225,817"
-33,Lake,Rural,Shasta / Cascades,Redwood Coast,"64,195"
-11,Colusa,Rural,Shasta / Cascades,Sacramento,"21,454"
-21,Glenn,Rural,Shasta / Cascades,North State,"27,976"
-91,Sierra,Rural,Sierra Nevada,North State,"3,040"
-105,Trinity,Rural,Shasta / Cascades,North State,"12,700"
-45,Mendocino,Rural,Redwood Coast,Redwood Coast,"87,224"
-59,Orange,Urban,Orange,Orange,"3,168,044"
-67,Sacramento,Urban,Sacramento,Sacramento,"1,524,553"
-17,El Dorado,Rural,Sacramento,Sacramento,"188,563"
-113,Yolo,Rural,Sacramento,Sacramento,"217,352"
-115,Yuba,Rural,Sacramento,Sacramento,"76,360"
-61,Placer,Rural,Sacramento,Sacramento,"385,512"
-101,Sutter,Rural,Sacramento,Sacramento,"96,109"
-73,San Diego,Urban,San Diego-Imperial,San Diego-Imperial,"3,316,073"
-25,Imperial,Rural,San Diego-Imperial,San Diego-Imperial,"180,701"
+1,Alameda,Urban,Bay Area,Bay Area,1656754
+13,Contra Costa,Urban,Bay Area,Bay Area,1142251
+95,Solano,Urban,Bay Area,Bay Area,441829
+81,San Mateo,Urban,Bay Area,Bay Area,767423
+85,Santa Clara,Urban,Bay Area,Bay Area,1927470
+41,Marin,Urban,Bay Area,Bay Area,259943
+55,Napa,Rural,Bay Area,Bay Area,139623
+75,San Francisco,Urban,Bay Area,Bay Area,874961
+97,Sonoma,Rural,Bay Area,Bay Area,499772
+53,Monterey,Urban,Central Coast,Central Coast,433410
+79,San Luis Obispo,Rural,Central Coast,Central Coast,282165
+83,Santa Barbara,Urban,Central Coast,Central Coast,444829
+69,San Benito,Rural,Central Coast,Central Coast,60376
+87,Santa Cruz,Urban,Central Coast,Central Coast,273962
+43,Mariposa,Rural,Sierra Nevada,Eastern Sierra,17420
+39,Madera,Rural,Central Valley,Central San Joaquin,155433
+51,Mono,Rural,Sierra Nevada,Eastern Sierra,14310
+77,San Joaquin,Urban,Central Valley,Northern San Joaquin,742603
+19,Fresno,Urban,Central Valley,Central San Joaquin,984521
+29,Kern,Urban,Central Valley,Kern,887641
+107,Tulare,Rural,Central Valley,Central San Joaquin,461898
+99,Stanislaus,Urban,Central Valley,Northern San Joaquin,543194
+3,Alpine,Rural,Sierra Nevada,Eastern Sierra,1039
+5,Amador,Rural,Sierra Nevada,Eastern Sierra,38429
+9,Calaveras,Rural,Sierra Nevada,Eastern Sierra,45514
+27,Inyo,Rural,Sierra Nevada,Eastern Sierra,17977
+109,Tuolumne,Rural,Sierra Nevada,Eastern Sierra,54045
+47,Merced,Rural,Central Valley,Northern San Joaquin,271382
+31,Kings,Urban,Central Valley,Central San Joaquin,150691
+111,Ventura,Urban,Central Coast,Central Coast,847263
+37,Los Angeles,Urban,Los Angeles,Los Angeles,10081570
+71,San Bernardino,Urban,Inland Empire,Inland Empire,2149031
+65,Riverside,Urban,Inland Empire,Inland Empire,2411439
+15,Del Norte,Rural,Redwood Coast,Redwood Coast,27495
+23,Humboldt,Rural,Redwood Coast,Redwood Coast,135940
+103,Tehama,Rural,Shasta / Cascades,North State,63912
+93,Siskiyou,Rural,Shasta / Cascades,North State,43468
+35,Lassen,Rural,Sierra Nevada,North State,30818
+57,Nevada,Rural,Sierra Nevada,North State,99244
+63,Plumas,Rural,Sierra Nevada,North State,18660
+49,Modoc,Rural,Sierra Nevada,North State,8907
+89,Shasta,Rural,Shasta / Cascades,North State,179212
+7,Butte,Rural,Shasta / Cascades,North State,225817
+33,Lake,Rural,Shasta / Cascades,Redwood Coast,64195
+11,Colusa,Rural,Shasta / Cascades,Sacramento,21454
+21,Glenn,Rural,Shasta / Cascades,North State,27976
+91,Sierra,Rural,Sierra Nevada,North State,3040
+105,Trinity,Rural,Shasta / Cascades,North State,12700
+45,Mendocino,Rural,Redwood Coast,Redwood Coast,87224
+59,Orange,Urban,Orange,Orange,3168044
+67,Sacramento,Urban,Sacramento,Sacramento,1524553
+17,El Dorado,Rural,Sacramento,Sacramento,188563
+113,Yolo,Rural,Sacramento,Sacramento,217352
+115,Yuba,Rural,Sacramento,Sacramento,76360
+61,Placer,Rural,Sacramento,Sacramento,385512
+101,Sutter,Rural,Sacramento,Sacramento,96109
+73,San Diego,Urban,San Diego-Imperial,San Diego-Imperial,3316073
+25,Imperial,Rural,San Diego-Imperial,San Diego-Imperial,180701
