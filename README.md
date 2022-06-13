@@ -24,6 +24,15 @@ The following fields should be selected when creating a dataset:
 - STATEFIP
 - YEAR
 
+**Data File Location**
+Due to the size of the IPUMS datasets, they cannot be stored in the repository and must be in the correct file location when generating high wage outputs. Begin by cloning and pulling the repository, so all other file locations are in place. Then, add any year of IPUMS data to the data folder with the following location and naming convention:
+
+Location: `data/ipums`
+
+Naming Convention: `IPUMS_{YEAR}.csv`
+
+Example: `data/ipums/IPUMS_2020`
+
 ### County to Region Information
 
 This is a translational spreadsheet to show how California has been divided by county into the Community Economic Resiliency Fund (CERF) regions. This spreadsheet can be found in this repository, under:
