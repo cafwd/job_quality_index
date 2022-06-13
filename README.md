@@ -1,5 +1,7 @@
 # CAFWD Job Quality Index
 
+The full documentation can be found [here](https://docs.google.com/document/d/1YGyLF0LoafMH-IuZ94a7Bw1o3q0IpqfXUlEY1c62RrU/edit).
+
 ## Data Sources
 
 ### EDD
