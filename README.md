@@ -25,6 +25,7 @@ The following fields should be selected when creating a dataset:
 - YEAR
 
 **Data File Location**
+
 Due to the size of the IPUMS datasets, they cannot be stored in the repository and must be in the correct file location when generating high wage outputs. Begin by cloning and pulling the repository, so all other file locations are in place. Then, add any year of IPUMS data to the data folder with the following location and naming convention:
 
 Location: `data/ipums`
