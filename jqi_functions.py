@@ -16,7 +16,7 @@ def normalize_titles(col):
     col = col.apply(lambda x:''.join([i for i in x if i not in string.punctuation]))
     return col
 
-def cleaned_ipums(year: str):
+def cleaned_ipums(year: str, demo = False):
     """
     Function to clean IPUMS data for the specified year.
     Currently has hardcoded file paths for naics_parsed_crosswalk and 
@@ -25,6 +25,9 @@ def cleaned_ipums(year: str):
     """
     """
     Minimum wage data found here: https://www.dir.ca.gov/iwc/minimumwagehistory.htm
+    """
+    """
+    Set demo = True if racial demographics needs to be included in dataset.
     """
     cwd = os.getcwd()
     
@@ -38,13 +41,17 @@ def cleaned_ipums(year: str):
     min_wage = min_wages[int(year)] * 30 * 50
     ipums = pd.read_csv(f'{cwd}/data/ipums/IPUMS_{year}.csv')
     ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy()
-    ca_ipums = ca_ipums[['YEAR', 'COUNTYFIP', 'INDNAICS','PERWT','INCWAGE']]
+    if demo == True:
+        ca_ipums = ca_ipums[['YEAR', 'COUNTYFIP', 'INDNAICS','PERWT','RACE','HISPAN','INCWAGE']]
+    else:
+        ca_ipums = ca_ipums[['YEAR', 'COUNTYFIP', 'INDNAICS','PERWT','INCWAGE']]
     ca_ipums = ca_ipums.loc[ca_ipums['INCWAGE'] >= min_wage].reset_index().iloc[:,1:] # filter by full time employees
     ipums_titles = pd.read_csv(f'{cwd}/data/ipums/ind_indnaics_crosswalk_2000_onward_without_code_descriptions.csv')
     ipums_titles = ipums_titles.iloc[2:]
-    ipums_titles = ipums_titles.iloc[:,9:]
+    ipums_titles = ipums_titles.iloc[:,8:]
     ipums_titles['2018 Onward ACS/PRCS INDNAICS CODE'] = normalize_titles(ipums_titles['2018 Onward ACS/PRCS INDNAICS CODE'])
     ipums_titles['2013-2017 ACS/PRCS INDNAICS CODE'] = normalize_titles(ipums_titles['2013-2017 ACS/PRCS INDNAICS CODE'])
+    ipums_titles['2008-2012 ACS/PRCS INDNAICS CODE'] = normalize_titles(ipums_titles['2008-2012 ACS/PRCS INDNAICS CODE'])
     ca_ipums['INDNAICS'] = normalize_titles(ca_ipums['INDNAICS'])
     if int(year) >= 2018:
         ipums_titles = ipums_titles[['2018 Onward ACS/PRCS INDNAICS CODE', 'Industry Title']]
@@ -104,22 +111,6 @@ def add_to_region_df(df):
                            'unwt_reg_ind_counts_x':'unwt_reg_ind_counts'})
     return df
 
-# def add_to_community_df(df):
-#     """
-#     Add high wage threshold and percentage features at the rural/urban level.
-#     """
-#     df['above_comm_thresh'] = df['INCWAGE'] > df['Rural/Urban COL']
-#     df["above_comm_thresh"] = df["above_comm_thresh"].astype(int)
-#     df["wt_comm_above_thresh"] = df["above_comm_thresh"] * df['PERWT'] 
-#     df_agg = df.groupby(['Crosswalk Value','Rural/Urban']).agg(wt_comm_ind_counts = ('PERWT','sum'),
-#                                                      wt_comm_high_wage_count = ('wt_comm_above_thresh','sum'),
-#                                                      unwt_comm_ind_counts = ('Crosswalk Value','count')).reset_index()
-#     df = pd.merge(df, df_agg, on=['Crosswalk Value', 'Rural/Urban'])
-#     df['wt_comm_high_wage_perc'] = (df['wt_comm_high_wage_count'] / df['wt_comm_ind_counts']) * 100
-#     df = df.rename(columns={"Rural/Urban_x": "Rural/Urban", 'wt_comm_high_wage_count_x':'wt_comm_high_wage_count','wt_comm_ind_counts_x':'wt_comm_ind_counts',
-#                            'unwt_comm_ind_counts_x':'unwt_comm_ind_counts'})
-#     return df
-
 def add_geo_high_wages(df):
     """
     Add all high wage threshold and percentage features at every geographical level 
@@ -128,7 +119,6 @@ def add_geo_high_wages(df):
     """
     df_new = df.copy() # initialize new dataframe
     df_new = add_to_state_df(df_new) # creating state level counts
-#     df_new = add_to_community_df(df_new) # creating rural/urban level counts
     df_new = add_to_region_df(df_new) # creating regional level counts
     return df_new
 
@@ -151,8 +141,6 @@ def edd_to_hw(edd_df, ipums_df_hw, region: str, crosswalk_val: int, date: str, s
     # sample size logic
     if edd_df['unwt_reg_ind_counts'].values[0] >= sample_size:
         hw_perc = edd_df['wt_reg_high_wage_perc'].values[0]
-#     elif edd_df['unwt_comm_ind_counts'].values[0] >= sample_size:
-#         hw_perc = edd_df['wt_comm_high_wage_perc'].values[0]
     elif edd_df['unwt_ind_counts'].values[0] >= sample_size:
         hw_perc = edd_df['wt_CA_high_wage_perc'].values[0]
     else:
@@ -275,7 +263,7 @@ def clean_edd(edd, edd_titles_crosswalk, edd_to_ipums_crosswalk, county_info):
     """
     edd['Area Name'] = edd['Area Name'].str.replace(' County', '')
     edd = edd.loc[edd['Area Type'] == 'County']
-    edd = edd.loc[edd['Year'] >= 2014]
+    edd = edd.loc[edd['Year'] >= 2010]
     edd = pd.merge(edd, edd_titles_crosswalk, on='Series Code')
     edd = edd.drop(columns=['Industry Title', 'EDD Industry Title'])
     edd = edd.rename(columns={'LMID Industry Title':'Industry Title'})
@@ -287,50 +275,3 @@ def clean_edd(edd, edd_titles_crosswalk, edd_to_ipums_crosswalk, county_info):
        'Seasonally Adjusted', 'Current Employment', 'Industry Title',
        'COUNTYFIP', 'County', 'Rural/Urban', 'CERF Regions', 'Crosswalk Value']]
     return edd
-
-def cleaned_ipums_demo(year: str):
-    """
-    Function to clean IPUMS data specifically for a race/demographics breakdown for the specified year.
-    Currently has hardcoded file paths for naics_parsed_crosswalk and 
-    ind_indnaics_crosswalk_2000_onward_without_code_descriptions csv files.
-    Assumption of full time employees is anyone with INCWAGE >= minimum wage * 30 hours * 50 weeks
-    """
-    """
-    Minimum wage data found here: https://www.dir.ca.gov/iwc/minimumwagehistory.htm
-    """
-    cwd = os.getcwd()
-    
-    if int(year) < 2014:
-        print('Invalid year')
-        return None
-    min_wages = {2010:8, 2011:8, 2012:8, 2013:8, 
-                 2014:9, 2015:9, 2016:10, 2017:10, 
-                 2018:10.5, 2019:11, 2020:12, 
-                 2021:13, 2022:14}
-    min_wage = min_wages[int(year)] * 30 * 50
-    ipums = pd.read_csv(f'{cwd}/data/ipums/IPUMS_{year}.csv')
-    ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy()
-    ca_ipums = ca_ipums[['YEAR', 'COUNTYFIP', 'INDNAICS','PERWT','RACE','HISPAN','INCWAGE']]
-    ca_ipums = ca_ipums.loc[ca_ipums['INCWAGE'] >= min_wage].reset_index().iloc[:,1:] # filter by full time employees
-    ipums_titles = pd.read_csv(f'{cwd}/data/ipums/ind_indnaics_crosswalk_2000_onward_without_code_descriptions.csv')
-    ipums_titles = ipums_titles.iloc[2:]
-    ipums_titles = ipums_titles.iloc[:,9:]
-    ipums_titles['2018 Onward ACS/PRCS INDNAICS CODE'] = normalize_titles(ipums_titles['2018 Onward ACS/PRCS INDNAICS CODE'])
-    ipums_titles['2013-2017 ACS/PRCS INDNAICS CODE'] = normalize_titles(ipums_titles['2013-2017 ACS/PRCS INDNAICS CODE'])
-    ca_ipums['INDNAICS'] = normalize_titles(ca_ipums['INDNAICS'])
-    if int(year) >= 2018:
-        ipums_titles = ipums_titles[['2018 Onward ACS/PRCS INDNAICS CODE', 'Industry Title']]
-        merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2018 Onward ACS/PRCS INDNAICS CODE')
-        merged_ipums = merged_ipums.rename(columns={"2018 Onward ACS/PRCS INDNAICS CODE": "NAICS Code"})
-    elif 2013 <= int(year) <= 2017:
-        ipums_titles = ipums_titles[['2013-2017 ACS/PRCS INDNAICS CODE', 'Industry Title']]
-        merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2013-2017 ACS/PRCS INDNAICS CODE')
-        merged_ipums = merged_ipums.rename(columns={"2013-2017 ACS/PRCS INDNAICS CODE": "NAICS Code"})
-    else:
-        ipums_titles = ipums_titles[['2008-2012 ACS/PRCS INDNAICS CODE', 'Industry Title']]
-        merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2008-2012 ACS/PRCS INDNAICS CODE')
-        merged_ipums = merged_ipums.rename(columns={"2008-2012 ACS/PRCS INDNAICS CODE": "NAICS Code"})
-    merged_ipums['Industry Title'] = normalize_titles(merged_ipums['Industry Title'])
-    ipums_to_edd = pd.read_csv(f'{cwd}/data/ipums/ipums_to_edd_crosswalk.csv')
-    merged_ipums = pd.merge(merged_ipums, ipums_to_edd, on='NAICS Code')
-    return merged_ipums

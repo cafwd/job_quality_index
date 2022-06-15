@@ -8,6 +8,8 @@ The full documentation can be found [here](https://docs.google.com/document/d/1Y
 
 The Employment Development Department releases its Current Employment Statistics each month, which can be found [here](https://data.edd.ca.gov/Industry-Information-/Current-Employment-Statistics-CES-/r4zm-kdcg).
 
+To properly create new years of EDD dataframes, make sure that the Current Employment Statistics are stored as `data/edd/Current_EDD_Statistics.csv`.
+
 
 ### IPUMS
 
@@ -66,9 +68,10 @@ The usage of these crosswalks is documented and incorporated in the JQI Function
 
 A library of functions to assist in generating high wage outputs has been created and lives in `jqi_functions.py`. These functions include, but are not limited to:
 
-- `normalize_titles`, `cleaned_ipums`, `cleaned_ipums_demo`
+- `normalize_titles`, `cleaned_ipums`
     - Cleans the IPUMS dataframes, merges with respective crosswalks, and normalizes any industry title text included.
-    - `cleaned_ipums_demo` is meant to be used in place of `cleaned_ipums` when generating high wage outputs with a racial demographic breakdown included.
+    - Set the `demo` parameter in `cleaned_ipums` to True to include racial demographic information in the IPUMS dataset.
+    - **NOTE:** `cleaned_ipums` uses minimum wage data that needs to be updated on an annual basis. Within the function, there is a dictionary that stores the California minimum wage from 2010 onward, and this data can be found [here](https://www.dir.ca.gov/iwc/minimumwagehistory.htm).
 - `add_to_state_df`, `add_to_region_df`, `add_geo_high_wages`
     - Engineers the necessary features for computing the high wage percentages for a particular industry at the state and regional levels, then adds these features to the returned dataframe.
 - `clean_edd`, `filter_edd`
@@ -79,14 +82,17 @@ A library of functions to assist in generating high wage outputs has been create
 ## Process to Create High Wage Outputs
 
 1. Ensure that EDD and IPUMS data are in the correct data folders (i.e., `data/edd` and `data/ipums`, respectively). 
-2. Run `clean-edd-data.ipynb` to generate a cleaned output of a particular year's EDD data. This is only necessary if working with new EDD data that has not been cleaned before.
+2. Ensure JQI Functions Library is up to date by:
+- Making sure all minimum wage values in `cleaned_ipums` are up to date.
+- Confirming that no new NAICS Code to Industry Title crosswalks have been released. This crosswalk has changed twice since 2010, so it's possible that they could change again.
+3. Run `clean-edd-data.ipynb` to generate a cleaned output of a particular year's EDD data. This is only necessary if working with new EDD data that has not been cleaned before.
 - To run this notebook, begin by changing the year to the year that is needed.
-3. Run `generate-cost-of-living.ipynb` to generate a particular year's cost of living data. This is only necessary if this year's cost of living data has not been generated before.
+4. Run `generate-cost-of-living.ipynb` to generate a particular year's cost of living data. This is only necessary if this year's cost of living data has not been generated before.
 - To run this notebook, begin by changing the year to the year that is needed.
-4. Run `jqi-create-high-wage-outputs.ipynb` to generate high wage outputs for a given year.
+5. Run `jqi-create-high-wage-outputs.ipynb` to generate high wage outputs for a given year.
 - To run this notebook, begin by changing the desired year for outputs.
-5. To create corresponding outputs with a racial demographics breakdown, run `jqi-race-breakdown-hw-outputs.ipynb` with the necessary year entered.
-6. Code for creating visualizations lives in `high-wage-visualizations.ipynb`.
+6. To create corresponding outputs with a racial demographics breakdown, run `jqi-race-breakdown-hw-outputs.ipynb` with the necessary year entered. To have racial demographics data included in the IPUMS dataset, change the `demo` parameter in `cleaned_ipums` to True.
+7. Code for creating visualizations lives in `high-wage-visualizations.ipynb`.
 
 
 
