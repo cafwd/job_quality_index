@@ -23,12 +23,18 @@ def cleaned_ipums(year: str):
     ind_indnaics_crosswalk_2000_onward_without_code_descriptions csv files.
     Assumption of full time employees is anyone with INCWAGE >= minimum wage * 30 hours * 50 weeks
     """
+    """
+    Minimum wage data found here: https://www.dir.ca.gov/iwc/minimumwagehistory.htm
+    """
     cwd = os.getcwd()
     
-    if int(year) < 2014:
+    if int(year) < 2010:
         print('Invalid year')
         return None
-    min_wages = {2014:9, 2015:9, 2016:10, 2017:10, 2018:10.5, 2019:11, 2020:12}
+    min_wages = {2010:8, 2011:8, 2012:8, 2013:8, 
+                 2014:9, 2015:9, 2016:10, 2017:10, 
+                 2018:10.5, 2019:11, 2020:12, 
+                 2021:13, 2022:14}
     min_wage = min_wages[int(year)] * 30 * 50
     ipums = pd.read_csv(f'{cwd}/data/ipums/IPUMS_{year}.csv')
     ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy()
@@ -44,10 +50,14 @@ def cleaned_ipums(year: str):
         ipums_titles = ipums_titles[['2018 Onward ACS/PRCS INDNAICS CODE', 'Industry Title']]
         merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2018 Onward ACS/PRCS INDNAICS CODE')
         merged_ipums = merged_ipums.rename(columns={"2018 Onward ACS/PRCS INDNAICS CODE": "NAICS Code"})
-    else:
+    elif 2013 <= int(year) <= 2017:
         ipums_titles = ipums_titles[['2013-2017 ACS/PRCS INDNAICS CODE', 'Industry Title']]
         merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2013-2017 ACS/PRCS INDNAICS CODE')
         merged_ipums = merged_ipums.rename(columns={"2013-2017 ACS/PRCS INDNAICS CODE": "NAICS Code"})
+    else:
+        ipums_titles = ipums_titles[['2008-2012 ACS/PRCS INDNAICS CODE', 'Industry Title']]
+        merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2008-2012 ACS/PRCS INDNAICS CODE')
+        merged_ipums = merged_ipums.rename(columns={"2008-2012 ACS/PRCS INDNAICS CODE": "NAICS Code"})
     merged_ipums['Industry Title'] = normalize_titles(merged_ipums['Industry Title'])
     ipums_to_edd = pd.read_csv(f'{cwd}/data/ipums/ipums_to_edd_crosswalk.csv')
     merged_ipums = pd.merge(merged_ipums, ipums_to_edd, on='NAICS Code')
@@ -285,12 +295,18 @@ def cleaned_ipums_demo(year: str):
     ind_indnaics_crosswalk_2000_onward_without_code_descriptions csv files.
     Assumption of full time employees is anyone with INCWAGE >= minimum wage * 30 hours * 50 weeks
     """
+    """
+    Minimum wage data found here: https://www.dir.ca.gov/iwc/minimumwagehistory.htm
+    """
     cwd = os.getcwd()
     
     if int(year) < 2014:
         print('Invalid year')
         return None
-    min_wages = {2014:9, 2015:9, 2016:10, 2017:10, 2018:10.5, 2019:11, 2020:12}
+    min_wages = {2010:8, 2011:8, 2012:8, 2013:8, 
+                 2014:9, 2015:9, 2016:10, 2017:10, 
+                 2018:10.5, 2019:11, 2020:12, 
+                 2021:13, 2022:14}
     min_wage = min_wages[int(year)] * 30 * 50
     ipums = pd.read_csv(f'{cwd}/data/ipums/IPUMS_{year}.csv')
     ca_ipums = ipums.loc[ipums['STATEFIP'] == 6].copy()
@@ -306,10 +322,14 @@ def cleaned_ipums_demo(year: str):
         ipums_titles = ipums_titles[['2018 Onward ACS/PRCS INDNAICS CODE', 'Industry Title']]
         merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2018 Onward ACS/PRCS INDNAICS CODE')
         merged_ipums = merged_ipums.rename(columns={"2018 Onward ACS/PRCS INDNAICS CODE": "NAICS Code"})
-    else:
+    elif 2013 <= int(year) <= 2017:
         ipums_titles = ipums_titles[['2013-2017 ACS/PRCS INDNAICS CODE', 'Industry Title']]
         merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2013-2017 ACS/PRCS INDNAICS CODE')
         merged_ipums = merged_ipums.rename(columns={"2013-2017 ACS/PRCS INDNAICS CODE": "NAICS Code"})
+    else:
+        ipums_titles = ipums_titles[['2008-2012 ACS/PRCS INDNAICS CODE', 'Industry Title']]
+        merged_ipums = pd.merge(ca_ipums, ipums_titles, left_on = 'INDNAICS', right_on = '2008-2012 ACS/PRCS INDNAICS CODE')
+        merged_ipums = merged_ipums.rename(columns={"2008-2012 ACS/PRCS INDNAICS CODE": "NAICS Code"})
     merged_ipums['Industry Title'] = normalize_titles(merged_ipums['Industry Title'])
     ipums_to_edd = pd.read_csv(f'{cwd}/data/ipums/ipums_to_edd_crosswalk.csv')
     merged_ipums = pd.merge(merged_ipums, ipums_to_edd, on='NAICS Code')
