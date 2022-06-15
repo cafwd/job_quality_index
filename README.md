@@ -48,6 +48,10 @@ To create cost of living thresholds to reflect the CERF regions, weighted averag
 
 `data/cost_of_living/cost-of-living-calculations.xlsx`.
 
+To maintain a consistent methodology across years, only the 2019 data from United Way is used, then this data is adjusted for previous or future years based on inflation rates from [here](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-). Inflation rates from 2010-2022 can be found in this repository, under:
+
+`data/cost_of_living/inflation-rates.csv`
+
 ### Crosswalks
 
 Some miscellaneous crosswalks have been developed in-house to connect select industries in the EDD dataset to the industries in the IPUMS dataset. These crosswalks live in this repository, under:
@@ -77,10 +81,12 @@ A library of functions to assist in generating high wage outputs has been create
 1. Ensure that EDD and IPUMS data are in the correct data folders (i.e., `data/edd` and `data/ipums`, respectively). 
 2. Run `clean-edd-data.ipynb` to generate a cleaned output of a particular year's EDD data. This is only necessary if working with new EDD data that has not been cleaned before.
 - To run this notebook, begin by changing the year to the year that is needed.
-3. Run `jqi-create-high-wage-outputs.ipynb` to generate high wage outputs for a given year.
+3. Run `generate-cost-of-living.ipynb` to generate a particular year's cost of living data. This is only necessary if this year's cost of living data has not been generated before.
+- To run this notebook, begin by changing the year to the year that is needed.
+4. Run `jqi-create-high-wage-outputs.ipynb` to generate high wage outputs for a given year.
 - To run this notebook, begin by changing the desired year and the corresponding cost of living year. Cost of living does not get updated as frequently as EDD and IPUMS data, so the cost of living year may be behind the year that outputs are being generated for.
-4. To create corresponding outputs with a racial demographics breakdown, run `jqi-race-breakdown-hw-outputs.ipynb` with the necessary year and corresponding cost of living year entered.
-5. Code for creating visualizations lives in `high-wage-visualizations.ipynb`.
+5. To create corresponding outputs with a racial demographics breakdown, run `jqi-race-breakdown-hw-outputs.ipynb` with the necessary year and corresponding cost of living year entered.
+6. Code for creating visualizations lives in `high-wage-visualizations.ipynb`.
 
 
 
