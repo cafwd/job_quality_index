@@ -84,8 +84,8 @@ A library of functions to assist in generating high wage outputs has been create
 3. Run `generate-cost-of-living.ipynb` to generate a particular year's cost of living data. This is only necessary if this year's cost of living data has not been generated before.
 - To run this notebook, begin by changing the year to the year that is needed.
 4. Run `jqi-create-high-wage-outputs.ipynb` to generate high wage outputs for a given year.
-- To run this notebook, begin by changing the desired year and the corresponding cost of living year. Cost of living does not get updated as frequently as EDD and IPUMS data, so the cost of living year may be behind the year that outputs are being generated for.
-5. To create corresponding outputs with a racial demographics breakdown, run `jqi-race-breakdown-hw-outputs.ipynb` with the necessary year and corresponding cost of living year entered.
+- To run this notebook, begin by changing the desired year for outputs.
+5. To create corresponding outputs with a racial demographics breakdown, run `jqi-race-breakdown-hw-outputs.ipynb` with the necessary year entered.
 6. Code for creating visualizations lives in `high-wage-visualizations.ipynb`.
 
 
