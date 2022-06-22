@@ -50,7 +50,7 @@ To create cost of living thresholds to reflect the CERF regions, weighted averag
 
 `data/cost_of_living/cost-of-living-calculations.xlsx`.
 
-To maintain a consistent methodology across years, only the 2019 data from United Way is used, then this data is adjusted for previous or future years based on inflation rates from [here](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-). Inflation rates from 2010-2022 can be found in this repository, under:
+To maintain a consistent methodology across years, only the 2014-2019 data from United Way is used, then this data is adjusted for previous or future years based on inflation rates from [here](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-). Inflation rates from 2010-2022 can be found in this repository, under:
 
 `data/cost_of_living/inflation-rates.csv`
 
@@ -90,8 +90,8 @@ A library of functions to assist in generating high wage outputs has been create
 4. Run `generate-cost-of-living.ipynb` to generate a particular year's cost of living data. This is only necessary if this year's cost of living data has not been generated before.
 - To run this notebook, begin by changing the year to the year that is needed.
 5. Run `jqi-create-high-wage-outputs.ipynb` to generate high wage outputs for a given year.
-- To run this notebook, begin by changing the desired year for outputs.
-6. To create corresponding outputs with a racial demographics breakdown, run `jqi-race-breakdown-hw-outputs.ipynb` with the necessary year entered. To have racial demographics data included in the IPUMS dataset, change the `demo` parameter in `cleaned_ipums` to True.
+- To run this notebook, begin by changing the necessary EDD year, IPUMS year, and cost of living year for outputs.
+6. To create corresponding outputs with a racial demographics breakdown, run `jqi-race-breakdown-hw-outputs.ipynb` with the necessary EDD year, IPUMS year, and cost of living year entered. To have racial demographics data included in the IPUMS dataset, change the `demo` parameter in `cleaned_ipums` to True.
 7. Code for creating visualizations lives in `high-wage-visualizations.ipynb`.
 
 

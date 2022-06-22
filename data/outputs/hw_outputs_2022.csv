@@ -1,0 +1,765 @@
+Industry,Date,Region,High Wage Count,Employment Count,Cost of Living,Region Population
+accommodation and food services,2022-01-01,Kern,2171,24200.0,54862,887641
+accommodation and food services,2022-02-01,Kern,2198,24500.0,54862,887641
+accommodation and food services,2022-03-01,Kern,2225,24800.0,54862,887641
+accommodation and food services,2022-04-01,Kern,2225,24800.0,54862,887641
+administrative and support and waste services,2022-01-01,Kern,3507,12000.0,54862,887641
+administrative and support and waste services,2022-02-01,Kern,3653,12500.0,54862,887641
+administrative and support and waste services,2022-03-01,Kern,3623,12400.0,54862,887641
+administrative and support and waste services,2022-04-01,Kern,3799,13000.0,54862,887641
+arts entertainment and recreation,2022-01-01,Kern,1162,2300.0,54862,887641
+arts entertainment and recreation,2022-02-01,Kern,1162,2300.0,54862,887641
+arts entertainment and recreation,2022-03-01,Kern,1263,2500.0,54862,887641
+arts entertainment and recreation,2022-04-01,Kern,1314,2600.0,54862,887641
+construction,2022-01-01,Kern,5417,14800.0,54862,887641
+construction,2022-02-01,Kern,5564,15200.0,54862,887641
+construction,2022-03-01,Kern,5564,15200.0,54862,887641
+construction,2022-04-01,Kern,5564,15200.0,54862,887641
+durable goods,2022-01-01,Kern,2162,4700.0,54862,887641
+durable goods,2022-02-01,Kern,2208,4800.0,54862,887641
+durable goods,2022-03-01,Kern,2208,4800.0,54862,887641
+durable goods,2022-04-01,Kern,2208,4800.0,54862,887641
+educational services,2022-01-01,Kern,890,1900.0,54862,887641
+educational services,2022-02-01,Kern,937,2000.0,54862,887641
+educational services,2022-03-01,Kern,937,2000.0,54862,887641
+educational services,2022-04-01,Kern,937,2000.0,54862,887641
+federal government,2022-01-01,Kern,7512,11200.0,54862,887641
+federal government,2022-02-01,Kern,7512,11200.0,54862,887641
+federal government,2022-03-01,Kern,7512,11200.0,54862,887641
+federal government,2022-04-01,Kern,7512,11200.0,54862,887641
+finance and insurance,2022-01-01,Kern,821,4200.0,54862,887641
+finance and insurance,2022-02-01,Kern,821,4200.0,54862,887641
+finance and insurance,2022-03-01,Kern,821,4200.0,54862,887641
+finance and insurance,2022-04-01,Kern,802,4100.0,54862,887641
+health care and social assistance,2022-01-01,Kern,16359,40200.0,54862,887641
+health care and social assistance,2022-02-01,Kern,16725,41100.0,54862,887641
+health care and social assistance,2022-03-01,Kern,16562,40700.0,54862,887641
+health care and social assistance,2022-04-01,Kern,16562,40700.0,54862,887641
+information,2022-01-01,Kern,285,1600.0,54862,887641
+information,2022-02-01,Kern,285,1600.0,54862,887641
+information,2022-03-01,Kern,285,1600.0,54862,887641
+information,2022-04-01,Kern,285,1600.0,54862,887641
+local government,2022-01-01,Kern,15887,44300.0,54862,887641
+local government,2022-02-01,Kern,16317,45500.0,54862,887641
+local government,2022-03-01,Kern,16389,45700.0,54862,887641
+local government,2022-04-01,Kern,16604,46300.0,54862,887641
+management of companies and enterprises,2022-01-01,Kern,1581,3000.0,54862,887641
+management of companies and enterprises,2022-02-01,Kern,1581,3000.0,54862,887641
+management of companies and enterprises,2022-03-01,Kern,1581,3000.0,54862,887641
+management of companies and enterprises,2022-04-01,Kern,1634,3100.0,54862,887641
+mining and logging,2022-01-01,Kern,3721,7100.0,54862,887641
+mining and logging,2022-02-01,Kern,3721,7100.0,54862,887641
+mining and logging,2022-03-01,Kern,3774,7200.0,54862,887641
+mining and logging,2022-04-01,Kern,3774,7200.0,54862,887641
+natural resources mining and construction,2022-01-01,Kern,14927,21900.0,54862,887641
+natural resources mining and construction,2022-02-01,Kern,15200,22300.0,54862,887641
+natural resources mining and construction,2022-03-01,Kern,15268,22400.0,54862,887641
+natural resources mining and construction,2022-04-01,Kern,15268,22400.0,54862,887641
+nondurable goods,2022-01-01,Kern,2171,6900.0,54862,887641
+nondurable goods,2022-02-01,Kern,2171,6900.0,54862,887641
+nondurable goods,2022-03-01,Kern,2171,6900.0,54862,887641
+nondurable goods,2022-04-01,Kern,2139,6800.0,54862,887641
+other services,2022-01-01,Kern,1225,8100.0,54862,887641
+other services,2022-02-01,Kern,1240,8200.0,54862,887641
+other services,2022-03-01,Kern,1255,8300.0,54862,887641
+other services,2022-04-01,Kern,1255,8300.0,54862,887641
+professional scientific and technical services,2022-01-01,Kern,5231,10000.0,54862,887641
+professional scientific and technical services,2022-02-01,Kern,5231,10000.0,54862,887641
+professional scientific and technical services,2022-03-01,Kern,5231,10000.0,54862,887641
+professional scientific and technical services,2022-04-01,Kern,5283,10100.0,54862,887641
+real estate and rental and leasing,2022-01-01,Kern,1995,3200.0,54862,887641
+real estate and rental and leasing,2022-02-01,Kern,2057,3300.0,54862,887641
+real estate and rental and leasing,2022-03-01,Kern,2057,3300.0,54862,887641
+real estate and rental and leasing,2022-04-01,Kern,2057,3300.0,54862,887641
+retail trade,2022-01-01,Kern,5358,33000.0,54862,887641
+retail trade,2022-02-01,Kern,5342,32900.0,54862,887641
+retail trade,2022-03-01,Kern,5342,32900.0,54862,887641
+retail trade,2022-04-01,Kern,5342,32900.0,54862,887641
+state government,2022-01-01,Kern,3514,9800.0,54862,887641
+state government,2022-02-01,Kern,3514,9800.0,54862,887641
+state government,2022-03-01,Kern,3514,9800.0,54862,887641
+state government,2022-04-01,Kern,3550,9900.0,54862,887641
+total farm,2022-01-01,Kern,6097,57200.0,54862,887641
+total farm,2022-02-01,Kern,5830,54700.0,54862,887641
+total farm,2022-03-01,Kern,4871,45700.0,54862,887641
+total farm,2022-04-01,Kern,6054,56800.0,54862,887641
+transportation warehousing and utilities,2022-01-01,Kern,5411,21100.0,54862,887641
+transportation warehousing and utilities,2022-02-01,Kern,5514,21500.0,54862,887641
+transportation warehousing and utilities,2022-03-01,Kern,5514,21500.0,54862,887641
+transportation warehousing and utilities,2022-04-01,Kern,5591,21800.0,54862,887641
+wholesale trade,2022-01-01,Kern,3626,7700.0,54862,887641
+wholesale trade,2022-02-01,Kern,3626,7700.0,54862,887641
+wholesale trade,2022-03-01,Kern,3673,7800.0,54862,887641
+wholesale trade,2022-04-01,Kern,3673,7800.0,54862,887641
+accommodation and food services,2022-01-01,Los Angeles,19040,384500.0,80216,10081570
+accommodation and food services,2022-02-01,Los Angeles,19456,392900.0,80216,10081570
+accommodation and food services,2022-03-01,Los Angeles,19719,398200.0,80216,10081570
+accommodation and food services,2022-04-01,Los Angeles,20065,405200.0,80216,10081570
+administrative and support and waste services,2022-01-01,Los Angeles,31281,268600.0,80216,10081570
+administrative and support and waste services,2022-02-01,Los Angeles,32178,276300.0,80216,10081570
+administrative and support and waste services,2022-03-01,Los Angeles,31968,274500.0,80216,10081570
+administrative and support and waste services,2022-04-01,Los Angeles,32213,276600.0,80216,10081570
+arts entertainment and recreation,2022-01-01,Los Angeles,20914,79500.0,80216,10081570
+arts entertainment and recreation,2022-02-01,Los Angeles,21993,83600.0,80216,10081570
+arts entertainment and recreation,2022-03-01,Los Angeles,22230,84500.0,80216,10081570
+arts entertainment and recreation,2022-04-01,Los Angeles,23072,87700.0,80216,10081570
+durable goods,2022-01-01,Los Angeles,50373,185900.0,80216,10081570
+durable goods,2022-02-01,Los Angeles,51294,189300.0,80216,10081570
+durable goods,2022-03-01,Los Angeles,51213,189000.0,80216,10081570
+durable goods,2022-04-01,Los Angeles,51158,188800.0,80216,10081570
+educational services,2022-01-01,Los Angeles,31067,134500.0,80216,10081570
+educational services,2022-02-01,Los Angeles,32199,139400.0,80216,10081570
+educational services,2022-03-01,Los Angeles,32661,141400.0,80216,10081570
+educational services,2022-04-01,Los Angeles,32453,140500.0,80216,10081570
+federal government,2022-01-01,Los Angeles,19339,47200.0,80216,10081570
+federal government,2022-02-01,Los Angeles,19380,47300.0,80216,10081570
+federal government,2022-03-01,Los Angeles,19257,47000.0,80216,10081570
+federal government,2022-04-01,Los Angeles,19298,47100.0,80216,10081570
+financial activities,2022-01-01,Los Angeles,73076,208600.0,80216,10081570
+financial activities,2022-02-01,Los Angeles,73392,209500.0,80216,10081570
+financial activities,2022-03-01,Los Angeles,73637,210200.0,80216,10081570
+financial activities,2022-04-01,Los Angeles,74407,212400.0,80216,10081570
+health care and social assistance,2022-01-01,Los Angeles,166516,723900.0,80216,10081570
+health care and social assistance,2022-02-01,Los Angeles,167827,729600.0,80216,10081570
+health care and social assistance,2022-03-01,Los Angeles,169046,734900.0,80216,10081570
+health care and social assistance,2022-04-01,Los Angeles,168425,732200.0,80216,10081570
+information,2022-01-01,Los Angeles,97734,219600.0,80216,10081570
+information,2022-02-01,Los Angeles,101205,227400.0,80216,10081570
+information,2022-03-01,Los Angeles,100537,225900.0,80216,10081570
+information,2022-04-01,Los Angeles,101650,228400.0,80216,10081570
+local government,2022-01-01,Los Angeles,97008,423700.0,80216,10081570
+local government,2022-02-01,Los Angeles,98427,429900.0,80216,10081570
+local government,2022-03-01,Los Angeles,98840,431700.0,80216,10081570
+local government,2022-04-01,Los Angeles,99137,433000.0,80216,10081570
+management of companies and enterprises,2022-01-01,Los Angeles,19755,62100.0,80216,10081570
+management of companies and enterprises,2022-02-01,Los Angeles,19914,62600.0,80216,10081570
+management of companies and enterprises,2022-03-01,Los Angeles,19914,62600.0,80216,10081570
+management of companies and enterprises,2022-04-01,Los Angeles,19850,62400.0,80216,10081570
+mining and logging,2022-01-01,Los Angeles,386,1600.0,80216,10081570
+mining and logging,2022-02-01,Los Angeles,386,1600.0,80216,10081570
+mining and logging,2022-03-01,Los Angeles,386,1600.0,80216,10081570
+mining and logging,2022-04-01,Los Angeles,386,1600.0,80216,10081570
+natural resources mining and construction,2022-01-01,Los Angeles,70474,151600.0,80216,10081570
+natural resources mining and construction,2022-02-01,Los Angeles,72101,155100.0,80216,10081570
+natural resources mining and construction,2022-03-01,Los Angeles,72613,156200.0,80216,10081570
+natural resources mining and construction,2022-04-01,Los Angeles,71264,153300.0,80216,10081570
+nondurable goods,2022-01-01,Los Angeles,15924,127900.0,80216,10081570
+nondurable goods,2022-02-01,Los Angeles,15986,128400.0,80216,10081570
+nondurable goods,2022-03-01,Los Angeles,16085,129200.0,80216,10081570
+nondurable goods,2022-04-01,Los Angeles,16185,130000.0,80216,10081570
+personal and laundry services,2022-01-01,Los Angeles,2680,52300.0,80216,10081570
+personal and laundry services,2022-02-01,Los Angeles,2752,53700.0,80216,10081570
+personal and laundry services,2022-03-01,Los Angeles,2808,54800.0,80216,10081570
+personal and laundry services,2022-04-01,Los Angeles,2860,55800.0,80216,10081570
+professional scientific and technical services,2022-01-01,Los Angeles,111828,311700.0,80216,10081570
+professional scientific and technical services,2022-02-01,Los Angeles,113443,316200.0,80216,10081570
+professional scientific and technical services,2022-03-01,Los Angeles,113766,317100.0,80216,10081570
+professional scientific and technical services,2022-04-01,Los Angeles,113335,315900.0,80216,10081570
+religious grants civic professional and like org,2022-01-01,Los Angeles,13103,54300.0,80216,10081570
+religious grants civic professional and like org,2022-02-01,Los Angeles,13321,55200.0,80216,10081570
+religious grants civic professional and like org,2022-03-01,Los Angeles,13321,55200.0,80216,10081570
+religious grants civic professional and like org,2022-04-01,Los Angeles,13176,54600.0,80216,10081570
+repair and maintenance,2022-01-01,Los Angeles,2904,36300.0,80216,10081570
+repair and maintenance,2022-02-01,Los Angeles,2912,36400.0,80216,10081570
+repair and maintenance,2022-03-01,Los Angeles,2936,36700.0,80216,10081570
+repair and maintenance,2022-04-01,Los Angeles,3024,37800.0,80216,10081570
+retail trade,2022-01-01,Los Angeles,50330,412100.0,80216,10081570
+retail trade,2022-02-01,Los Angeles,50342,412200.0,80216,10081570
+retail trade,2022-03-01,Los Angeles,50183,410900.0,80216,10081570
+retail trade,2022-04-01,Los Angeles,50073,410000.0,80216,10081570
+state government,2022-01-01,Los Angeles,20834,91000.0,80216,10081570
+state government,2022-02-01,Los Angeles,20857,91100.0,80216,10081570
+state government,2022-03-01,Los Angeles,20995,91700.0,80216,10081570
+state government,2022-04-01,Los Angeles,21063,92000.0,80216,10081570
+total farm,2022-01-01,Los Angeles,473,4200.0,80216,10081570
+total farm,2022-02-01,Los Angeles,484,4300.0,80216,10081570
+total farm,2022-03-01,Los Angeles,495,4400.0,80216,10081570
+total farm,2022-04-01,Los Angeles,506,4500.0,80216,10081570
+transportation and warehousing,2022-01-01,Los Angeles,34441,211700.0,80216,10081570
+transportation and warehousing,2022-02-01,Los Angeles,34783,213800.0,80216,10081570
+transportation and warehousing,2022-03-01,Los Angeles,34767,213700.0,80216,10081570
+transportation and warehousing,2022-04-01,Los Angeles,34637,212900.0,80216,10081570
+utilities,2022-01-01,Los Angeles,6285,11700.0,80216,10081570
+utilities,2022-02-01,Los Angeles,6285,11700.0,80216,10081570
+utilities,2022-03-01,Los Angeles,6285,11700.0,80216,10081570
+utilities,2022-04-01,Los Angeles,6231,11600.0,80216,10081570
+wholesale trade,2022-01-01,Los Angeles,36906,202700.0,80216,10081570
+wholesale trade,2022-02-01,Los Angeles,37306,204900.0,80216,10081570
+wholesale trade,2022-03-01,Los Angeles,37252,204600.0,80216,10081570
+wholesale trade,2022-04-01,Los Angeles,37670,206900.0,80216,10081570
+accommodation and food services,2022-01-01,Orange,13646,156900.0,87648,3168044
+accommodation and food services,2022-02-01,Orange,13907,159900.0,87648,3168044
+accommodation and food services,2022-03-01,Orange,14238,163700.0,87648,3168044
+accommodation and food services,2022-04-01,Orange,14638,168300.0,87648,3168044
+administrative and support and waste services,2022-01-01,Orange,15887,147200.0,87648,3168044
+administrative and support and waste services,2022-02-01,Orange,16189,150000.0,87648,3168044
+administrative and support and waste services,2022-03-01,Orange,16135,149500.0,87648,3168044
+administrative and support and waste services,2022-04-01,Orange,16221,150300.0,87648,3168044
+arts entertainment and recreation,2022-01-01,Orange,9003,45900.0,87648,3168044
+arts entertainment and recreation,2022-02-01,Orange,9219,47000.0,87648,3168044
+arts entertainment and recreation,2022-03-01,Orange,9670,49300.0,87648,3168044
+arts entertainment and recreation,2022-04-01,Orange,9984,50900.0,87648,3168044
+construction,2022-01-01,Orange,23079,97000.0,87648,3168044
+construction,2022-02-01,Orange,24269,102000.0,87648,3168044
+construction,2022-03-01,Orange,24721,103900.0,87648,3168044
+construction,2022-04-01,Orange,24412,102600.0,87648,3168044
+durable goods,2022-01-01,Orange,40900,108800.0,87648,3168044
+durable goods,2022-02-01,Orange,41276,109800.0,87648,3168044
+durable goods,2022-03-01,Orange,41915,111500.0,87648,3168044
+durable goods,2022-04-01,Orange,42028,111800.0,87648,3168044
+educational services,2022-01-01,Orange,9649,33500.0,87648,3168044
+educational services,2022-02-01,Orange,10081,35000.0,87648,3168044
+educational services,2022-03-01,Orange,10138,35200.0,87648,3168044
+educational services,2022-04-01,Orange,10225,35500.0,87648,3168044
+federal government,2022-01-01,Orange,5591,11100.0,87648,3168044
+federal government,2022-02-01,Orange,5591,11100.0,87648,3168044
+federal government,2022-03-01,Orange,5540,11000.0,87648,3168044
+federal government,2022-04-01,Orange,5540,11000.0,87648,3168044
+finance and insurance,2022-01-01,Orange,36471,77100.0,87648,3168044
+finance and insurance,2022-02-01,Orange,35950,76000.0,87648,3168044
+finance and insurance,2022-03-01,Orange,35856,75800.0,87648,3168044
+finance and insurance,2022-04-01,Orange,35619,75300.0,87648,3168044
+health care and social assistance,2022-01-01,Orange,60130,206400.0,87648,3168044
+health care and social assistance,2022-02-01,Orange,60421,207400.0,87648,3168044
+health care and social assistance,2022-03-01,Orange,60567,207900.0,87648,3168044
+health care and social assistance,2022-04-01,Orange,60771,208600.0,87648,3168044
+information,2022-01-01,Orange,9892,24500.0,87648,3168044
+information,2022-02-01,Orange,9851,24400.0,87648,3168044
+information,2022-03-01,Orange,10053,24900.0,87648,3168044
+information,2022-04-01,Orange,9972,24700.0,87648,3168044
+local government,2022-01-01,Orange,21920,111800.0,87648,3168044
+local government,2022-02-01,Orange,22449,114500.0,87648,3168044
+local government,2022-03-01,Orange,22586,115200.0,87648,3168044
+local government,2022-04-01,Orange,22645,115500.0,87648,3168044
+management of companies and enterprises,2022-01-01,Orange,9957,36200.0,87648,3168044
+management of companies and enterprises,2022-02-01,Orange,9957,36200.0,87648,3168044
+management of companies and enterprises,2022-03-01,Orange,10122,36800.0,87648,3168044
+management of companies and enterprises,2022-04-01,Orange,10205,37100.0,87648,3168044
+mining and logging,2022-01-01,Orange,78,400.0,87648,3168044
+mining and logging,2022-02-01,Orange,78,400.0,87648,3168044
+mining and logging,2022-03-01,Orange,78,400.0,87648,3168044
+mining and logging,2022-04-01,Orange,78,400.0,87648,3168044
+nondurable goods,2022-01-01,Orange,10410,38700.0,87648,3168044
+nondurable goods,2022-02-01,Orange,10383,38600.0,87648,3168044
+nondurable goods,2022-03-01,Orange,10437,38800.0,87648,3168044
+nondurable goods,2022-04-01,Orange,10464,38900.0,87648,3168044
+other services,2022-01-01,Orange,6131,48600.0,87648,3168044
+other services,2022-02-01,Orange,6270,49700.0,87648,3168044
+other services,2022-03-01,Orange,6409,50800.0,87648,3168044
+other services,2022-04-01,Orange,6459,51200.0,87648,3168044
+professional scientific and technical services,2022-01-01,Orange,52991,135500.0,87648,3168044
+professional scientific and technical services,2022-02-01,Orange,53851,137700.0,87648,3168044
+professional scientific and technical services,2022-03-01,Orange,53968,138000.0,87648,3168044
+professional scientific and technical services,2022-04-01,Orange,55181,141100.0,87648,3168044
+real estate and rental and leasing,2022-01-01,Orange,12161,38000.0,87648,3168044
+real estate and rental and leasing,2022-02-01,Orange,12065,37700.0,87648,3168044
+real estate and rental and leasing,2022-03-01,Orange,12417,38800.0,87648,3168044
+real estate and rental and leasing,2022-04-01,Orange,12513,39100.0,87648,3168044
+retail trade,2022-01-01,Orange,20760,145000.0,87648,3168044
+retail trade,2022-02-01,Orange,20502,143200.0,87648,3168044
+retail trade,2022-03-01,Orange,20330,142000.0,87648,3168044
+retail trade,2022-04-01,Orange,20258,141500.0,87648,3168044
+state government,2022-01-01,Orange,6783,34600.0,87648,3168044
+state government,2022-02-01,Orange,6803,34700.0,87648,3168044
+state government,2022-03-01,Orange,6862,35000.0,87648,3168044
+state government,2022-04-01,Orange,6921,35300.0,87648,3168044
+total farm,2022-01-01,Orange,268,1800.0,87648,3168044
+total farm,2022-02-01,Orange,283,1900.0,87648,3168044
+total farm,2022-03-01,Orange,298,2000.0,87648,3168044
+total farm,2022-04-01,Orange,313,2100.0,87648,3168044
+transportation and warehousing,2022-01-01,Orange,7070,28500.0,87648,3168044
+transportation and warehousing,2022-02-01,Orange,7145,28800.0,87648,3168044
+transportation and warehousing,2022-03-01,Orange,6897,27800.0,87648,3168044
+transportation and warehousing,2022-04-01,Orange,6797,27400.0,87648,3168044
+utilities,2022-01-01,Orange,1429,3000.0,87648,3168044
+utilities,2022-02-01,Orange,1429,3000.0,87648,3168044
+utilities,2022-03-01,Orange,1477,3100.0,87648,3168044
+utilities,2022-04-01,Orange,1429,3000.0,87648,3168044
+wholesale trade,2022-01-01,Orange,24739,74900.0,87648,3168044
+wholesale trade,2022-02-01,Orange,24706,74800.0,87648,3168044
+wholesale trade,2022-03-01,Orange,24937,75500.0,87648,3168044
+wholesale trade,2022-04-01,Orange,24706,74800.0,87648,3168044
+administrative and support and waste services,2022-01-01,Bay Area,2472,20500.0,97249,7710026
+administrative and support and waste services,2022-02-01,Bay Area,2545,21100.0,97249,7710026
+administrative and support and waste services,2022-03-01,Bay Area,2533,21000.0,97249,7710026
+administrative and support and waste services,2022-04-01,Bay Area,2557,21200.0,97249,7710026
+construction,2022-01-01,Bay Area,8047,34200.0,97249,7710026
+construction,2022-02-01,Bay Area,8424,35800.0,97249,7710026
+construction,2022-03-01,Bay Area,8424,35800.0,97249,7710026
+construction,2022-04-01,Bay Area,8424,35800.0,97249,7710026
+educational and health services,2022-01-01,Bay Area,22633,90000.0,97249,7710026
+educational and health services,2022-02-01,Bay Area,22935,91200.0,97249,7710026
+educational and health services,2022-03-01,Bay Area,22860,90900.0,97249,7710026
+educational and health services,2022-04-01,Bay Area,22608,89900.0,97249,7710026
+federal government,2022-01-01,Bay Area,2270,5700.0,97249,7710026
+federal government,2022-02-01,Bay Area,2230,5600.0,97249,7710026
+federal government,2022-03-01,Bay Area,2230,5600.0,97249,7710026
+federal government,2022-04-01,Bay Area,2230,5600.0,97249,7710026
+information,2022-01-01,Bay Area,3819,6000.0,97249,7710026
+information,2022-02-01,Bay Area,3883,6100.0,97249,7710026
+information,2022-03-01,Bay Area,3883,6100.0,97249,7710026
+information,2022-04-01,Bay Area,3883,6100.0,97249,7710026
+leisure and hospitality,2022-01-01,Bay Area,4741,59900.0,97249,7710026
+leisure and hospitality,2022-02-01,Bay Area,4812,60800.0,97249,7710026
+leisure and hospitality,2022-03-01,Bay Area,4891,61800.0,97249,7710026
+leisure and hospitality,2022-04-01,Bay Area,5002,63200.0,97249,7710026
+local government,2022-01-01,Bay Area,17791,54200.0,97249,7710026
+local government,2022-02-01,Bay Area,17726,54000.0,97249,7710026
+local government,2022-03-01,Bay Area,17857,54400.0,97249,7710026
+local government,2022-04-01,Bay Area,18054,55000.0,97249,7710026
+management of companies and enterprises,2022-01-01,Bay Area,1247,2000.0,97249,7710026
+management of companies and enterprises,2022-02-01,Bay Area,1247,2000.0,97249,7710026
+management of companies and enterprises,2022-03-01,Bay Area,1247,2000.0,97249,7710026
+management of companies and enterprises,2022-04-01,Bay Area,1309,2100.0,97249,7710026
+manufacturing,2022-01-01,Bay Area,24294,50500.0,97249,7710026
+manufacturing,2022-02-01,Bay Area,24534,51000.0,97249,7710026
+manufacturing,2022-03-01,Bay Area,24727,51400.0,97249,7710026
+manufacturing,2022-04-01,Bay Area,24775,51500.0,97249,7710026
+mining and logging,2022-01-01,Bay Area,170,500.0,97249,7710026
+mining and logging,2022-02-01,Bay Area,170,500.0,97249,7710026
+mining and logging,2022-03-01,Bay Area,170,500.0,97249,7710026
+mining and logging,2022-04-01,Bay Area,170,500.0,97249,7710026
+natural resources mining and construction,2022-01-01,Bay Area,25199,38900.0,97249,7710026
+natural resources mining and construction,2022-02-01,Bay Area,26300,40600.0,97249,7710026
+natural resources mining and construction,2022-03-01,Bay Area,26365,40700.0,97249,7710026
+natural resources mining and construction,2022-04-01,Bay Area,26300,40600.0,97249,7710026
+other services,2022-01-01,Bay Area,2536,17800.0,97249,7710026
+other services,2022-02-01,Bay Area,2593,18200.0,97249,7710026
+other services,2022-03-01,Bay Area,2608,18300.0,97249,7710026
+other services,2022-04-01,Bay Area,2636,18500.0,97249,7710026
+professional scientific and technical services,2022-01-01,Bay Area,5669,10200.0,97249,7710026
+professional scientific and technical services,2022-02-01,Bay Area,5724,10300.0,97249,7710026
+professional scientific and technical services,2022-03-01,Bay Area,5613,10100.0,97249,7710026
+professional scientific and technical services,2022-04-01,Bay Area,5724,10300.0,97249,7710026
+retail trade,2022-01-01,Bay Area,14220,61400.0,97249,7710026
+retail trade,2022-02-01,Bay Area,14244,61500.0,97249,7710026
+retail trade,2022-03-01,Bay Area,14244,61500.0,97249,7710026
+retail trade,2022-04-01,Bay Area,14197,61300.0,97249,7710026
+state government,2022-01-01,Bay Area,4398,13400.0,97249,7710026
+state government,2022-02-01,Bay Area,4464,13600.0,97249,7710026
+state government,2022-03-01,Bay Area,4497,13700.0,97249,7710026
+state government,2022-04-01,Bay Area,4497,13700.0,97249,7710026
+total farm,2022-01-01,Bay Area,797,10400.0,97249,7710026
+total farm,2022-02-01,Bay Area,911,11900.0,97249,7710026
+total farm,2022-03-01,Bay Area,965,12600.0,97249,7710026
+total farm,2022-04-01,Bay Area,1049,13700.0,97249,7710026
+transportation warehousing and utilities,2022-01-01,Bay Area,2380,13200.0,97249,7710026
+transportation warehousing and utilities,2022-02-01,Bay Area,2398,13300.0,97249,7710026
+transportation warehousing and utilities,2022-03-01,Bay Area,2380,13200.0,97249,7710026
+transportation warehousing and utilities,2022-04-01,Bay Area,2344,13000.0,97249,7710026
+wholesale trade,2022-01-01,Bay Area,4308,14900.0,97249,7710026
+wholesale trade,2022-02-01,Bay Area,4308,14900.0,97249,7710026
+wholesale trade,2022-03-01,Bay Area,4366,15100.0,97249,7710026
+wholesale trade,2022-04-01,Bay Area,4366,15100.0,97249,7710026
+administrative and support and waste services,2022-01-01,San Diego-Imperial,16932,94500.0,77956,3496774
+administrative and support and waste services,2022-02-01,San Diego-Imperial,17864,99700.0,77956,3496774
+administrative and support and waste services,2022-03-01,San Diego-Imperial,17936,100100.0,77956,3496774
+administrative and support and waste services,2022-04-01,San Diego-Imperial,17954,100200.0,77956,3496774
+construction,2022-01-01,San Diego-Imperial,19675,82000.0,77956,3496774
+construction,2022-02-01,San Diego-Imperial,20227,84300.0,77956,3496774
+construction,2022-03-01,San Diego-Imperial,19915,83000.0,77956,3496774
+construction,2022-04-01,San Diego-Imperial,20203,84200.0,77956,3496774
+durable goods,2022-01-01,San Diego-Imperial,41791,83700.0,77956,3496774
+durable goods,2022-02-01,San Diego-Imperial,41392,82900.0,77956,3496774
+durable goods,2022-03-01,San Diego-Imperial,41242,82600.0,77956,3496774
+durable goods,2022-04-01,San Diego-Imperial,41242,82600.0,77956,3496774
+educational and health services,2022-01-01,San Diego-Imperial,72194,224100.0,77956,3496774
+educational and health services,2022-02-01,San Diego-Imperial,73515,228200.0,77956,3496774
+educational and health services,2022-03-01,San Diego-Imperial,73483,228100.0,77956,3496774
+educational and health services,2022-04-01,San Diego-Imperial,73805,229100.0,77956,3496774
+federal government,2022-01-01,San Diego-Imperial,16428,49400.0,77956,3496774
+federal government,2022-02-01,San Diego-Imperial,16428,49400.0,77956,3496774
+federal government,2022-03-01,San Diego-Imperial,16328,49100.0,77956,3496774
+federal government,2022-04-01,San Diego-Imperial,16394,49300.0,77956,3496774
+financial activities,2022-01-01,San Diego-Imperial,30228,74600.0,77956,3496774
+financial activities,2022-02-01,San Diego-Imperial,30876,76200.0,77956,3496774
+financial activities,2022-03-01,San Diego-Imperial,30998,76500.0,77956,3496774
+financial activities,2022-04-01,San Diego-Imperial,30917,76300.0,77956,3496774
+information,2022-01-01,San Diego-Imperial,9150,22300.0,77956,3496774
+information,2022-02-01,San Diego-Imperial,9150,22300.0,77956,3496774
+information,2022-03-01,San Diego-Imperial,9232,22500.0,77956,3496774
+information,2022-04-01,San Diego-Imperial,9232,22500.0,77956,3496774
+leisure and hospitality,2022-01-01,San Diego-Imperial,14451,183900.0,77956,3496774
+leisure and hospitality,2022-02-01,San Diego-Imperial,14789,188200.0,77956,3496774
+leisure and hospitality,2022-03-01,San Diego-Imperial,15237,193900.0,77956,3496774
+leisure and hospitality,2022-04-01,San Diego-Imperial,15583,198300.0,77956,3496774
+local government,2022-01-01,San Diego-Imperial,26617,156800.0,77956,3496774
+local government,2022-02-01,San Diego-Imperial,26769,157700.0,77956,3496774
+local government,2022-03-01,San Diego-Imperial,26973,158900.0,77956,3496774
+local government,2022-04-01,San Diego-Imperial,27211,160300.0,77956,3496774
+management of companies and enterprises,2022-01-01,San Diego-Imperial,14555,23500.0,77956,3496774
+management of companies and enterprises,2022-02-01,San Diego-Imperial,14678,23700.0,77956,3496774
+management of companies and enterprises,2022-03-01,San Diego-Imperial,14617,23600.0,77956,3496774
+management of companies and enterprises,2022-04-01,San Diego-Imperial,14617,23600.0,77956,3496774
+mining and logging,2022-01-01,San Diego-Imperial,65,300.0,77956,3496774
+mining and logging,2022-02-01,San Diego-Imperial,65,300.0,77956,3496774
+mining and logging,2022-03-01,San Diego-Imperial,65,300.0,77956,3496774
+mining and logging,2022-04-01,San Diego-Imperial,65,300.0,77956,3496774
+nondurable goods,2022-01-01,San Diego-Imperial,10972,32500.0,77956,3496774
+nondurable goods,2022-02-01,San Diego-Imperial,11040,32700.0,77956,3496774
+nondurable goods,2022-03-01,San Diego-Imperial,11074,32800.0,77956,3496774
+nondurable goods,2022-04-01,San Diego-Imperial,11040,32700.0,77956,3496774
+other services,2022-01-01,San Diego-Imperial,8149,51000.0,77956,3496774
+other services,2022-02-01,San Diego-Imperial,8485,53100.0,77956,3496774
+other services,2022-03-01,San Diego-Imperial,8676,54300.0,77956,3496774
+other services,2022-04-01,San Diego-Imperial,8549,53500.0,77956,3496774
+professional scientific and technical services,2022-01-01,San Diego-Imperial,74155,155600.0,77956,3496774
+professional scientific and technical services,2022-02-01,San Diego-Imperial,74250,155800.0,77956,3496774
+professional scientific and technical services,2022-03-01,San Diego-Imperial,74631,156600.0,77956,3496774
+professional scientific and technical services,2022-04-01,San Diego-Imperial,75203,157800.0,77956,3496774
+retail trade,2022-01-01,San Diego-Imperial,19121,149800.0,77956,3496774
+retail trade,2022-02-01,San Diego-Imperial,18968,148600.0,77956,3496774
+retail trade,2022-03-01,San Diego-Imperial,18878,147900.0,77956,3496774
+retail trade,2022-04-01,San Diego-Imperial,18751,146900.0,77956,3496774
+state government,2022-01-01,San Diego-Imperial,9438,55600.0,77956,3496774
+state government,2022-02-01,San Diego-Imperial,9557,56300.0,77956,3496774
+state government,2022-03-01,San Diego-Imperial,9726,57300.0,77956,3496774
+state government,2022-04-01,San Diego-Imperial,9709,57200.0,77956,3496774
+total farm,2022-01-01,San Diego-Imperial,0,19300.0,77956,3496774
+total farm,2022-02-01,San Diego-Imperial,0,19800.0,77956,3496774
+total farm,2022-03-01,San Diego-Imperial,0,18400.0,77956,3496774
+total farm,2022-04-01,San Diego-Imperial,0,17300.0,77956,3496774
+transportation and warehousing,2022-01-01,San Diego-Imperial,5940,34000.0,77956,3496774
+transportation and warehousing,2022-02-01,San Diego-Imperial,5888,33700.0,77956,3496774
+transportation and warehousing,2022-03-01,San Diego-Imperial,5643,32300.0,77956,3496774
+transportation and warehousing,2022-04-01,San Diego-Imperial,5643,32300.0,77956,3496774
+utilities,2022-01-01,San Diego-Imperial,2922,5000.0,77956,3496774
+utilities,2022-02-01,San Diego-Imperial,2981,5100.0,77956,3496774
+utilities,2022-03-01,San Diego-Imperial,2922,5000.0,77956,3496774
+utilities,2022-04-01,San Diego-Imperial,2922,5000.0,77956,3496774
+warehousing and storage,2022-01-01,San Diego-Imperial,660,5600.0,77956,3496774
+warehousing and storage,2022-02-01,San Diego-Imperial,660,5600.0,77956,3496774
+warehousing and storage,2022-03-01,San Diego-Imperial,660,5600.0,77956,3496774
+warehousing and storage,2022-04-01,San Diego-Imperial,660,5600.0,77956,3496774
+wholesale trade,2022-01-01,San Diego-Imperial,13359,43000.0,77956,3496774
+wholesale trade,2022-02-01,San Diego-Imperial,13390,43100.0,77956,3496774
+wholesale trade,2022-03-01,San Diego-Imperial,13483,43400.0,77956,3496774
+wholesale trade,2022-04-01,San Diego-Imperial,13763,44300.0,77956,3496774
+construction,2022-01-01,Central Coast,6181,25200.0,78200,2342005
+construction,2022-02-01,Central Coast,6426,26200.0,78200,2342005
+construction,2022-03-01,Central Coast,6450,26300.0,78200,2342005
+construction,2022-04-01,Central Coast,6475,26400.0,78200,2342005
+durable goods,2022-01-01,Central Coast,14161,33500.0,78200,2342005
+durable goods,2022-02-01,Central Coast,14330,33900.0,78200,2342005
+durable goods,2022-03-01,Central Coast,14373,34000.0,78200,2342005
+durable goods,2022-04-01,Central Coast,14415,34100.0,78200,2342005
+educational and health services,2022-01-01,Central Coast,32018,112000.0,78200,2342005
+educational and health services,2022-02-01,Central Coast,32475,113600.0,78200,2342005
+educational and health services,2022-03-01,Central Coast,32876,115000.0,78200,2342005
+educational and health services,2022-04-01,Central Coast,32933,115200.0,78200,2342005
+federal government,2022-01-01,Central Coast,5726,12100.0,78200,2342005
+federal government,2022-02-01,Central Coast,5679,12000.0,78200,2342005
+federal government,2022-03-01,Central Coast,5679,12000.0,78200,2342005
+federal government,2022-04-01,Central Coast,5679,12000.0,78200,2342005
+financial activities,2022-01-01,Central Coast,11670,29600.0,78200,2342005
+financial activities,2022-02-01,Central Coast,11631,29500.0,78200,2342005
+financial activities,2022-03-01,Central Coast,11631,29500.0,78200,2342005
+financial activities,2022-04-01,Central Coast,11670,29600.0,78200,2342005
+leisure and hospitality,2022-01-01,Central Coast,6246,90700.0,78200,2342005
+leisure and hospitality,2022-02-01,Central Coast,6356,92300.0,78200,2342005
+leisure and hospitality,2022-03-01,Central Coast,6459,93800.0,78200,2342005
+leisure and hospitality,2022-04-01,Central Coast,6597,95800.0,78200,2342005
+local government,2022-01-01,Central Coast,22989,81700.0,78200,2342005
+local government,2022-02-01,Central Coast,23298,82800.0,78200,2342005
+local government,2022-03-01,Central Coast,23861,84800.0,78200,2342005
+local government,2022-04-01,Central Coast,23326,82900.0,78200,2342005
+mining and logging,2022-01-01,Central Coast,597,1500.0,78200,2342005
+mining and logging,2022-02-01,Central Coast,597,1500.0,78200,2342005
+mining and logging,2022-03-01,Central Coast,597,1500.0,78200,2342005
+mining and logging,2022-04-01,Central Coast,597,1500.0,78200,2342005
+natural resources mining and construction,2022-01-01,Central Coast,13682,35500.0,78200,2342005
+natural resources mining and construction,2022-02-01,Central Coast,14183,36800.0,78200,2342005
+natural resources mining and construction,2022-03-01,Central Coast,14261,37000.0,78200,2342005
+natural resources mining and construction,2022-04-01,Central Coast,14338,37200.0,78200,2342005
+nondurable goods,2022-01-01,Central Coast,4449,16200.0,78200,2342005
+nondurable goods,2022-02-01,Central Coast,4476,16300.0,78200,2342005
+nondurable goods,2022-03-01,Central Coast,4531,16500.0,78200,2342005
+nondurable goods,2022-04-01,Central Coast,4531,16500.0,78200,2342005
+other services,2022-01-01,Central Coast,3248,23400.0,78200,2342005
+other services,2022-02-01,Central Coast,3303,23800.0,78200,2342005
+other services,2022-03-01,Central Coast,3359,24200.0,78200,2342005
+other services,2022-04-01,Central Coast,3373,24300.0,78200,2342005
+professional and business services,2022-01-01,Central Coast,44643,98300.0,78200,2342005
+professional and business services,2022-02-01,Central Coast,45006,99100.0,78200,2342005
+professional and business services,2022-03-01,Central Coast,45188,99500.0,78200,2342005
+professional and business services,2022-04-01,Central Coast,45596,100400.0,78200,2342005
+retail trade,2022-01-01,Central Coast,11596,78600.0,78200,2342005
+retail trade,2022-02-01,Central Coast,11596,78600.0,78200,2342005
+retail trade,2022-03-01,Central Coast,11581,78500.0,78200,2342005
+retail trade,2022-04-01,Central Coast,11522,78100.0,78200,2342005
+state government,2022-01-01,Central Coast,9201,32700.0,78200,2342005
+state government,2022-02-01,Central Coast,9398,33400.0,78200,2342005
+state government,2022-03-01,Central Coast,9426,33500.0,78200,2342005
+state government,2022-04-01,Central Coast,9538,33900.0,78200,2342005
+total farm,2022-01-01,Central Coast,1599,46600.0,78200,2342005
+total farm,2022-02-01,Central Coast,1723,50200.0,78200,2342005
+total farm,2022-03-01,Central Coast,1881,54800.0,78200,2342005
+total farm,2022-04-01,Central Coast,2159,62900.0,78200,2342005
+transportation warehousing and utilities,2022-01-01,Central Coast,3209,16600.0,78200,2342005
+transportation warehousing and utilities,2022-02-01,Central Coast,3170,16400.0,78200,2342005
+transportation warehousing and utilities,2022-03-01,Central Coast,3151,16300.0,78200,2342005
+transportation warehousing and utilities,2022-04-01,Central Coast,3112,16100.0,78200,2342005
+wholesale trade,2022-01-01,Central Coast,7166,22800.0,78200,2342005
+wholesale trade,2022-02-01,Central Coast,7166,22800.0,78200,2342005
+wholesale trade,2022-03-01,Central Coast,7229,23000.0,78200,2342005
+wholesale trade,2022-04-01,Central Coast,7292,23200.0,78200,2342005
+construction,2022-01-01,Central San Joaquin,7352,19100.0,56000,1752543
+construction,2022-02-01,Central San Joaquin,7698,20000.0,56000,1752543
+construction,2022-03-01,Central San Joaquin,7814,20300.0,56000,1752543
+construction,2022-04-01,Central San Joaquin,7891,20500.0,56000,1752543
+durable goods,2022-01-01,Central San Joaquin,5214,12300.0,56000,1752543
+durable goods,2022-02-01,Central San Joaquin,5257,12400.0,56000,1752543
+durable goods,2022-03-01,Central San Joaquin,5342,12600.0,56000,1752543
+durable goods,2022-04-01,Central San Joaquin,5342,12600.0,56000,1752543
+educational and health services,2022-01-01,Central San Joaquin,45102,112200.0,56000,1752543
+educational and health services,2022-02-01,Central San Joaquin,45705,113700.0,56000,1752543
+educational and health services,2022-03-01,Central San Joaquin,45705,113700.0,56000,1752543
+educational and health services,2022-04-01,Central San Joaquin,46308,115200.0,56000,1752543
+federal government,2022-01-01,Central San Joaquin,6070,12000.0,56000,1752543
+federal government,2022-02-01,Central San Joaquin,5969,11800.0,56000,1752543
+federal government,2022-03-01,Central San Joaquin,5918,11700.0,56000,1752543
+federal government,2022-04-01,Central San Joaquin,5969,11800.0,56000,1752543
+financial activities,2022-01-01,Central San Joaquin,6557,18200.0,56000,1752543
+financial activities,2022-02-01,Central San Joaquin,6593,18300.0,56000,1752543
+financial activities,2022-03-01,Central San Joaquin,6593,18300.0,56000,1752543
+financial activities,2022-04-01,Central San Joaquin,6593,18300.0,56000,1752543
+information,2022-01-01,Central San Joaquin,3125,4200.0,56000,1752543
+information,2022-02-01,Central San Joaquin,3125,4200.0,56000,1752543
+information,2022-03-01,Central San Joaquin,3125,4200.0,56000,1752543
+information,2022-04-01,Central San Joaquin,3125,4200.0,56000,1752543
+leisure and hospitality,2022-01-01,Central San Joaquin,4933,53800.0,56000,1752543
+leisure and hospitality,2022-02-01,Central San Joaquin,5052,55100.0,56000,1752543
+leisure and hospitality,2022-03-01,Central San Joaquin,5144,56100.0,56000,1752543
+leisure and hospitality,2022-04-01,Central San Joaquin,5300,57800.0,56000,1752543
+local government,2022-01-01,Central San Joaquin,24771,95500.0,56000,1752543
+local government,2022-02-01,Central San Joaquin,25342,97700.0,56000,1752543
+local government,2022-03-01,Central San Joaquin,25445,98100.0,56000,1752543
+local government,2022-04-01,Central San Joaquin,25393,97900.0,56000,1752543
+mining and logging,2022-01-01,Central San Joaquin,22,300.0,56000,1752543
+mining and logging,2022-02-01,Central San Joaquin,22,300.0,56000,1752543
+mining and logging,2022-03-01,Central San Joaquin,22,300.0,56000,1752543
+mining and logging,2022-04-01,Central San Joaquin,22,300.0,56000,1752543
+natural resources mining and construction,2022-01-01,Central San Joaquin,21856,28600.0,56000,1752543
+natural resources mining and construction,2022-02-01,Central San Joaquin,22850,29900.0,56000,1752543
+natural resources mining and construction,2022-03-01,Central San Joaquin,23079,30200.0,56000,1752543
+natural resources mining and construction,2022-04-01,Central San Joaquin,23232,30400.0,56000,1752543
+nondurable goods,2022-01-01,Central San Joaquin,6853,26500.0,56000,1752543
+nondurable goods,2022-02-01,Central San Joaquin,6853,26500.0,56000,1752543
+nondurable goods,2022-03-01,Central San Joaquin,6879,26600.0,56000,1752543
+nondurable goods,2022-04-01,Central San Joaquin,6930,26800.0,56000,1752543
+other services,2022-01-01,Central San Joaquin,3513,17600.0,56000,1752543
+other services,2022-02-01,Central San Joaquin,3592,18000.0,56000,1752543
+other services,2022-03-01,Central San Joaquin,3612,18100.0,56000,1752543
+other services,2022-04-01,Central San Joaquin,3692,18500.0,56000,1752543
+professional and business services,2022-01-01,Central San Joaquin,16164,47300.0,56000,1752543
+professional and business services,2022-02-01,Central San Joaquin,16404,48000.0,56000,1752543
+professional and business services,2022-03-01,Central San Joaquin,16370,47900.0,56000,1752543
+professional and business services,2022-04-01,Central San Joaquin,16540,48400.0,56000,1752543
+retail trade,2022-01-01,Central San Joaquin,16079,65700.0,56000,1752543
+retail trade,2022-02-01,Central San Joaquin,16006,65400.0,56000,1752543
+retail trade,2022-03-01,Central San Joaquin,15908,65000.0,56000,1752543
+retail trade,2022-04-01,Central San Joaquin,15957,65200.0,56000,1752543
+state government,2022-01-01,Central San Joaquin,5550,21400.0,56000,1752543
+state government,2022-02-01,Central San Joaquin,5498,21200.0,56000,1752543
+state government,2022-03-01,Central San Joaquin,5550,21400.0,56000,1752543
+state government,2022-04-01,Central San Joaquin,5628,21700.0,56000,1752543
+total farm,2022-01-01,Central San Joaquin,9222,87900.0,56000,1752543
+total farm,2022-02-01,Central San Joaquin,9422,89800.0,56000,1752543
+total farm,2022-03-01,Central San Joaquin,8823,84100.0,56000,1752543
+total farm,2022-04-01,Central San Joaquin,10303,98200.0,56000,1752543
+transportation warehousing and utilities,2022-01-01,Central San Joaquin,8015,33200.0,56000,1752543
+transportation warehousing and utilities,2022-02-01,Central San Joaquin,7991,33100.0,56000,1752543
+transportation warehousing and utilities,2022-03-01,Central San Joaquin,7943,32900.0,56000,1752543
+transportation warehousing and utilities,2022-04-01,Central San Joaquin,7894,32700.0,56000,1752543
+wholesale trade,2022-01-01,Central San Joaquin,6393,20800.0,56000,1752543
+wholesale trade,2022-02-01,Central San Joaquin,6485,21100.0,56000,1752543
+wholesale trade,2022-03-01,Central San Joaquin,6547,21300.0,56000,1752543
+wholesale trade,2022-04-01,Central San Joaquin,6547,21300.0,56000,1752543
+construction,2022-01-01,Northern San Joaquin,6068,13300.0,57805,1557179
+construction,2022-02-01,Northern San Joaquin,6387,14000.0,57805,1557179
+construction,2022-03-01,Northern San Joaquin,6433,14100.0,57805,1557179
+construction,2022-04-01,Northern San Joaquin,6524,14300.0,57805,1557179
+educational and health services,2022-01-01,Northern San Joaquin,36223,84200.0,57805,1557179
+educational and health services,2022-02-01,Northern San Joaquin,36696,85300.0,57805,1557179
+educational and health services,2022-03-01,Northern San Joaquin,36782,85500.0,57805,1557179
+educational and health services,2022-04-01,Northern San Joaquin,36954,85900.0,57805,1557179
+federal government,2022-01-01,Northern San Joaquin,2488,4500.0,57805,1557179
+federal government,2022-02-01,Northern San Joaquin,2488,4500.0,57805,1557179
+federal government,2022-03-01,Northern San Joaquin,2488,4500.0,57805,1557179
+federal government,2022-04-01,Northern San Joaquin,2488,4500.0,57805,1557179
+financial activities,2022-01-01,Northern San Joaquin,6226,14700.0,57805,1557179
+financial activities,2022-02-01,Northern San Joaquin,6226,14700.0,57805,1557179
+financial activities,2022-03-01,Northern San Joaquin,6184,14600.0,57805,1557179
+financial activities,2022-04-01,Northern San Joaquin,6226,14700.0,57805,1557179
+information,2022-01-01,Northern San Joaquin,1039,2200.0,57805,1557179
+information,2022-02-01,Northern San Joaquin,1039,2200.0,57805,1557179
+information,2022-03-01,Northern San Joaquin,1039,2200.0,57805,1557179
+information,2022-04-01,Northern San Joaquin,1039,2200.0,57805,1557179
+leisure and hospitality,2022-01-01,Northern San Joaquin,7314,48200.0,57805,1557179
+leisure and hospitality,2022-02-01,Northern San Joaquin,7329,48300.0,57805,1557179
+leisure and hospitality,2022-03-01,Northern San Joaquin,7511,49500.0,57805,1557179
+leisure and hospitality,2022-04-01,Northern San Joaquin,7617,50200.0,57805,1557179
+local government,2022-01-01,Northern San Joaquin,30510,74200.0,57805,1557179
+local government,2022-02-01,Northern San Joaquin,30798,74900.0,57805,1557179
+local government,2022-03-01,Northern San Joaquin,31127,75700.0,57805,1557179
+local government,2022-04-01,Northern San Joaquin,30962,75300.0,57805,1557179
+manufacturing,2022-01-01,Northern San Joaquin,17886,51500.0,57805,1557179
+manufacturing,2022-02-01,Northern San Joaquin,18094,52100.0,57805,1557179
+manufacturing,2022-03-01,Northern San Joaquin,18268,52600.0,57805,1557179
+manufacturing,2022-04-01,Northern San Joaquin,18198,52400.0,57805,1557179
+mining and logging,2022-01-01,Northern San Joaquin,20,100.0,57805,1557179
+mining and logging,2022-02-01,Northern San Joaquin,20,100.0,57805,1557179
+mining and logging,2022-03-01,Northern San Joaquin,20,100.0,57805,1557179
+mining and logging,2022-04-01,Northern San Joaquin,20,100.0,57805,1557179
+natural resources mining and construction,2022-01-01,Northern San Joaquin,12938,23500.0,57805,1557179
+natural resources mining and construction,2022-02-01,Northern San Joaquin,13599,24700.0,57805,1557179
+natural resources mining and construction,2022-03-01,Northern San Joaquin,13544,24600.0,57805,1557179
+natural resources mining and construction,2022-04-01,Northern San Joaquin,13819,25100.0,57805,1557179
+other services,2022-01-01,Northern San Joaquin,2870,14500.0,57805,1557179
+other services,2022-02-01,Northern San Joaquin,2930,14800.0,57805,1557179
+other services,2022-03-01,Northern San Joaquin,2969,15000.0,57805,1557179
+other services,2022-04-01,Northern San Joaquin,3029,15300.0,57805,1557179
+professional and business services,2022-01-01,Northern San Joaquin,17374,41900.0,57805,1557179
+professional and business services,2022-02-01,Northern San Joaquin,17664,42600.0,57805,1557179
+professional and business services,2022-03-01,Northern San Joaquin,17706,42700.0,57805,1557179
+professional and business services,2022-04-01,Northern San Joaquin,17789,42900.0,57805,1557179
+retail trade,2022-01-01,Northern San Joaquin,12456,58900.0,57805,1557179
+retail trade,2022-02-01,Northern San Joaquin,12371,58500.0,57805,1557179
+retail trade,2022-03-01,Northern San Joaquin,12308,58200.0,57805,1557179
+retail trade,2022-04-01,Northern San Joaquin,12308,58200.0,57805,1557179
+state government,2022-01-01,Northern San Joaquin,4646,11300.0,57805,1557179
+state government,2022-02-01,Northern San Joaquin,4769,11600.0,57805,1557179
+state government,2022-03-01,Northern San Joaquin,4852,11800.0,57805,1557179
+state government,2022-04-01,Northern San Joaquin,4852,11800.0,57805,1557179
+total farm,2022-01-01,Northern San Joaquin,2803,33400.0,57805,1557179
+total farm,2022-02-01,Northern San Joaquin,2887,34400.0,57805,1557179
+total farm,2022-03-01,Northern San Joaquin,3013,35900.0,57805,1557179
+total farm,2022-04-01,Northern San Joaquin,3323,39600.0,57805,1557179
+transportation warehousing and utilities,2022-01-01,Northern San Joaquin,14775,54900.0,57805,1557179
+transportation warehousing and utilities,2022-02-01,Northern San Joaquin,14882,55300.0,57805,1557179
+transportation warehousing and utilities,2022-03-01,Northern San Joaquin,14721,54700.0,57805,1557179
+transportation warehousing and utilities,2022-04-01,Northern San Joaquin,14586,54200.0,57805,1557179
+wholesale trade,2022-01-01,Northern San Joaquin,7111,17600.0,57805,1557179
+wholesale trade,2022-02-01,Northern San Joaquin,7111,17600.0,57805,1557179
+wholesale trade,2022-03-01,Northern San Joaquin,7192,17800.0,57805,1557179
+wholesale trade,2022-04-01,Northern San Joaquin,7232,17900.0,57805,1557179
+construction,2022-01-01,Redwood Coast,955,2200.0,58613,314854
+construction,2022-02-01,Redwood Coast,998,2300.0,58613,314854
+construction,2022-03-01,Redwood Coast,998,2300.0,58613,314854
+construction,2022-04-01,Redwood Coast,998,2300.0,58613,314854
+durable goods,2022-01-01,Redwood Coast,525,1200.0,58613,314854
+durable goods,2022-02-01,Redwood Coast,525,1200.0,58613,314854
+durable goods,2022-03-01,Redwood Coast,525,1200.0,58613,314854
+durable goods,2022-04-01,Redwood Coast,525,1200.0,58613,314854
+educational and health services,2022-01-01,Redwood Coast,2149,8300.0,58613,314854
+educational and health services,2022-02-01,Redwood Coast,2175,8400.0,58613,314854
+educational and health services,2022-03-01,Redwood Coast,2175,8400.0,58613,314854
+educational and health services,2022-04-01,Redwood Coast,2175,8400.0,58613,314854
+federal government,2022-01-01,Redwood Coast,399,700.0,58613,314854
+federal government,2022-02-01,Redwood Coast,456,800.0,58613,314854
+federal government,2022-03-01,Redwood Coast,456,800.0,58613,314854
+federal government,2022-04-01,Redwood Coast,456,800.0,58613,314854
+financial activities,2022-01-01,Redwood Coast,372,1700.0,58613,314854
+financial activities,2022-02-01,Redwood Coast,372,1700.0,58613,314854
+financial activities,2022-03-01,Redwood Coast,372,1700.0,58613,314854
+financial activities,2022-04-01,Redwood Coast,372,1700.0,58613,314854
+information,2022-01-01,Redwood Coast,159,300.0,58613,314854
+information,2022-02-01,Redwood Coast,159,300.0,58613,314854
+information,2022-03-01,Redwood Coast,159,300.0,58613,314854
+information,2022-04-01,Redwood Coast,159,300.0,58613,314854
+leisure and hospitality,2022-01-01,Redwood Coast,995,4800.0,58613,314854
+leisure and hospitality,2022-02-01,Redwood Coast,1016,4900.0,58613,314854
+leisure and hospitality,2022-03-01,Redwood Coast,1037,5000.0,58613,314854
+leisure and hospitality,2022-04-01,Redwood Coast,1057,5100.0,58613,314854
+local government,2022-01-01,Redwood Coast,2762,9600.0,58613,314854
+local government,2022-02-01,Redwood Coast,2762,9600.0,58613,314854
+local government,2022-03-01,Redwood Coast,2790,9700.0,58613,314854
+local government,2022-04-01,Redwood Coast,2819,9800.0,58613,314854
+mining and logging,2022-01-01,Redwood Coast,58,300.0,58613,314854
+mining and logging,2022-02-01,Redwood Coast,58,300.0,58613,314854
+mining and logging,2022-03-01,Redwood Coast,58,300.0,58613,314854
+mining and logging,2022-04-01,Redwood Coast,58,300.0,58613,314854
+nondurable goods,2022-01-01,Redwood Coast,194,1300.0,58613,314854
+nondurable goods,2022-02-01,Redwood Coast,209,1400.0,58613,314854
+nondurable goods,2022-03-01,Redwood Coast,194,1300.0,58613,314854
+nondurable goods,2022-04-01,Redwood Coast,194,1300.0,58613,314854
+other services,2022-01-01,Redwood Coast,458,1900.0,58613,314854
+other services,2022-02-01,Redwood Coast,482,2000.0,58613,314854
+other services,2022-03-01,Redwood Coast,482,2000.0,58613,314854
+other services,2022-04-01,Redwood Coast,482,2000.0,58613,314854
+professional and business services,2022-01-01,Redwood Coast,1727,3100.0,58613,314854
+professional and business services,2022-02-01,Redwood Coast,1782,3200.0,58613,314854
+professional and business services,2022-03-01,Redwood Coast,1782,3200.0,58613,314854
+professional and business services,2022-04-01,Redwood Coast,1838,3300.0,58613,314854
+state government,2022-01-01,Redwood Coast,891,3100.0,58613,314854
+state government,2022-02-01,Redwood Coast,891,3100.0,58613,314854
+state government,2022-03-01,Redwood Coast,949,3300.0,58613,314854
+state government,2022-04-01,Redwood Coast,978,3400.0,58613,314854
+total farm,2022-01-01,Redwood Coast,126,1400.0,58613,314854
+total farm,2022-02-01,Redwood Coast,135,1500.0,58613,314854
+total farm,2022-03-01,Redwood Coast,135,1500.0,58613,314854
+total farm,2022-04-01,Redwood Coast,144,1600.0,58613,314854
+transportation warehousing and utilities,2022-01-01,Redwood Coast,1418,8400.0,58613,314854
+transportation warehousing and utilities,2022-02-01,Redwood Coast,1435,8500.0,58613,314854
+transportation warehousing and utilities,2022-03-01,Redwood Coast,1435,8500.0,58613,314854
+transportation warehousing and utilities,2022-04-01,Redwood Coast,1435,8500.0,58613,314854
+educational and health services,2022-01-01,North State,11861,32700.0,58128,713754
+educational and health services,2022-02-01,North State,11934,32900.0,58128,713754
+educational and health services,2022-03-01,North State,12006,33100.0,58128,713754
+educational and health services,2022-04-01,North State,12115,33400.0,58128,713754
+federal government,2022-01-01,North State,997,1800.0,58128,713754
+federal government,2022-02-01,North State,997,1800.0,58128,713754
+federal government,2022-03-01,North State,997,1800.0,58128,713754
+federal government,2022-04-01,North State,997,1800.0,58128,713754
+financial activities,2022-01-01,North State,3186,5600.0,58128,713754
+financial activities,2022-02-01,North State,3186,5600.0,58128,713754
+financial activities,2022-03-01,North State,3186,5600.0,58128,713754
+financial activities,2022-04-01,North State,3186,5600.0,58128,713754
+information,2022-01-01,North State,614,1100.0,58128,713754
+information,2022-02-01,North State,614,1100.0,58128,713754
+information,2022-03-01,North State,614,1100.0,58128,713754
+information,2022-04-01,North State,614,1100.0,58128,713754
+leisure and hospitality,2022-01-01,North State,2349,15100.0,58128,713754
+leisure and hospitality,2022-02-01,North State,2411,15500.0,58128,713754
+leisure and hospitality,2022-03-01,North State,2458,15800.0,58128,713754
+leisure and hospitality,2022-04-01,North State,2505,16100.0,58128,713754
+local government,2022-01-01,North State,7001,20200.0,58128,713754
+local government,2022-02-01,North State,6759,19500.0,58128,713754
+local government,2022-03-01,North State,6759,19500.0,58128,713754
+local government,2022-04-01,North State,7071,20400.0,58128,713754
+manufacturing,2022-01-01,North State,2983,6600.0,58128,713754
+manufacturing,2022-02-01,North State,3028,6700.0,58128,713754
+manufacturing,2022-03-01,North State,3164,7000.0,58128,713754
+manufacturing,2022-04-01,North State,3164,7000.0,58128,713754
+natural resources mining and construction,2022-01-01,North State,4514,8200.0,58128,713754
+natural resources mining and construction,2022-02-01,North State,4735,8600.0,58128,713754
+natural resources mining and construction,2022-03-01,North State,4790,8700.0,58128,713754
+natural resources mining and construction,2022-04-01,North State,4900,8900.0,58128,713754
+other services,2022-01-01,North State,1266,5300.0,58128,713754
+other services,2022-02-01,North State,1361,5700.0,58128,713754
+other services,2022-03-01,North State,1385,5800.0,58128,713754
+other services,2022-04-01,North State,1385,5800.0,58128,713754
+professional and business services,2022-01-01,North State,5071,11400.0,58128,713754
+professional and business services,2022-02-01,North State,5115,11500.0,58128,713754
+professional and business services,2022-03-01,North State,5160,11600.0,58128,713754
+professional and business services,2022-04-01,North State,5204,11700.0,58128,713754
+retail trade,2022-01-01,North State,4948,19600.0,58128,713754
+retail trade,2022-02-01,North State,5024,19900.0,58128,713754
+retail trade,2022-03-01,North State,5074,20100.0,58128,713754
+retail trade,2022-04-01,North State,5049,20000.0,58128,713754
+state government,2022-01-01,North State,2079,6000.0,58128,713754
+state government,2022-02-01,North State,2010,5800.0,58128,713754
+state government,2022-03-01,North State,2114,6100.0,58128,713754
+state government,2022-04-01,North State,2218,6400.0,58128,713754
+total farm,2022-01-01,North State,1308,3900.0,58128,713754
+total farm,2022-02-01,North State,1140,3400.0,58128,713754
+total farm,2022-03-01,North State,1174,3500.0,58128,713754
+total farm,2022-04-01,North State,1241,3700.0,58128,713754
+transportation warehousing and utilities,2022-01-01,North State,1826,4100.0,58128,713754
+transportation warehousing and utilities,2022-02-01,North State,1826,4100.0,58128,713754
+transportation warehousing and utilities,2022-03-01,North State,1826,4100.0,58128,713754
+transportation warehousing and utilities,2022-04-01,North State,1781,4000.0,58128,713754
+wholesale trade,2022-01-01,North State,1529,4300.0,58128,713754
+wholesale trade,2022-02-01,North State,1565,4400.0,58128,713754
+wholesale trade,2022-03-01,North State,1565,4400.0,58128,713754
+wholesale trade,2022-04-01,North State,1565,4400.0,58128,713754
